@@ -1,0 +1,250 @@
+/* ============= GUIDELINES ============= */
+/*----- COLOR ------*/
+/** Primary Color - #3c6e71 **/
+/** Secondary Color - #284B63 **/
+/** Buttons1 Color - #D9D9D9 **/
+/** Black Color - #353535 **/
+/** White Color - #FFFFFF **/
+
+/** greens **/
+/** Op - #3c6e71 **/
+/** Op - #38ad4a **/
+
+/*----- FONTS ------*/
+/*Neue Haas Display Bold*/
+/*font-family: "NeueHaasDisplayBold", sans-serif;*/
+/*font-weight: 700;*/
+/*font-style: normal;*/
+
+/*Neue Haas Display Roman*/
+/*font-family: "NeueHaasDisplayRoman", sans-serif;*/
+/*font-weight: 500;*/
+/*font-style: normal;*/
+
+/*Neue Haas Display Thin*/
+/*font-family: "NeueHaasDisplayThin", sans-serif;*/
+/*font-weight: 300;*/
+/*font-style: normal;*/
+
+/* ============= IMPORTS ============= */
+@font-face {
+    font-family: 'Heading';
+    src: url('./assets/fonts/neue-haas/NeueHaasDisplayBold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Body';
+    src: url('./assets/fonts/neue-haas/NeueHaasDisplayRoman.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url('./assets/fonts/neue-haas/NeueHaasDisplayThin.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accent-1';
+    src: url('./assets/fonts/levis-window/regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accent-2';
+    src: url('./assets/fonts/cormorant/static/Cormorant-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ============= CONFIG ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    width: 100vw;
+}
+
+.center-text {
+    text-align: center;
+}
+
+img {
+    width: 800px;
+}
+
+/* ============= SELECTORS ============= */
+/*----- HEADINGS ------*/
+h1 {
+    font-family: 'Heading', sans-serif;
+    font-size: 6em;
+    /* line-height: 1.2em; */
+    text-transform: normal;
+}
+
+h2 {
+    font-family: 'Thin', sans-serif;
+    font-size: 3em;
+    line-height: normal;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    width: 80%;
+}
+
+h3 {
+    font-family: 'Thin', sans-serif;
+    font-size: 3em;
+    line-height: normal;
+    letter-spacing: .02em;
+    text-transform: normal;
+    color: #3c6e71;
+    text-align: center;
+}
+
+/*----- BODY ------*/
+p {
+    font-family: 'Body', sans-serif;
+    font-size: 1em;
+    line-height: normal;
+    letter-spacing: 0em;
+    color: #000;
+    text-align: center;
+    width: 40%;
+}
+
+/*----- ACCENT ------*/
+.text-green {
+    font-family: 'Accent-1', sans-serif;
+    text-transform: lowercase;
+    color: #3c6e71;
+}
+
+.text-blue {
+    font-family: 'Accent-2', sans-serif;
+    text-transform: lowercase;
+    color: blue;
+}
+
+/* ============= STYLE SECTIONS - MAIN PAGE ============= */
+/*----- MAIN SECTION 1 ------*/
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 30px 30px 100px 30px;
+    /*--- bg-op1 ---*/
+    /* background: radial-gradient(at 78% 41%, hsla(120, 81%, 88%, 1) 0px, transparent 50%);
+    background-size: 300% 300%;
+    animation: change 3s infinite ease-in-out; */
+}
+
+.heading-accent {
+    text-transform: lowercase !important;
+}
+
+/*----- MAIN SECTION 2 ------*/
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+    /*--- bg-op2 ---*/
+    animation: change 3s infinite ease-in-out; 
+    background-color: #38ad4a;
+    background-image:
+        radial-gradient(at 78% 41%, hsla(120, 81%, 88%, 1) 0px, transparent 50%),
+        radial-gradient(at 36% 0%, hsla(158, 81%, 88%, 1) 0px, transparent 50%),
+        radial-gradient(at 2% 82%, hsla(122, 81%, 88%, 1) 0px, transparent 50%);
+}
+
+@keyframes change {
+
+    0% {
+
+        background-position: 0 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.container-2 h1 {
+    font-family: 'Thin', sans-serif;
+    font-size:10em;
+    color:#fff;
+}
+
+/*----- MAIN SECTION 3 ------*/
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 30px 30px 100px 30px;
+}
+
+/* ============= MODEL-VIEWER ============= */
+/*----- TERRARIUM ------*/
+#threedd {
+    width: 1000px;
+    height: 500px;
+}
+
+/* ============= WIDGETS ============= */
+/** ---------- Close Text ---------- **/
+.container-close-text ul {
+    margin:0;
+    padding:0;
+    font-size:120px;
+    display:flex;
+    color:#fff;
+    cursor:pointer;
+}
+
+.container-close-text li {
+    list-style:none;
+    transition:0.5s;
+}
+
+.container-close-text ul:hover li {
+    transform: rotate(180deg);
+}
+
+.container-close-text ul:hover li:last-child {
+    transition-delay:0.5s;
+}
+
+.container-close-text li span {
+    transition: 0.5s;
+    display:inline-block;
+}
+
+.container-close-text ul:hover li:last-child span:nth-child(2) {
+    transform: rotate(180deg) translateY(-25px);
+    transition-delay:1.5s;
+}
