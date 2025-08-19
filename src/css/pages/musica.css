@@ -1,0 +1,13 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__musica {
+    height: 90vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.musica__img-content img {
+    width: 100%;
+}

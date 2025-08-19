@@ -1,0 +1,40 @@
+/* Botón */
+.button {
+    font-size: 0.9rem;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+    transform: scale(1.03);
+}
+
+.button--primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.button--secondary {
+    background-color: #fff;
+    color: #000;
+}
+
+.button--terciary {
+    font-size: 1rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    padding: 0 76px 14px 0;
+}
+
+.button-icon{
+    position:relative;
+    right:-72px;
+    color: black;
+}
+

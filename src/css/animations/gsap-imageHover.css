@@ -1,0 +1,97 @@
+/* ---------------------------------------- */
+/* Home > Benefits Section */
+/* ---------------------------------------- */
+.benefits__item {
+    position: relative;
+    overflow: visible;
+}
+
+.benefits__image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.benefits__image {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.benefits__item--01 {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ---------------------------------------- */
+/* Terrarios > Hero Section */
+/* ---------------------------------------- */
+.terrarios__item {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.terrarios__title h3 {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 3.5rem;
+    line-height: .8;
+    color: #000;
+}
+
+.terrarios__title span {
+    margin-left: .7rem;
+    margin-right: -1rem;
+}
+
+.terrarios__image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 520px;
+    height: 440px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.terrarios__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 0;
+}
+
+.terrarios__image.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+
+.terrarios__item .grid__col {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.terrarios__item .grid {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+}

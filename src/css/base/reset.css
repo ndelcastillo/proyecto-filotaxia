@@ -1,0 +1,27 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+hr {
+    width: 100%;
+    border: .3px solid rgb(223, 223, 223);
+}

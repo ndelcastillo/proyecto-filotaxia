@@ -1,0 +1,58 @@
+/* Nav */
+.nav {
+    height: 10vh;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-top: 25px;
+}
+
+/* .nav__tagline {
+     margin-left: 30px;   
+} */    
+
+.nav__list--row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* .nav__list--column {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    color: #a0a0a0;
+    ;
+} */
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'PP_Neue_Montreal_medium';
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: #666;
+    /* ejemplo hover */
+}
+
+.nav__logo-img {
+    width: 120px;
+    position: relative;
+    top: 3px;
+}
+
+.nav__toggle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: black;
+}

@@ -1,0 +1,14 @@
+/* ---------------------------------------- */
+/* Section Footer  */
+/* ---------------------------------------- */
+.footer__subtitle {
+    color: #000;
+}
+
+.footer__logo {
+    width: 800px;
+}
+
+.footer .nav__link {
+    color: #a0a0a0;
+}

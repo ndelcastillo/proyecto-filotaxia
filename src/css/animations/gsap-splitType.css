@@ -1,0 +1,14 @@
+.hero__title {
+    color: #000;
+    margin-left: -30px;
+    text-align: center;
+    white-space: nowrap;
+    /* Evita saltos de línea */
+    position: relative;
+}
+
+.hero__title .char {
+    display: inline-block;
+    /* Cada carácter mantiene su propio ancho */
+    will-change: transform;
+}
