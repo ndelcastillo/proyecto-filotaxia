@@ -4,6 +4,7 @@
 .benefits__item {
     position: relative;
     overflow: visible;
+    margin-top: 30px;
 }
 
 .benefits__image-wrapper {
