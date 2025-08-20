@@ -96,3 +96,60 @@
     bottom: .5rem;
     left: 0;
 }
+
+
+/* ---------------------------------------- */
+/* Musica > Catalogo Section */
+/* ---------------------------------------- */
+.catalogo__content {
+    position: relative;
+    color: inherit;
+    text-decoration: none;    
+    display: grid;    
+    cursor: pointer;    
+    transition: background 0.3s ease;
+}
+
+.catalogo__content:hover {
+    background: rgba(0, 0, 0, 0.05);    
+}
+
+.catalogo__image-preview {
+    position: absolute;
+    top: -1.5rem;
+    left: 25%;
+    width: 210px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    /* no bloquea el hover */
+    z-index: 5;
+}
+
+.catalogo__image-preview.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* HR oculto por defecto dentro de cada fila */
+.catalogo__content hr {
+    display: block;
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background: #000;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.55s ease, opacity 0.35s ease;
+    will-change: transform, opacity;
+}
+
+/* Al hacer hover en la fila, aparece el hr */
+.catalogo__content:hover hr {
+    opacity: 1;
+    transform: scaleX(1);
+}

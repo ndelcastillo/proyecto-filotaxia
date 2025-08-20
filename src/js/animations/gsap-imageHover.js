@@ -88,3 +88,28 @@ terrariosTitles.forEach(title => {
 });
 
 
+/* ---------------------------------------- */
+/* Musica > Catalogo */
+/* ---------------------------------------- */
+const filas = document.querySelectorAll(".catalogo__content");
+
+filas.forEach(fila => {
+    const imageUrl = fila.dataset.image;
+
+    // Crear imagen para cada fila
+    if (imageUrl) {
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        img.classList.add("catalogo__image-preview");
+        fila.appendChild(img);
+
+        // Hover dentro de la fila
+        fila.addEventListener("mouseenter", () => {
+            img.classList.add("active");
+        });
+
+        fila.addEventListener("mouseleave", () => {
+            img.classList.remove("active");
+        });
+    }
+});

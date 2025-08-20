@@ -49,13 +49,14 @@
 .cta {
     height: 100vh;
     padding: 20px;
-
 }
 
 .cta__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
+    /* <-- centra horizontalmente y alinea abajo */
 }
 
 /* ---------------------------------------- */
