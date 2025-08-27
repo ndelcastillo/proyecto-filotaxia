@@ -116,10 +116,10 @@
 
 .catalogo__image-preview {
     position: absolute;
-    top: -1.5rem;
-    left: 25%;
-    width: 210px;
-    height: 150px;
+    top: -4.5rem;
+    left: 23%;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     opacity: 0;
     transform: scale(0.95);

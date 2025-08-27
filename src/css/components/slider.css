@@ -1,0 +1,55 @@
+.musica__slider {
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    cursor: grab;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    white-space: nowrap;
+}
+
+.slider-item {
+    display: inline-block;
+    width: 40vw;
+    /* ajustá según tu diseño */
+    padding: 1vw;
+}
+
+.slider-item figure {
+    position: relative;
+    padding-bottom: 60%;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.slider-item figure img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-progress {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slider-progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+    display: none;
+}
+
