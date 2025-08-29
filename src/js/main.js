@@ -5,3 +5,6 @@ import './animations/gsap.js';
 import './components/grid.js';
 import './components/slider.js';
 import './components/benefits.js';
+
+// Models
+import './models/model-three.js';

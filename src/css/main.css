@@ -6,6 +6,8 @@
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 
+@import url('./models/model-three.css');
+
 @import url('./animations/gsap.css');
 @import url('./animations/meshGradient.css');
 

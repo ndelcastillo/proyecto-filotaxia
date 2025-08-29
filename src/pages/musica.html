@@ -60,11 +60,48 @@
                 </div>
             </div>
         </section>
-        <section class="cta">
-            <img class="cta__image" src="../assets/images/productos/T3/Filotaxia-6.jpg" alt="">
-            <!-- <p class="cta__text cta__text--primary mt-xxxs">Filotaxia Shooting</p>
-            <p class="cta__text cta__text--secondary">⎯ Lorem ipsum dolor sit amet</p> -->
+        <section class="horizontal-section">
+            <div id="three-container"></div>
+            <div class="horizontal-wrapper">
+                <!-- <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Puntiaguda<span class="ml-sm">⎯</span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Triangular</h2>
+                </div>
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Redondeada<span class="ml-sm">⎯</span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Sinusoidal</h2>
+                </div>
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Dentada<span class="ml-sm">⎯</span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Diente de Sierra</h2>
+                </div>
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Recta<span class="ml-sm">⎯</span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Cuadrada</h2>
+                </div> -->
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Puntiaguda<span class="ml-sm"><img class="panel__icon" src="../assets/images/recursos/wave-4:w.png"></span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Triangular</h2>
+                </div>
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Redondeada<span class="ml-sm"><img class="panel__icon" src="../assets/images/recursos/wave-3:w.png"></span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Sinusoidal</h2>
+                </div>
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Dentada<span class="ml-sm"><img class="panel__icon" src="../assets/images/recursos/wave-5:white.png"></span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Diente de Sierra</h2>
+                </div>
+                <div class="panel">
+                    <h2><span class="panel__text">(Forma)</span>Recta<span class="ml-sm"><img class="panel__icon" src="../assets/images/recursos/wave-2:w.png"></span></h2>
+                    <h2 class="tooltip"><span class="panel__text">(Onda)</span>Cuadrada</h2>
+                </div>
+            </div>
         </section>
+
+        <!-- <section class="cta__product">
+            <div class="cta__product-image"></div>
+            <img class="cta__image" src="../assets/images/productos/T3/Filotaxia-6.jpg" alt="">
+        </section> -->
         <section class="musica__text mt-xl">
             <div class="grid">
                 <div class="grid__col grid__col--span-5">
@@ -417,22 +454,12 @@
                         está sucediendo y uno adopta un rol más pasivo. Yo sería simplemente un facilitador más que un
                         compositor. La música es de ellas.”</p>
                 </div>
-                <div class="grid__col grid__col--span-5"></div>
-                <div class="testimonio__content grid__col grid__col--span-5 mt-sm">
-                    <p class="mb-xxs">La música de las plantas nace de la forma de sus hojas.</p>
-                    <p class="testimonio__texto">“En algunos casos las plantas son protagonistas absolutas de la música
-                        que
-                        está sucediendo y uno adopta un rol más pasivo. Yo sería simplemente un facilitador más que un
-                        compositor. La música es de ellas.”</p>
-                </div>
             </div>
         </section>
-        <section class="cta__product mb-xl">
+        <!-- <section class="cta__product mb-xl">
             <div class="cta__product-image"></div>
-            <!-- <img class="cta__product-image" src="../assets/images/productos/T3/Filotaxia-6.jpg" alt=""> -->
-            <!-- <p class="cta__text cta__text--primary mt-xxxs">Filotaxia Shooting</p>
-            <p class="cta__text cta__text--secondary">⎯ Lorem ipsum dolor sit amet</p> -->
-        </section>
+            <div id="three-container"></div>
+        </section> -->
     </main>
 
     <footer class="footer mt-md mb-xs" role="contentinfo">
@@ -483,8 +510,9 @@
             </div>
         </div>
     </footer>
-    <!-- Model Viewer -->
+    <!-- Models -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <script type="module" src="../js/models/model-three.js"></script>
     <!-- Scripts -->
     <script src="../js/vendor/vendor.js"></script>
     <script type="module" src="../js/main.js"></script>
@@ -492,3 +520,12 @@
 </body>
 
 </html>
+
+
+
+
+<!-- <model-viewer class="model-viewer" src="../assets/models/forest_in_a_jar_-_terrarium.glb"
+                    alt="A 3D model" autoplay auto-rotate camera-controls disable-zoom disable-tap ar ar-scale="fixed"
+                    camera-orbit="0deg 90deg 100%" min-camera-orbit="auto 70deg auto"
+                    max-camera-orbit="auto 70deg auto">
+                </model-viewer> -->
