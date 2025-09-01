@@ -1,0 +1,82 @@
+/* 
+audio {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    background: transparent !important;
+    background-color: transparent !important;
+    position: relative;
+    left: -20px;
+    bottom: -20px;
+}
+
+audio::-webkit-media-controls-panel {
+    background: none;
+}
+
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    display: none !important;
+} */
+
+
+/* Ocultar el botón de menú con 3 puntitos en Chrome / Edge */
+/* audio::-webkit-media-controls-enclosure {
+    overflow: hidden;
+    
+} */
+
+/* Asegura que el botón de 3 puntos no se muestre */
+/* audio::-webkit-media-controls-panel {
+    justify-content: flex-start;    
+} */
+
+/* Algunos navegadores usan esta clase para el botón de más opciones */
+/* audio::-webkit-media-controls-toggle-closed-captions-button,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    display: none !important;
+} */
+
+/* Intentar ocultar el menú de 3 puntitos */
+/* audio::-webkit-media-controls-more-overflow-button {
+    display: none !important;
+} */
+
+
+
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #f0f0f0; */
+    padding: 10px;
+    border-radius: 50px;
+    width: fit-content;
+    position: relative;
+    bottom: -12px;
+}
+
+.playPauseBtn {
+    font-size: .9rem;
+    border: none;
+    background: transparent;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* transition: background 0.3s ease, transform 0.2s ease; */
+}
+
+.playPauseBtn.pause-icon {
+    font-size: 1.3rem; /* tamaño más grande del pause */
+}
+
+
+
