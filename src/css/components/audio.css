@@ -60,6 +60,7 @@ audio::-webkit-media-controls-seek-forward-button {
     width: fit-content;
     position: relative;
     bottom: -12px;
+    z-index: 100;
 }
 
 .playPauseBtn {

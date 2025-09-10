@@ -1,0 +1,63 @@
+/* ---------------------------------------- */
+/* Manifiesto > Hero Section */
+/* ---------------------------------------- */
+
+.manifiesto__title-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .image-swap-triangle,
+.image-swap-sine,
+.image-swap-saw,
+.image-swap-square {
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+    animation-duration: 8s;    
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+} */
+
+.manifiesto__title-content1 {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.manifiesto__title-content1 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.manifiesto__title-content1 h1 {
+    position: absolute;
+    left: 120px;
+}
+
+.image-swap-triangle {
+    background: url("../../assets/images/patch/bgBlack/vco-triangle-bgBlack.png") center/contain no-repeat;
+}
+
+.image-swap-sine {
+    background: url("../../assets/images/patch/bgBlack/vco-sine-bgBlack.png") center/contain no-repeat;
+}
+
+.image-swap-saw {
+    background: url("../../assets/images/patch/bgBlack/vco-saw-bgBlack.png") center/contain no-repeat;
+}
+
+.image-swap-square {
+    background: url("../../assets/images/patch/bgBlack/vco-square-bgBlack.png") center/contain no-repeat;
+}
