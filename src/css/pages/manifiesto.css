@@ -1,0 +1,257 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__manifiesto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 86vh;
+}
+
+.manifiesto__title {}
+
+.manifiesto__title-img {
+    margin-left: 25px;
+}
+
+.manifiesto__img {
+    width: 80px;
+    object-fit: cover;
+    gap: 0;
+    margin-left: -20px;
+}
+
+.manifiesto__title-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.manifiesto__title-content1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .image-swap-triangle {
+    width: 80px;
+    height: 80px;
+    margin-bottom: -10px;
+    background-image: url('../../assets/images/patch/black/vco-triangle.png');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+.image-swap-triangle:hover {
+    background-image: url('../../assets/images/patch/bgBlack/vco-triangle-bgBlack.png');
+}
+
+.image-swap-sine {
+    width: 80px;
+    height: 80px;
+    margin-bottom: -10px;
+    background-image: url('../../assets/images/patch/black/vco-sine.png');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+.image-swap-sine:hover {
+    background-image: url('../../assets/images/patch/bgBlack/vco-sine-bgBlack.png');
+}
+
+.image-swap-saw {
+    width: 80px;
+    height: 80px;
+    margin-bottom: -10px;
+    background-image: url('../../assets/images/patch/black/vco-saw.png');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+.image-swap-saw:hover {
+    background-image: url('../../assets/images/patch/bgBlack/vco-saw-bgBlack.png');
+}
+
+.image-swap-square {
+    width: 80px;
+    height: 80px;
+    margin-bottom: -10px;
+    background-image: url('../../assets/images/patch/black/vco-square.png');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+.image-swap-square:hover {
+    background-image: url('../../assets/images/patch/bgBlack/vco-square-bgBlack.png');
+} */
+
+
+/* Base genérica */
+.image-swap-triangle,
+.image-swap-sine,
+.image-swap-saw,
+.image-swap-square {
+    width: 80px;
+    height: 80px;
+    margin-bottom: -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+    animation-duration: 8s;
+    /* Duración total del ciclo */
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+    /* cambios secos, no fade */
+}
+
+/* Cada ícono con su imagen inicial, animación y delay */
+.image-swap-triangle {
+    background-image: url('../../assets/images/patch/bgBlack/vco-triangle-bgBlack.png');
+    animation-name: swapTriangle;
+    animation-delay: 0s;
+}
+
+.image-swap-sine {
+    background-image: url('../../assets/images/patch/black/vco-sine.png');
+    animation-name: swapSine;
+    animation-delay: 2s;
+}
+
+.image-swap-saw {
+    background-image: url('../../assets/images/patch/black/vco-saw.png');
+    animation-name: swapSaw;
+    animation-delay: 4s;
+}
+
+.image-swap-square {
+    background-image: url('../../assets/images/patch/black/vco-square.png');
+    animation-name: swapSquare;
+    animation-delay: 6s;
+}
+
+/* @keyframes swapTriangle {
+
+    0%,
+    24% {
+        background-image: url('../../assets/images/patch/black/vco-triangle.png');        
+    }
+
+    25%,
+    49% {
+        background-image: url('../../assets/images/patch/bgBlack/vco-triangle-bgBlack.png');        
+    }
+
+    50%,
+    100% {
+        background-image: url('../../assets/images/patch/black/vco-triangle.png');        
+    }
+}
+
+@keyframes swapSine {
+
+    0%,
+    24% {
+        background-image: url('../../assets/images/patch/black/vco-sine.png');
+    }
+
+    25%,
+    49% {
+        background-image: url('../../assets/images/patch/bgBlack/vco-sine-bgBlack.png');
+    }
+
+    50%,
+    100% {
+        background-image: url('../../assets/images/patch/black/vco-sine.png');
+    }
+}
+
+@keyframes swapSaw {
+
+    0%,
+    24% {
+        background-image: url('../../assets/images/patch/black/vco-saw.png');
+    }
+
+    25%,
+    49% {
+        background-image: url('../../assets/images/patch/bgBlack/vco-saw-bgBlack.png');
+    }
+
+    50%,
+    100% {
+        background-image: url('../../assets/images/patch/black/vco-saw.png');
+    }
+}
+
+@keyframes swapSquare {
+
+    0%,
+    24% {
+        background-image: url('../../assets/images/patch/black/vco-square.png');
+    }
+
+    25%,
+    49% {
+        background-image: url('../../assets/images/patch/bgBlack/vco-square-bgBlack.png');
+    }
+
+    50%,
+    100% {
+        background-image: url('../../assets/images/patch/black/vco-square.png');
+    }
+} */
+
+
+/* ---------------------------------------- */
+/* Section CTA */
+/* ---------------------------------------- */
+.cta__manifiesto {
+    height: 100vh;    
+    margin: 20px;
+    background-color: black;
+    position: relative;
+}
+
+.cta__manifiesto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* ---------------------------------------- */
+/* Section Citas */
+/* ---------------------------------------- */
+/* Contenedor del slider */
+.manifiesto__citas {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.manifiesto__track {
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+    /* mejora performance */
+}
+
+.manifiesto__slide {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    height: 420px;
+    width: 500px;
+    border: 1px solid #B7B7B7;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.manifiesto__slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

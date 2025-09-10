@@ -248,8 +248,12 @@
 }
 
 /* ---------------------------------------- */
-/* Justificación horizontal para elementos flex */
+/* Modificadores de alineación vertical */
 /* ---------------------------------------- */
+.align--start {
+    justify-content: flex-start;
+}
+
 .align--end {
     justify-content: flex-end;
 }
