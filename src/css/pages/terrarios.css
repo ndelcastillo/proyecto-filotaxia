@@ -119,7 +119,7 @@
     width: 100%;
     height: 800px;
     display: block;
-    object-fit: cover;
+    object-fit: cover;    
 }
 
 .cuidados__text {

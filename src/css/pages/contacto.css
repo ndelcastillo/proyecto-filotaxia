@@ -1,0 +1,31 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__contacto {
+    height: 80vh;
+}
+
+.hero__contacto-content {
+    height: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__contacto-content p {
+    width: 55%;
+}
+
+.hero__contacto-content h1 {
+    position: relative;
+    left: -5px;
+}
+
+.hero__contacto-content img {
+    height: 220px;    
+}
+
+.info__title {
+    color: #888A8B;
+}

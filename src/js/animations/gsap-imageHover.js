@@ -1,55 +1,37 @@
 import { gsap } from 'gsap';
 
 /* ---------------------------------------- */
-/* Index > benefits */
+/* Home > benefits */
 /* ---------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-    // console.log("GSAP Hover script cargado");
-
     const benefitItems = document.querySelectorAll('.benefits__item');
     const imageWrappers = document.querySelectorAll('.benefits__image-wrapper');
-    if (imageWrappers.length === 0) return; // Si no hay imágenes, salimos
+    if (imageWrappers.length === 0) return;
 
-    const firstImageWrapper = imageWrappers[0];
+    // Inicializamos todas las imágenes en opacity 0
+    imageWrappers.forEach(wrapper => {
+        gsap.set(wrapper, { opacity: 0, scale: 0.85 });
+    });
 
-    // Inicializamos la primera imagen visible
-    gsap.set(firstImageWrapper, { opacity: 1, scale: 1 });
-
-    // Variable para guardar el índice del item activo
-    let activeIndex = 0;
+    // Mostramos la primera imagen por defecto (opcional)
+    gsap.to(imageWrappers[0], { opacity: 1, scale: 1, duration: 0.5 });
 
     benefitItems.forEach((item, index) => {
-        const imageWrapper = item.querySelector('.benefits__image-wrapper');
+        const imageWrapper = imageWrappers[index]; // mapeamos la imagen según el índice del item
 
-        item.addEventListener('click', () => {
-            console.log(`Click en item ${index}`);
-
-            // Si ya está activo este item, no hacemos nada
-            if (activeIndex === index) return;
-
-            activeIndex = index;
-
+        item.addEventListener('mouseenter', () => {
             // Ocultamos todas las imágenes
             imageWrappers.forEach(wrapper => {
-                gsap.to(wrapper, {
-                    opacity: 0,
-                    scale: 0.85,
-                    duration: 0.3,
-                    ease: "power2.inOut",
-                });
+                gsap.to(wrapper, { opacity: 0, scale: 0.85, duration: 0.3, ease: "power2.inOut" });
             });
 
-            // Mostramos la imagen clickeada
+            // Mostramos la imagen correspondiente al item hover
             gsap.set(imageWrapper, { scale: 0.95 });
-            gsap.to(imageWrapper, {
-                opacity: 1,
-                scale: 1,
-                duration: 0.5,
-                ease: "power2.out",
-            });
+            gsap.to(imageWrapper, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" });
         });
     });
 });
+
 
 
 

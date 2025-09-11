@@ -71,6 +71,15 @@ p {
     color: #000;
 }
 
+ul {
+    list-style: none;
+}
+
 li {
+    font-family: 'PP_Neue_Montreal_medium';
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #000;
     line-height: 1.5;
 }
+

@@ -1,0 +1,80 @@
+.contact-form .form-group {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form .form-group label {
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-family: 'PP_Neue_Montreal_medium';
+    line-height: 1.4;
+    color: #000;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea,
+.contact-form .form-group select {
+    padding: 20px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    transition: border 0.2s;
+    font-family: 'PP_Neue_Montreal_medium';
+    line-height: 1.4;
+    color: #000;
+    width: 100%;
+}
+
+.contact-form select {
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: #fff;
+    appearance: none; /* elimina flecha nativa para personalizar si querés */
+    transition: border 0.2s;
+}
+
+.contact-form select:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.contact-form .form-feedback {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: green;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group label a {
+    color: #969696;
+    text-decoration: none;
+}
+
+.checkbox-group label a:hover {
+    text-decoration: underline;
+}
+
+.contacto__info ul li {
+    color: #888A8B;
+}
+
+

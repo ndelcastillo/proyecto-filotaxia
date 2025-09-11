@@ -1,26 +1,58 @@
 /* ---------------------------------------- */
-/* Manifiesto > Hero Section */
+/* Home > Manifiesto Section */
 /* ---------------------------------------- */
-
-.manifiesto__title-content {
+.homeManifiesto_title-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* .image-swap-triangle,
-.image-swap-sine,
-.image-swap-saw,
-.image-swap-square {
-    width: 110px;
-    height: 110px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease;
-    animation-duration: 8s;    
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(1);
-} */
+.homeManifiesto__title-content1 {
+    position: relative;
+    height: 240px;
+    width: 200px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeManifiesto__title-content1 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.homeImage-terrario01 {
+    background: url("../../assets/images/productos/FINALES/terrariosShootPorteT2.jpg") center/cover no-repeat;
+}
+
+.homeImage-terrario02 {
+    background: url("../../assets/images/productos/FINALES/terrariosShootPorteT9.jpg") center/cover no-repeat;
+}
+
+.homeImage-terrario03 {
+    background: url("../../assets/images/productos/FINALES/terrariosShootPorteT7.jpg") center/cover no-repeat;
+}
+
+.homeImage-terrario04 {
+    background: url("../../assets/images/productos/FINALES/terrariosShootPorteT8.jpg") center/cover no-repeat;
+}
+
+
+
+/* ---------------------------------------- */
+/* Manifiesto > Hero Section */
+/* ---------------------------------------- */
+.manifiesto__title-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .manifiesto__title-content1 {
     position: relative;
@@ -60,4 +92,49 @@
 
 .image-swap-square {
     background: url("../../assets/images/patch/bgBlack/vco-square-bgBlack.png") center/contain no-repeat;
+}
+
+
+/* ---------------------------------------- */
+/* Contacto > Hero Section */
+/* ---------------------------------------- */
+.contacto__title-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacto__title-content1 {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__title-content1 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image-terrario01 {
+    background: url("../../assets/images/terrarios/Filotaxia-2.webp") center/contain no-repeat;
+}
+
+.image-terrario02 {
+    background: url("../../assets/images/terrarios/Filotaxia-3.webp") center/contain no-repeat;
+}
+
+.image-terrario03 {
+    background: url("../../assets/images/terrarios/Filotaxia-5.webp") center/contain no-repeat;
+}
+
+.image-terrario04 {
+    background: url("../../assets/images/terrarios/Filotaxia-12.webp") center/contain no-repeat;
 }
