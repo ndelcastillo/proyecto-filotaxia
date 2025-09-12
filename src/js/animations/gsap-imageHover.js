@@ -71,6 +71,47 @@ terrariosTitles.forEach(title => {
 
 
 /* ---------------------------------------- */
+/* Terrarios > Cuidados */
+/* ---------------------------------------- */
+document.addEventListener('DOMContentLoaded', () => {
+    const imgEl = document.querySelector('.cuidados__img');
+    const titleEl = document.getElementById('cuidados-title');
+    const textEl = document.getElementById('cuidados-text');
+    const h2Elements = document.querySelectorAll('.cuidados__content h2');
+
+    // 👉 Activar el primer h2 por defecto
+    if (h2Elements.length > 0) {
+        const first = h2Elements[0];
+        first.classList.add('active');
+        imgEl.src = first.dataset.img;
+        titleEl.textContent = first.dataset.title;
+        textEl.textContent = first.dataset.text;
+    }
+
+    h2Elements.forEach(h2 => {
+        h2.addEventListener('click', () => {
+            // Reset estados activos
+            h2Elements.forEach(el => el.classList.remove('active'));
+            h2.classList.add('active');
+
+            // Transición de imagen
+            gsap.to(imgEl, {
+                opacity: 0, duration: 0.3, onComplete: () => {
+                    imgEl.src = h2.dataset.img;
+                    gsap.to(imgEl, { opacity: 1, duration: 0.3 });
+                }
+            });
+
+            // Actualizamos textos
+            titleEl.textContent = h2.dataset.title;
+            textEl.textContent = h2.dataset.text;
+        });
+    });
+});
+
+
+
+/* ---------------------------------------- */
 /* Musica > Catalogo */
 /* ---------------------------------------- */
 const filas = document.querySelectorAll(".catalogo__content");

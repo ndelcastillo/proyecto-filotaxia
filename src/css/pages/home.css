@@ -83,7 +83,10 @@
 /* ---------------------------------------- */
 /* Section Gallery */
 /* ---------------------------------------- */
-.gallery__title {}
+p.gallery__subtitle {
+    color: #888A8B;
+
+}
 
 .gallery__image-1 {
     width: 100%;
