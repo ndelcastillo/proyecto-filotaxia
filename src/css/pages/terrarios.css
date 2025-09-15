@@ -209,3 +209,30 @@
 .terrariosCuidados__content h3 {
     margin-top: 10px;
 }
+
+
+
+/* ---------------------------------------- */
+/* Section FAQ */
+/* ---------------------------------------- */
+.faq-intro__title {
+    width: 100%;
+}
+
+.faq-intro__subtitle {
+    font-size: 1.2rem;
+    margin-right: 200px;
+    position: relative;
+    top:-15px;
+}
+
+.faq-intro__number {
+    position: relative;
+    bottom:-30px;
+}
+
+.faq-intro__img {
+    height: 240px;
+    width: 200px;
+    object-fit: cover;
+}

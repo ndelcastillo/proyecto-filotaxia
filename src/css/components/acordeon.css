@@ -18,9 +18,9 @@
 .faq__answear {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
+    transition: max-height 0s ease, padding 0s ease;
     padding: 0 0;
-    color: #000;
+    color: #888A8B;
     width: 80%;
 }
 
