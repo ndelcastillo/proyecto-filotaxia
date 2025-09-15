@@ -2,6 +2,7 @@
 import './animations/gsap.js';
 
 // Components
+import './components/acordeon.js';
 import './components/audio.js';
 import './components/grid.js';
 import './components/slider.js';

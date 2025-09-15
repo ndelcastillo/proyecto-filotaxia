@@ -26,13 +26,9 @@
 /* ---------------------------------------- */
 /* Section Slider */
 /* ---------------------------------------- */
-/* .slider {
-    overflow: hidden;
-    flex-wrap: nowrap;
-    display: flex;
-    flex-direction: row;
-    margin-right: 0 !important;
-} */
+.musica__historia-content1 h3 {
+ width: 96%;
+}
 
 .testimonio__content {
     width: 90%;

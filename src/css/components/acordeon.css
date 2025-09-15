@@ -1,0 +1,79 @@
+/* ---------------------------------------- */
+/* Section FAQ */
+/* ---------------------------------------- */
+.faq__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 0 0px 0;
+}
+
+.faq__content p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Respuesta oculta inicialmente */
+.faq__answear {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 0;
+    color: #000;
+    width: 80%;
+}
+
+/* Cuando está activo */
+.faq__content.active+.faq__answear {
+    padding: 50px 0 20px 0;
+    max-height: 500px;
+    /* suficiente para el texto */
+}
+
+/* Girar el + cuando se abre */
+.faq__content.active .faq__content2 span {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Toggle como + usando pseudo-elementos */
+.faq__content2 .faq-toggle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+.faq__content2 .faq-toggle::before,
+.faq__content2 .faq-toggle::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+
+.faq__content2 .faq-toggle::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* línea horizontal */
+    transform: translateY(-50%);
+}
+
+.faq__content2 .faq-toggle::after {
+    left: 50%;
+    top: 0;
+    width: 2px;
+    /* línea vertical */
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+/* Cuando está activo: solo horizontal (-) */
+.faq__content.active .faq-toggle::after {
+    transform: scaleY(0);
+}
