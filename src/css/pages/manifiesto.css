@@ -30,42 +30,7 @@
 /* ---------------------------------------- */
 /* Section Citas */
 /* ---------------------------------------- */
-/* Contenedor del slider */
-.manifiesto__citas {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding: 20px 0;
-}
 
-.manifiesto__track {
-    display: flex;
-    flex-wrap: nowrap;
-    will-change: transform;
-    /* mejora performance */
-}
-
-.manifiesto__slide {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    height: 420px;
-    width: 480px;
-    border: 1px solid #B7B7B7;
-    padding: 30px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.manifiesto__slide-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.manifiesto__slide p {
-    width: 100%;
-}
 
 
 /* ---------------------------------------- */

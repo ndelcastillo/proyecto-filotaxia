@@ -1,25 +1,15 @@
 import { gsap } from 'gsap';
-import SplitType from 'split-type';
+import SplitType from "split-type";
 
-document.addEventListener('DOMContentLoaded', () => {
-    const heroTitle = document.querySelector('.hero__title');
-    if (!heroTitle) return;
+const heroTitle = new SplitType('.hero__title', { types: "chars, words" })
 
-    // Limpiar splits previos (por si vuelve a ejecutarse)
-    if (heroTitle.querySelector('span')) {
-        heroTitle.innerHTML = heroTitle.textContent;
-    }
+heroTitle.chars.forEach((char, index) => {
+    gsap.from(char, {
+        y: 400,
+        duration: 1,
+        ease: "power4.out",
+        opacity: 0,
+        delay: index * 0.05,
+    })
+})
 
-    const splitText = new SplitType(heroTitle, { types: 'chars' });
-
-    gsap.set(splitText.chars, { y: 400, opacity: 0 });
-
-    gsap.to(splitText.chars, {
-        y: 0,
-        opacity: 1,
-        duration: 1.4,
-        stagger: 0.08,
-        ease: 'power4.out',
-        delay: 0.2,
-    });
-});

@@ -13,7 +13,7 @@ if (track) {
     let totalWidth = slideWidth * slides.length;
 
     let proxyX = 0;
-    const speed = 0.7; // velocidad automática px/frame
+    const speed = 1.2; // velocidad automática px/frame
 
     // Loop infinito con ticker
     gsap.ticker.add(() => {
