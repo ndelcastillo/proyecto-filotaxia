@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 document.addEventListener('DOMContentLoaded', () => {
   const lenis = new Lenis({
-    duration: 1.2,
+    duration: 2,
     smoothWheel: true,
     smoothTouch: false,
   });

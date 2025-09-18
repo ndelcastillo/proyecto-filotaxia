@@ -12,3 +12,11 @@
     /* Cada carácter mantiene su propio ancho */
     will-change: transform;
 }
+
+.split-line {
+    overflow: hidden;
+}
+
+.split-parent {
+    overflow: hidden;
+}
