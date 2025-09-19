@@ -16,7 +16,7 @@ heroTitle.chars.forEach((char, index) => {
         duration: 1,
         ease: "power4.out",
         opacity: 0,
-        delay: index * 0.05,
+        delay: 3 + index * 0.05,
     })
 })
 

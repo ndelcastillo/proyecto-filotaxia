@@ -6,33 +6,29 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+/* ---------------------------------------- */
+/* Content Reveal > position */
+/* ---------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-    let navReveal = document.querySelector(".nav-animation");
-    gsap.from(navReveal, {
+    let contentRevealPositionHome = document.querySelector(".content-reveal-position-home");
+    gsap.from(contentRevealPositionHome, {
+        y: -100,
+        duration: 1,
+        delay: 3,
+        ease: "ease-in",
+    })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    let contentRevealPositionSmDown = document.querySelector(".content-reveal-position-sm-down");
+    gsap.from(contentRevealPositionSmDown, {
         y: -100,
         duration: 1,
         ease: "ease-in",
     })
 })
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const titleReveal = new SplitType('.title-animation span', { types: "words,chars" });
-//     gsap.from(titleReveal.words, {
-//         y: 100,
-//         duration: 1,
-//         stagger: 0.025,
-//         ease: "ease",
-//         scrollTrigger: {
-//             trigger: '.title-animation',
-//             start: 'top 85%',
-//             toggleActions: 'play none none reverse'
-//         }
-//     })
-// })
 
-/* ---------------------------------------- */
-/* Content Reveal > position */
-/* ---------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
     let contentRevealPositionSm = document.querySelectorAll(".content-reveal-position-sm");
     gsap.from(contentRevealPositionSm, {
@@ -51,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contentRevealPosition = document.querySelectorAll(".content-reveal-position-md");
-    gsap.from(contentRevealPosition, {
+    const contentRevealPositionMd = document.querySelectorAll(".content-reveal-position-md");
+    gsap.from(contentRevealPositionMd, {
         opacity: 0,
         y: 300,
         duration: 1,
@@ -66,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contentRevealPosition = document.querySelectorAll(".content-reveal-position-md-hero");
-    gsap.from(contentRevealPosition, {
+    const contentRevealPositionMdHero = document.querySelectorAll(".content-reveal-position-md-hero");
+    gsap.from(contentRevealPositionMdHero, {
         opacity: 0,
         y: 300,
         duration: 1,

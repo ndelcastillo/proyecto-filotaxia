@@ -1,0 +1,81 @@
+/* ---------------------------------------- */
+/* Preloader > Site */
+/* ---------------------------------------- */
+.pre-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content span {
+    font-family: 'PP_Neue_Montreal_medium';
+    font-weight: 400;
+}
+
+.pre-loader-img1,
+.pre-loader-img2 {
+    width: 200px;
+    height: auto;
+}
+
+.text {
+    margin-bottom: 1em;
+    font-family: 'PP_Neue_Montreal_medium';
+    font-weight: 400;
+}
+
+.loader {
+    width: 330px;
+    height: 2px;
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .content {
+        font-size: 5vw;
+    }
+
+    .loader {
+        width: 70%;
+    }
+}
+
+
+/* ---------------------------------------- */
+/* Preloader > Pages */
+/* ---------------------------------------- */
+.pre-loader-pages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+}
+
+.pre-loader-pages-logo {
+    width: 200px;
+    height: auto;
+}
