@@ -3,20 +3,16 @@
 /* ---------------------------------------- */
 .pre-loader {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
+    inset: 0;
+    top:0; right:0; bottom:0; left:0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    background: #fff;
     z-index: 9999;
-    overflow: hidden;
 }
 
-.content {
+.pre-loader .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +27,8 @@
 
 .pre-loader-img1,
 .pre-loader-img2 {
+    position: relative;
+    top: -20px;
     width: 200px;
     height: auto;
 }
@@ -45,6 +43,18 @@
     width: 330px;
     height: 2px;
     background: #fff;
+}
+
+/* <!-- Preloader block --> */
+html.no-scroll,
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body.lock-scroll {
+    position: fixed;
+    width: 100%;
 }
 
 @media (max-width: 900px) {

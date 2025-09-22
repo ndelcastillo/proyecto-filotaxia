@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 0.5,
         scrollTrigger: {
             trigger: '.content-reveal-position-sm',
-            start: 'top 90%',
+            start: 'top 80%',
             once: true,
             // toggleActions: 'play none none reverse'
         }
@@ -68,6 +68,22 @@ document.addEventListener('DOMContentLoaded', () => {
         y: 300,
         duration: 1,
         ease: "ease",
+    })
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contentRevealPositionSmHero = document.querySelectorAll(".content-reveal-position-sm-hero");
+    gsap.from(contentRevealPositionSmHero, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "ease",
+        scrollTrigger: {
+            trigger: '.content-reveal-position-sm-hero',
+            start: 'top 60%',
+            once: true,
+        }
     })
 });
 

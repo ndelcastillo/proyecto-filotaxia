@@ -13,10 +13,24 @@
     will-change: transform;
 }
 
-.split-line {
+/* .split-line {
     overflow: hidden;
 }
 
 .split-parent {
     overflow: hidden;
+} */
+
+.split-parent {
+    overflow: hidden;
+}
+
+.split-line {
+    display: block;
+    overflow: hidden;
+}
+
+.split-word,
+.split-char {
+    display: inline-block;
 }

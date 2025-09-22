@@ -1,8 +1,8 @@
 import { gsap } from 'gsap';
 
-/* ---------------------------------------- */
-/* Home > benefits */
-/* ---------------------------------------- */
+/* ----------------------------------------
+   Home > benefits
+---------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
     const benefitItems = document.querySelectorAll('.benefits__item');
     const imageWrappers = document.querySelectorAll('.benefits__image-wrapper');
@@ -13,22 +13,32 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.set(wrapper, { opacity: 0, scale: 0.85 });
     });
 
-    // Mostramos la primera imagen por defecto (opcional)
+    // Mostramos la primera imagen por defecto
     gsap.to(imageWrappers[0], { opacity: 1, scale: 1, duration: 0.5 });
 
+    let activeImage = imageWrappers[0];
+
     benefitItems.forEach((item, index) => {
-        const imageWrapper = imageWrappers[index]; // mapeamos la imagen según el índice del item
+        const imageWrapper = imageWrappers[index];
+        const icon = item.querySelector('.benefits__icon');
 
         item.addEventListener('mouseenter', () => {
-            // Ocultamos todas las imágenes
-            imageWrappers.forEach(wrapper => {
-                gsap.to(wrapper, { opacity: 0, scale: 0.85, duration: 0.3, ease: "power2.inOut" });
-            });
+            if (activeImage !== imageWrapper) {
+                // Ocultamos la imagen activa
+                gsap.killTweensOf(activeImage);
+                gsap.to(activeImage, { opacity: 0, scale: 0.85, duration: 0.3, ease: "power2.inOut" });
 
-            // Mostramos la imagen correspondiente al item hover
-            gsap.set(imageWrapper, { scale: 0.95 });
-            gsap.to(imageWrapper, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" });
+                // Mostramos la nueva
+                gsap.killTweensOf(imageWrapper);
+                gsap.set(imageWrapper, { scale: 0.95 });
+                gsap.to(imageWrapper, { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" });
+
+                activeImage = imageWrapper;
+            }
+
+
         });
+
     });
 });
 

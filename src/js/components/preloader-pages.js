@@ -1,50 +1,42 @@
-import { gsap } from 'gsap';
+// preloader-pages.js
+import { gsap } from "gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
     const preloader = document.getElementById("preloader-pages");
+    if (!preloader) return; // no ejecutar si no está presente
 
-    // ----------------------------
-    // Entrada del preloader al cargar la página
-    // ----------------------------
+    // entrada breve (se ve al cargar la página)
     gsap.set(preloader, { opacity: 0, display: "flex" });
-    gsap.to(preloader, { opacity: 1, duration: 0.3, ease: "power1.inOut" });
+    gsap.to(preloader, { opacity: 1, duration: 0.25, ease: "power1.inOut" });
 
-    // ----------------------------
-    // Fade-out al terminar de cargar la página
-    // ----------------------------
+    // fade-out cuando la página termine de cargar
     window.addEventListener("load", () => {
         gsap.to(preloader, {
             opacity: 0,
-            duration: 0.2,
+            duration: 0.35,
             ease: "power1.inOut",
-            onComplete: () => preloader.style.display = "none"
+            onComplete: () => {
+                preloader.style.display = "none";
+            }
         });
     });
 
-    // ----------------------------
-    // Preloader al hacer click en links del navbar
-    // ----------------------------
+    // mostrar preloader cuando clickeás en el navbar y luego navegar
     const links = document.querySelectorAll("nav a");
-
     links.forEach(link => {
         link.addEventListener("click", (e) => {
             const href = link.getAttribute("href");
-
-            // Ignoramos enlaces con #
-            if (!href || href.startsWith("#")) return;
-
+            if (!href || href.startsWith("#") || link.target === "_blank") return;
             e.preventDefault();
 
-            // Mostramos preloader
+            // mostrar preloader (rápido fade-in) y luego cambiar de página
             gsap.set(preloader, { display: "flex", opacity: 0 });
-
-            // Animación de fade-in rápida y suave
             gsap.to(preloader, {
                 opacity: 1,
-                duration: 0.3,
+                duration: 0.25,
                 ease: "power1.inOut",
                 onComplete: () => {
-                    // Redirige inmediatamente después del fade-in
+                    // redirigir después del pequeño fade
                     window.location.href = href;
                 }
             });
