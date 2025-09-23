@@ -25,7 +25,7 @@ document.querySelectorAll(".button--terciary").forEach(button => {
     button.addEventListener("mouseenter", () => {
         const tlBtn = gsap.timeline();
         tlBtn.to(lineBtn, { scaleX: 0, duration: 0.4, ease: "power4.in" })
-            .to(lineBtn, { scaleX: 1, duration: 0.15, ease: "circ.inOut" });
+            .to(lineBtn, { scaleX: 1, duration: 0.3, ease: "circ.out" });
     });
 });
 

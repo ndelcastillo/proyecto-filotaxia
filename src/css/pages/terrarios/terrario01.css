@@ -2,9 +2,67 @@
 /* Section Hero */
 /* ---------------------------------------- */
 .hero__subTerrarios {
-    height: 90vh !important;
+    /* height: 90vh !important; */
+}
+
+.hero__subTerrarios-content-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    /* height: 45vh; */
+}
+
+.hero__subTerrarios-content-1 img {
+    object-fit: cover;
+    height: 380px;
+}
+
+.hero__subTerrarios-content-2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: start;
+    margin-top: 20px;
+    /* height: 45vh; */
+}
+
+.subTerrarios__subtitle {
+    color: #888A8B;
+}
+
+
+/* ---------------------------------------- */
+/* Musica > Catalogo Section */
+/* ---------------------------------------- */
+.subTerrarios-content-2__catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalogo-plantas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+/* HR oculto por defecto dentro de cada fila */
+.catalogo__content hr {
+    display: block;
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background: #000;
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.55s ease, opacity 0.35s ease;
+    will-change: transform, opacity;
+}
+
+/* Al hacer hover en la fila, aparece el hr */
+.catalogo__content:hover hr {
+    opacity: 1;
+    transform: scaleX(1);
 }

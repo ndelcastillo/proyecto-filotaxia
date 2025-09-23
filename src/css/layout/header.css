@@ -1,10 +1,15 @@
 /* Nav */
+header {
+    z-index: 1000;
+}
+
 .nav {
     height: 10vh;
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
     padding-top: 25px;
+    z-index: 1000;
 }
 
 .nav__list--row {
@@ -43,7 +48,8 @@
     transform: scaleX(0);
     transform-origin: left;
     animation: underline-grow .8s ease forwards;
-    animation-delay: 0.5s; /* <-- retrasa el inicio */
+    animation-delay: 0.5s;
+    /* <-- retrasa el inicio */
 }
 
 @keyframes underline-grow {

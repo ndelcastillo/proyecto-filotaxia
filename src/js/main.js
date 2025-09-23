@@ -1,6 +1,9 @@
 // Animations
 import './animations/gsap.js';
 
+// Layout
+import './layout/footer.js';
+
 // Components
 import './components/preloader-site.js';
 import './components/preloader-pages.js';
