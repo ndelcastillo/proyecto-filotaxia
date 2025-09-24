@@ -1,0 +1,57 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__subCapas {
+    height: 85vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__subCapas-content-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.hero__subCapas-content-1 img {
+    object-fit: cover;
+    height: 370px;
+}
+
+.hero__subCapas-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 0px;
+    /* height: 45vh; */
+}
+
+.subCapas-content-2-2 {
+    margin-left: -5px;
+}
+
+.subCapas-content-2-3 {
+    width: 85%;
+}
+
+.subCapas__subtitle {
+    color: #888A8B;
+}
+
+.hero__subCapas-content-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.subCapas-content-3-2 {
+    text-align: left;
+    margin-left: -100px;
+}
+
+.subCapas-content-3-3 {
+    text-align: right;
+}

@@ -23,11 +23,13 @@
 
 .split-parent {
     overflow: hidden;
+      line-height: 1.1; /* importante */
 }
 
 .split-line {
     display: block;
     overflow: hidden;
+    line-height: 1.1; /* o el valor real de tu h2 */
 }
 
 .split-word,
