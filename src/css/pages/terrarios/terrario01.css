@@ -2,37 +2,64 @@
 /* Section Hero */
 /* ---------------------------------------- */
 .hero__subTerrarios {
-    /* height: 90vh !important; */
+    height: 90vh;
+}
+
+.hero__subTerrarios .grid {
+    margin-left: 0;
 }
 
 .hero__subTerrarios-content-1 {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
     width: 100%;
-    /* height: 45vh; */
+    height: 100vh;
+    margin-top: -84px;
 }
 
 .hero__subTerrarios-content-1 img {
     object-fit: cover;
-    height: 380px;
+    height: 100%;
+    width: 100%;
 }
 
 .hero__subTerrarios-content-2 {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin-top: 20px;
-    /* height: 45vh; */
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.hero__subTerrarios-content-2 .grid {
+    margin: 0 0;
+}
+
+.subTerrarios-content-2-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subTerrarios-content-2-1-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subTerrarios-content-2-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .subTerrarios__subtitle {
     color: #888A8B;
 }
 
+.subTerrarios__title {
+    margin-bottom: 10px;
+}
 
 /* ---------------------------------------- */
-/* Musica > Catalogo Section */
+/* subTerrarios > Catalogo */
 /* ---------------------------------------- */
 .subTerrarios-content-2__catalogo {
     display: flex;
@@ -40,11 +67,53 @@
     justify-content: space-between;
 }
 
-.catalogo-plantas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 8px 0;
+.subTerrarios-content-2-2 .catalogo__content {
+    gap:0px;
+}
+
+.subTerrarios-content-2-2 .catalogo__image-preview {
+    width: 80px;
+    height: 80px;
+    top: -.4rem;
+    left: 24%;
+}
+
+.subTerrarios-content-2-2 .audio-player {
+    position: relative;
+    bottom: -10px;
+} 
+
+.catalogo__content {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    display: grid;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.catalogo__content:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.catalogo__image-preview {
+    position: absolute;
+    top: -4.5rem;
+    left: 23%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    /* no bloquea el hover */
+    z-index: 5;
+}
+
+.catalogo__image-preview.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* HR oculto por defecto dentro de cada fila */
@@ -54,7 +123,7 @@
     border: 0;
     height: 2px;
     background: #000;
-    opacity: 1;
+    opacity: 0;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.55s ease, opacity 0.35s ease;
