@@ -5,19 +5,19 @@
     height: 90vh;
 }
 
-.hero__subTerrarios .grid {
+/* .hero__subTerrarios .grid {
     margin-left: 0;
-}
+} */
 
 .hero__subTerrarios-content-1 {
     width: 100%;
     height: 100vh;
-    margin-top: -84px;
+    /* margin-top: -84px; */
 }
 
 .hero__subTerrarios-content-1 img {
     object-fit: cover;
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -25,17 +25,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 20px;
 }
 
-.hero__subTerrarios-content-2 .grid {
+/* .hero__subTerrarios-content-2 .grid {
     margin: 0 0;
-}
+} */
 
 .subTerrarios-content-2-1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 90%;
+    margin-top: -100px !important;
 }
 
 .subTerrarios-content-2-1-1 {
@@ -59,79 +60,45 @@
 }
 
 /* ---------------------------------------- */
-/* subTerrarios > Catalogo */
+/* Section Destacado */
 /* ---------------------------------------- */
-.subTerrarios-content-2__catalogo {
+.subTerrarios__destacado img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destacado-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
 }
 
-.subTerrarios-content-2-2 .catalogo__content {
-    gap:0px;
+.destacado-content-1 img {
+    height: 600px;
 }
 
-.subTerrarios-content-2-2 .catalogo__image-preview {
-    width: 80px;
-    height: 80px;
-    top: -.4rem;
-    left: 24%;
+.destacado-content-2 img {
+    height: 400px;
 }
 
-.subTerrarios-content-2-2 .audio-player {
-    position: relative;
-    bottom: -10px;
-} 
-
-.catalogo__content {
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-    display: grid;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.destacado-content-3 img {
+    height: 500px;
 }
 
-.catalogo__content:hover {
-    background: rgba(0, 0, 0, 0.05);
+.destacado-text {
+    color: #888A8B;
 }
 
-.catalogo__image-preview {
-    position: absolute;
-    top: -4.5rem;
-    left: 23%;
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none;
-    /* no bloquea el hover */
-    z-index: 5;
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.info-content-1 {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.catalogo__image-preview.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* HR oculto por defecto dentro de cada fila */
-.catalogo__content hr {
-    display: block;
-    width: 100%;
-    border: 0;
-    height: 2px;
-    background: #000;
-    opacity: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.55s ease, opacity 0.35s ease;
-    will-change: transform, opacity;
-}
-
-/* Al hacer hover en la fila, aparece el hr */
-.catalogo__content:hover hr {
-    opacity: 1;
-    transform: scaleX(1);
+.info-content-1 p {
+    padding: 20px 0 0 0;
+    line-height: 1;
 }
