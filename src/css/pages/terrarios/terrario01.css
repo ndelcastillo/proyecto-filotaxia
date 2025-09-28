@@ -102,3 +102,24 @@
     padding: 20px 0 0 0;
     line-height: 1;
 }
+
+
+/* ---------------------------------------- */
+/* Section Paso a paso */
+/* ---------------------------------------- */
+.subTerrario__benefits__image {
+    width: 340px;
+    height: 320px;
+}
+
+.subTerrario__benefits__image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
