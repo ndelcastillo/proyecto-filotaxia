@@ -1,7 +1,7 @@
 import { gsap } from 'gsap';
 
 /* ----------------------------------------
-   Home > benefits
+    Home > benefits
 ---------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
     const benefitItems = document.querySelectorAll('.benefits__item');
@@ -145,4 +145,54 @@ filas.forEach(fila => {
             img.classList.remove("active");
         });
     }
+});
+
+
+/* ----------------------------------------
+subTerrarios > Funcionamiento
+---------------------------------------- */
+document.addEventListener('DOMContentLoaded', () => {
+    const subTerrariosItems = document.querySelectorAll('.subTerrarios__item');
+    const subTerrariosImageWrappers = document.querySelectorAll('.subTerrarios__image-wrapper');
+    if (subTerrariosImageWrappers.length === 0) return;
+
+    // Ocultamos todas las imágenes al inicio
+    subTerrariosImageWrappers.forEach(wrapper => {
+        gsap.set(wrapper, { opacity: 0, y: -50 }); // arrancan arriba y ocultas
+    });
+
+    // Mostramos la primera imagen
+    gsap.to(subTerrariosImageWrappers[0], { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" });
+    let subTerrarioActiveImage = subTerrariosImageWrappers[0];
+
+    // Activamos primer item
+    subTerrariosItems[0].classList.add('active');
+
+    subTerrariosItems.forEach((item, index) => {
+        const subTerrariosImageWrapper = subTerrariosImageWrappers[index];
+
+        item.addEventListener('click', () => {
+            if (!item.classList.contains('active')) {
+                // Reset de items
+                subTerrariosItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+
+                // Ocultar la imagen activa
+                gsap.to(subTerrarioActiveImage, {
+                    opacity: 0,
+                    y: 0, // sale hacia abajo
+                    duration: 0.4,
+                    ease: "power2.inOut"
+                });
+
+                // Mostrar la nueva imagen desde arriba
+                gsap.fromTo(subTerrariosImageWrapper,
+                    { opacity: 0, y: 0 },
+                    { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }
+                );
+
+                subTerrarioActiveImage = subTerrariosImageWrapper;
+            }
+        });
+    });
 });

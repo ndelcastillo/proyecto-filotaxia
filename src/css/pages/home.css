@@ -146,41 +146,6 @@ p.gallery__subtitle {
     object-fit: cover;
 }
 
-
-/* ---------------------------------------- */
-/* Section Benefits */
-/* ---------------------------------------- */
-/* .benefits__title {
-    line-height: 1.2;
-} */
-
-.benefits__number {
-    font-size: 1.2rem;
-}
-
-.benefits__icon {
-    font-size: 2rem;
-    display: inline-block;
-    text-align: right;
-    width: 100%;
-}
-
-#benefits__icon {
-    display: inline-block;
-}
-
-
-#benefits__icon-original {
-    display: inline-block;
-}
-
-#benefits__icon-active {
-    display: none;
-    transform: rotate(-40deg);
-    position: relative;
-    top: 20px;
-}
-
 /* ---------------------------------------- */
 /* Section Testimonials  */
 /* ---------------------------------------- */

@@ -1,6 +1,10 @@
 /* ---------------------------------------- */
 /* Home > Benefits Section */
 /* ---------------------------------------- */
+/* .benefits__title {
+    line-height: 1.2;
+} */
+
 .benefits__item {
     position: relative;
     overflow: visible;
@@ -32,7 +36,7 @@
 
 .benefits__icon-wrapper {
     position: relative;
-    width: 20px; 
+    width: 20px;
     height: 20px;
 }
 
@@ -40,7 +44,7 @@
     position: absolute;
     top: 0;
     left: -10px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 1;
     transition: opacity 0.35s ease;
 }
@@ -58,6 +62,9 @@
     opacity: 1;
 }
 
+.benefits__number {
+    font-size: 1.4rem;
+}
 
 /* ---------------------------------------- */
 /* Terrarios > Hero Section */
@@ -182,3 +189,98 @@
     opacity: 1;
     transform: scaleX(1);
 }
+
+
+
+/* ---------------------------------------- */
+/* subTerrarios > Funcionamiento */
+/* ---------------------------------------- */
+.subTerrarios__item {
+    position: relative;
+    overflow: visible;
+    margin-top: 30px;
+}
+
+.subTerrarios__images-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 40px;
+}
+
+.subTerrarios__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0;
+    transition: opacity 0.6s ease; */
+}
+
+.subTerrarios__image-wrapper.active {
+    opacity: 1;
+}
+
+.subTerrarios__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subTerrarios__item--01 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.subTerrarios__icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.subTerrarios__icon {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-size: 2rem;
+    line-height: 1;
+    transition: opacity 0.35s ease;
+}
+
+.subTerrarios__icon-active {
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+.subTerrarios__item:hover .subTerrarios__icon-default {
+    opacity: 0;
+}
+
+.subTerrarios__item:hover .subTerrarios__icon-active {
+    opacity: 1;
+}
+
+.subTerrarios__number {
+    font-size: 3.5rem;
+}
+
+.subTerrarios__item .subTerrarios__icon-default {
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.subTerrarios__item .subTerrarios__icon-active {
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+/* Cuando el item está activo */
+.subTerrarios__item.active .subTerrarios__icon-default {
+    opacity: 0;
+}
+
+.subTerrarios__item.active .subTerrarios__icon-active {
+    opacity: 1;
+}
+
