@@ -1,10 +1,6 @@
 /* ---------------------------------------- */
 /* Section CTA-3D */
 /* ---------------------------------------- */
-/* body {
-    overflow-x: hidden;
-} */
-
 .panel {
     width: 100vw;
     height: 100vh;
@@ -102,4 +98,83 @@
 
 .panel .content2 img {
     width: 500px;
+}
+
+
+/* ---------------------------------------- */
+/* subTerrarios > Hero */
+/* ---------------------------------------- */
+.header__subCapas {
+    position: fixed;
+}
+
+.hero__subCapas {
+    height: 85vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden !important;
+    position: relative;
+}
+
+.hero__subCapas-content-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: max-content;
+    will-change: transform;
+    position: relative;
+    left: 80px;
+}
+
+.hero__subCapas-content-1 img {
+    object-fit: cover;
+    height: 370px;
+    flex-shrink: 0; /* que no se achiquen */
+    width: auto; /* podés fijar un ancho si querés consistencia */
+}
+
+.hero__subCapas-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 0px;
+    
+    /* height: 45vh; */
+}
+
+.subCapas-content-2-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.subCapas-content-2-2 {
+    margin-left: -5px;
+}
+
+.subCapas-content-2-3 {
+    width: 85%;
+}
+
+.subCapas__subtitle {
+    color: #888A8B;
+}
+
+.hero__subCapas-content-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000 !important;
+}
+
+.subCapas-content-3-2 {
+    text-align: left;
+    margin-left: -100px;
+}
+
+.subCapas-content-3-3 {
+    text-align: right;
 }
