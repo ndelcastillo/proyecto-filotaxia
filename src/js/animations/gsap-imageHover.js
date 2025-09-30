@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     subTerrariosItems.forEach((item, index) => {
         const subTerrariosImageWrapper = subTerrariosImageWrappers[index];
 
-        item.addEventListener('click', () => {
+        item.addEventListener('mouseenter', () => {
             if (!item.classList.contains('active')) {
                 // Reset de items
                 subTerrariosItems.forEach(i => i.classList.remove('active'));

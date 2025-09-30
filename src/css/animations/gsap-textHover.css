@@ -1,0 +1,87 @@
+/* ---------------------------------------- */
+/* Home > Section Gallery */
+/* ---------------------------------------- */
+.gallery__item {
+    position: relative;
+    overflow: hidden !important;
+}
+
+.gallery__image-wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    /* 🔑 recorta el zoom */
+    position: relative;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+}
+
+p.gallery__subtitle {
+    color: #888A8B;
+}
+
+.gallery__image-1 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery__image-2 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery__image-3 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery__image-4 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery__image-5 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery__image-6 {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+
+.gallery__title-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__title-text {}
+
+.gallery__title-text.original {
+    position: relative;
+    opacity: 1;
+
+}
+
+.gallery__title-text.alt {
+    position: absolute;
+    opacity: 0;
+}

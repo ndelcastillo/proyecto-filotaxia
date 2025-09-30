@@ -7,5 +7,6 @@ import './gsap-stepFlowScrollTrigger.js';
 import './gsap-transition.js';
 import './gsap-marquee.js';
 import './gsap-basics.js';
+import './gsap-textHover.js';
 
 
