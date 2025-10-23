@@ -20,46 +20,6 @@
 
 :root {
   /* ==============================
-    COLORS
-  ============================== */
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-gray-100: #f8f8f8;
-  --color-gray-300: #dfdfdf;
-  --color-gray-500: #777777;
-  --color-background: #ffffff;
-
-  --color-primary-500: #2DB3F2;
-  --color-primary-600: #1E90D6;
-
-
-  /* ==============================
-    SPACING
-  ============================== */
-  --spacing-xs: 0.2rem;
-  --spacing-sm: 0.4rem;
-  --spacing-md: 0.8rem;
-  --spacing-lg: 1.2rem;
-  --spacing-xl: 1.6rem;
-
-
-  /* ==============================
-    RADIUS
-  ============================== */
-  --radius-sm: 0.2rem;
-  --radius-md: 0.4rem;
-  --radius-lg: 0.8rem;
-
-
-  /* ==============================
-    SHADOWS
-  ============================== */
-  --shadow-sm: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
-
-
-  /* ==============================
     TYPOGRAPHY
   ============================== */
   /* Base */
@@ -104,6 +64,124 @@
   --display-1-line: 15.5rem;
   --display-2-size: 7rem;
   --display-2-line: 7rem;
+
+
+  /* ==============================
+  FONT WEIGHTS
+============================== */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+
+  /* ==============================
+    COLORS
+============================== */
+  /* --- Guidelines --- */
+  /* Base */
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* Greyscale - light */
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #d4d4d4;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #737373;
+  --color-gray-600: #404040;
+  --color-gray-700: #262626;
+  --color-gray-800: #171717;
+  --color-gray-900: #0a0a0a;
+
+  /* --- Brand / Primary Palette --- */
+  --color-primary-100: #E6EEF6;
+  --color-primary-500: #3A5A78;
+  --color-primary-900: #1F2E3D;
+
+  /* --- Brand / Secondary Palette --- */
+  --color-secondary-100: #F5F5F2;
+  --color-secondary-500: #D0D0CC;
+  --color-secondary-900: #9A9A96;
+
+  /* --- Brand / Accent --- */
+  --color-accent-100: #FBE9D0;
+  --color-accent-500: #E0A458;
+  --color-accent-900: #B4742D;
+
+  /* --- Brand / Swiss --- */
+  --color-primary-500: #111111;
+  --color-secondary-500: #F2F2F2;
+  --color-accent-500: #FF6B35;
+
+
+  /* --- Semantic (Functional) --- */
+  /* Text */
+  --color-headings: var(--color-black);
+  --color-headings-inverse: var(--color-white);
+
+  --color-display: var(--color-black);
+  --color-display-inverse: var(--color-white);
+
+  --color-text: var(--color-black);
+  --color-text-inverse: var(--color-white);
+
+  --color-text-alt: var(--color-gray-400);
+  --color-text-alt-inverse: var(--color-gray-600);
+
+  --color-text-list: var(--color-black);
+  --color-text-list-inverse: var(--color-white);
+
+  /* Links */
+  --color-link: var(--color-black);
+  --color-link-hover: var(--color-gray-400);
+  --color-link-inverse: var(--color-white);
+  --color-link-inverse-hover: var(--color-gray-400);
+
+
+  /* Background */
+  --color-bg: var(--color-white);
+  --color-bg-light: var(--color-gray-100);
+  --color-bg-dark: var(--color-black);
+
+  /* Borders */
+  --color-border: var(--color-gray-300);
+  --color-muted: var(--color-gray-500);
+  --color-surface: var(--color-gray-100);
+
+  /* States */
+  --color-normal: var(--color-primary-500);
+  --color-hover: var(--color-primary-900);
+  --color-active: var(--color-gray-100);
+
+
+
+  /* ==============================
+    SPACING
+  ============================== */
+  --spacing-xs: 0.2rem;
+  --spacing-sm: 0.4rem;
+  --spacing-md: 0.8rem;
+  --spacing-lg: 1.2rem;
+  --spacing-xl: 1.6rem;
+
+
+  /* ==============================
+    RADIUS
+  ============================== */
+  --radius-sm: 0.2rem;
+  --radius-md: 0.4rem;
+  --radius-lg: 0.8rem;
+
+
+  /* ==============================
+    SHADOWS
+  ============================== */
+  --shadow-sm: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 

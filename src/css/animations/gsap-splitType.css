@@ -1,9 +1,8 @@
 .hero__title {
-    color: #000;
+    color: var(--color-black);
     margin-left: -20px;
     text-align: center;
-    white-space: nowrap;
-    /* Evita saltos de línea */
+    white-space: nowrap;    
     position: relative;
 }
 
