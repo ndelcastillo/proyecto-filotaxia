@@ -261,3 +261,111 @@
 .align-horizontal--center {
     justify-content: center;
 }
+
+
+
+
+
+/* ---------------------------------------- */
+/* Responsive */
+/* ---------------------------------------- */
+
+/* ----- MOBILE (menor a 600px) ----- */
+@media (max-width: 599px) {
+
+    /* Grid Overlay */
+    .grid-overlay {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        /* opcional: podés reducir el espacio si querés */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .grid-overlay>div {
+        background-color: rgba(255, 0, 0, 0.1);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .grid__col {
+        grid-column: span 1 !important;
+    }
+
+    .text-nowrap {
+        white-space: normal;
+        /* deja que el texto fluya */
+    }
+
+    /* Header y menú */
+    .nav__list--row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    /* Galería: una columna */
+    .gallery__item {
+        grid-column: span 1;
+    }
+
+    /* Secciones como “benefits” o “step-flow”: stack vertical */
+    .benefits__item,
+    .step-flow__content,
+    .step-flow__images {
+        grid-column: span 1 !important;
+    }
+
+    .step-flow__images img {
+        width: 100%;
+    }
+
+    /* ---------------------------------------- */
+    /* Modificadores para control de margin-left */
+    /* ---------------------------------------- */
+    .ml-xs {
+        margin-left: 0rem;
+    }
+
+    .ml-sm {
+        margin-left: 0rem;
+    }
+
+    .ml-md {
+        margin-left: 0rem;
+    }
+
+    .ml-lg {
+        margin-left: 0rem;
+    }
+
+    /* ---------------------------------------- */
+    /* Modificadores para control de margin-right */
+    /* ---------------------------------------- */
+    .mr-xs {
+        margin-right: 0rem;
+    }
+
+    .mr-sm {
+        margin-right: 0rem;
+    }
+
+    .mr-md {
+        margin-right: 0rem;
+    }
+
+    .mr-lg {
+        margin-right: 0rem;
+    }
+}

@@ -76,14 +76,13 @@
     height: 100%;
 }
 
-.terrarios__title h3 {
+.terrarios__title h2 {
     cursor: pointer;
     display: inline-block;
     margin-right: 1rem;
     text-decoration: none;
-    font-size: 4rem;
-    line-height: .8;
     color: #000;
+    line-height: 0.8;
 }
 
 .terrarios__title span {
@@ -132,6 +131,78 @@
     bottom: .5rem;
     left: 0;
 }
+
+
+/* ---------------------------------------- */
+/* Terrarios > Cuidados Section */
+/* ---------------------------------------- */
+.cuidados__img {
+    width: 100%;
+    height: 800px;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+.cuidados__text {
+    color: #a0a0a0;
+}
+
+.cuidados__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cuidados__content h2 {
+    position: relative;
+    display: inline-block;
+    /* 👈 clave para que el underline se ajuste al texto */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #a0a0a0;
+    margin-top: 22px;
+    font-weight: 400;
+}
+
+/* Línea personalizada */
+.cuidados__content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* separación del texto */
+    width: 100%;
+    /* ahora será el ancho del texto */
+    height: 3px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+/* Hover */
+.cuidados__content h2:hover {
+    color: #000;
+}
+
+.cuidados__content h2:hover::after {
+    transform: scaleX(1);
+}
+
+/* Activo */
+.cuidados__content h2.active {
+    color: #000;
+}
+
+.cuidados__content h2.active::after {
+    transform: scaleX(1);
+}
+
+.cuidados__content img {
+    width: 100%;
+}
+
 
 
 /* ---------------------------------------- */
@@ -260,9 +331,6 @@
     opacity: 1;
 }
 
-.subTerrarios__number {
-    font-size: 3.5rem;
-}
 
 .subTerrarios__item .subTerrarios__icon-default {
     opacity: 1;
@@ -283,4 +351,3 @@
 .subTerrarios__item.active .subTerrarios__icon-active {
     opacity: 1;
 }
-

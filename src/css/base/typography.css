@@ -15,76 +15,101 @@
 
 body {
     width: 100%;
-    font-family: 'PP_Neue_Montreal_medium';
-    font-size: 1rem;
-    color: #000;
-    background-color: #fff;
+    font-family: var(--font-primary);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    color: var(--color-black);
+    background-color: var(--color-background);
 }
 
+
+/* === HEADINGS === */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'PP_Neue_Montreal_medium';
+    font-family: var(--font-primary);
     font-weight: 400;
-    color: #000;
+    color: var(--color-black);
+    margin: 0;
 }
 
 h1 {
-    font-size: 7rem;
-    line-height: .9;
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
 }
 
 h2 {
-    font-size: 3.5rem;
-    line-height: 1.1;
+    font-size: var(--h2-size);
+    line-height: var(--h2-line);
 }
 
 h3 {
-    font-size: 2rem;
-    line-height: 1.1;
+    font-size: var(--h3-size);
+    line-height: var(--h3-line);
 }
 
 h4 {
-    font-size: 1.3rem;
-    line-height: 1.2;
-    text-transform: normal;
+    font-size: var(--h4-size);
+    line-height: var(--h4-line);
 }
 
 h5 {
-    font-size: 1rem;
-    line-height: 1.2;
-    text-transform: normal;
+    font-size: var(--h5-size);
+    line-height: var(--h5-line);
 }
 
 h6 {
-    font-size: 8rem;
-    line-height: 1.5;
+    font-size: var(--h6-size);
+    line-height: var(--h6-line);
 }
 
+
+/* === DISPLAY === */
+.display-1 {
+    font-size: var(--display-1-size);
+    line-height: var(--display-1-line);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+}
+
+.display-2 {
+    font-size: var(--display-2-size);
+    line-height: var(--display-2-line);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+
+/* === PARAGRAPHS === */
 p {
-    font-family: 'PP_Neue_Montreal_medium';
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #000;
+    font-family: var(--font-primary);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    color: var(--color-black);
+    margin: 0;
 }
 
-a{
+/* === LINKS === */
+a {
     text-decoration: none;
     color: inherit;
 }
 
+/* === LISTS === */
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-    font-family: 'PP_Neue_Montreal_medium';
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #000;
-    line-height: 1.5;
+    font-family: var(--font-primary);
+    font-size: var(--li-size);
+    line-height: var(--li-line);
+    color: var(--color-black);
 }
-

@@ -10,12 +10,6 @@
     position: relative;
 }
 
-.hero__title {
-    font-size: 15.5rem;
-    letter-spacing: -0.3rem;
-    line-height: 1;
-}
-
 /* Textos hero con modificadores */
 .hero__text {
     font-family: 'PP_Neue_Montreal_medium';
@@ -96,9 +90,23 @@
     object-fit: contain;
 }
 
+.content2-text {
+    margin-left: 20px;
+}
+
+.content2-btn {
+    margin-left: 20px;
+}
+
+
 /* ---------------------------------------- */
 /* Section Gallery */
 /* ---------------------------------------- */
+.gallery__intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 /* ---------------------------------------- */
@@ -169,4 +177,61 @@
     position: relative;
     top: -1rem;
     margin-right: 1rem;
+}
+
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 450px) {
+    /* ---------------------------------------- */
+    /* Section Hero */
+    /* ---------------------------------------- */
+
+    .hero__model img {
+        width: 240px;
+    }
+
+    .hero__title {
+        font-size: 4.7rem;
+        letter-spacing: -0.1rem;
+        margin-left: -6px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section CTA */
+    /* ---------------------------------------- */
+    .cta {
+        height: 40vh;
+        padding: 10px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section About-Us */
+    /* ---------------------------------------- */
+    .about-us__img {
+        height: 140px;
+        width: 100px;
+    }
+
+    .about-us__title span {
+        margin-right: 0;
+        display: block;
+    }
+
+    .content2-text {
+        margin-left: 0px;
+    }
+
+    .content2-btn {
+        margin-left: 0px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Gallery */
+    /* ---------------------------------------- */
+    .gallery__intro {
+        margin-bottom:-20px
+    }
 }
