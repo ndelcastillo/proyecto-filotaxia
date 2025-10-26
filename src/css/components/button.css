@@ -1,26 +1,14 @@
-/* Botón */
-.button {
-    font-size: 0.9rem;
+/* Primary */
+.button--primary {
+    font-size: var(--btn-primary-size);
+    color: var(--color-btn-primary-text);
+    background-color: var(--color-btn-primary-bg);
+    position: relative;
+    overflow: hidden;
     padding: 14px 24px;
     border: none;
     cursor: pointer;
     transition: transform 0.2s ease;
-}
-
-.button:hover,
-.button:focus {
-    transform: scale(1.03);
-}
-
-/* Primary */
-.button--primary {
-    position: relative;
-    overflow: hidden;
-    background-color: #000;
-    color: #fff;
-    padding: 14px 24px;
-    border: none;
-    cursor: pointer;
 }
 
 .button--primary .button-bg {
@@ -28,71 +16,68 @@
     top: 0;
     left: 0;
     width: 0%;
-    /* empieza cerrado */
     height: 100%;
-    background-color: #9E9E9E;
+    background-color: var(--color-hover);
     z-index: 0;
 }
 
 .button--primary a {
+    color: var(--color-link-inverse);
     position: relative;
     z-index: 1;
-    color: #fff;
     text-decoration: none;
 }
 
 /* Secondary */
 .button--secondary {
-    background-color: #fff;
-    color: #000;
+    font-size: var(--btn-secondary-size);
+    color: var(--color-btn-secondary-text);
+    background-color: var(--color-btn-secondary-bg);
 }
 
 /* Terciary */
 .button--terciary {
-    position: relative;
+    font-size: var(--btn-terciary-size);
+    color: var(--color-btn-terciary-text);
+    background-color: var(--color-btn-terciary-bg);
     background: transparent;
-    border: none;
     padding: 0 76px 14px 0;
-    font-size: 1rem;
+    position: relative;
+    border: none;
     cursor: pointer;
 }
 
-.button--terciary-alt-1 {
+.button--terciary-inverse {
+    font-size: var(--btn-terciary-size);
+    color: var(--color-btn-terciary-inverse-text);
+    background-color: var(--color-btn-terciary-inverse-bg);
     position: relative;
     background: transparent;
-    border: none;
     padding: 0 76px 14px 0;
-    font-size: 1rem;
+    border: none;
     cursor: pointer;
-    color: #fff;
 }
 
 .button-line {
+    background-color: var(--color-black);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #000;
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.button-line-alt-1 {
+.button-line-inverse {
+    background-color: var(--color-white);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #fff;
     transform-origin: left;
     transform: scaleX(1);
-    color: #fff;
-}
-
-.alt-1 {
-    color: #fff;
-    border-bottom: 1px solid #fff;
 }
 
 .button-icon {
@@ -105,5 +90,20 @@
 }
 
 .button-icon--secondary {
-    color: #fff;
+    color: var(--color-white);
+}
+
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 780px) {
+    .button--terciary-inverse {
+        width: 215px !important;
+    }
+
+    .button--terciary {
+        width: 215px !important;
+    }
 }

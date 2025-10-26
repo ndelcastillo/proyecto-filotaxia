@@ -5,9 +5,6 @@ header {
 
 .nav {
     height: 10vh;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     padding-top: 25px;
     z-index: 1000;
 }
@@ -86,4 +83,24 @@ header {
     border-radius: 100%;
     background-color: black;
     cursor: pointer;
+}
+
+
+/* Mostrar sólo en mobile */
+@media (max-width: 580px) {
+    .nav {        
+        padding-top: 15px;
+    }
+
+    .nav__tagline {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+    }
 }

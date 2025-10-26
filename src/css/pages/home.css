@@ -5,9 +5,14 @@
     height: 93vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.hero__model {
+    position: relative;
+    top: -20px;
 }
 
 /* ---------------------------------------- */
@@ -61,6 +66,14 @@
 
 
 /* ---------------------------------------- */
+/* Section Benefits  */
+/* ---------------------------------------- */
+/* .benefits__intro {
+    width: ;
+} */
+
+
+/* ---------------------------------------- */
 /* Section Testimonials  */
 /* ---------------------------------------- */
 .testimonials {
@@ -97,17 +110,15 @@
 }
 
 
-
 /* ---------------------------------------- */
 /* Section stepFlow  */
 /* ---------------------------------------- */
 .step-flow {
     position: relative;
-    background-color: #000;
+    background-color: var(--color-bg-dark);
     height: 400vh;
     margin: 0px;
 }
-
 
 
 /* ---------------------------------------- */
@@ -124,7 +135,7 @@
 }
 
 .manifiesto__title-detail {
-    font-size: 1rem;
+    font-size: var(--h4-size);
     position: relative;
     top: -1rem;
     margin-right: 1rem;
@@ -136,16 +147,22 @@
 /* RESPONSIVE */
 /* ---------------------------------------- */
 @media (max-width: 450px) {
+
     /* ---------------------------------------- */
     /* Section Hero */
     /* ---------------------------------------- */
+    .hero {
+        
+        justify-content: space-between;   
+    }
 
     .hero__model img {
-        width: 240px;
+        position: relative;
+        bottom: -100px;
+        width: 360px;
     }
 
     .hero__title {
-        font-size: 4.7rem;
         letter-spacing: -0.1rem;
         margin-left: -6px;
     }
@@ -155,7 +172,7 @@
     /* ---------------------------------------- */
     .cta {
         height: 40vh;
-        padding: 10px;
+        padding: 0 15px 0 15px;
     }
 
     /* ---------------------------------------- */

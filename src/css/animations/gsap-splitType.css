@@ -1,9 +1,14 @@
+/* ---------------------------------------- */
+/* Home > Section Hero */
+/* ---------------------------------------- */
+
 .hero__title {
     color: var(--color-black);
     margin-left: -20px;
     text-align: center;
     white-space: nowrap;    
     position: relative;
+    top: -1rem;
 }
 
 .hero__title .char {
@@ -12,6 +17,10 @@
     will-change: transform;
 }
 
+
+/* ---------------------------------------- */
+/* General > FX */
+/* ---------------------------------------- */
 /* .split-line {
     overflow: hidden;
 }

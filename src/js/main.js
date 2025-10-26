@@ -7,6 +7,7 @@ import './layout/footer.js';
 // Components
 import './components/preloader-site.js';
 import './components/preloader-pages.js';
+import './components/sidebar.js';
 import './components/button.js';
 import './components/acordeon.js';
 import './components/audio.js';

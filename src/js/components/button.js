@@ -31,10 +31,10 @@ document.querySelectorAll(".button--terciary").forEach(button => {
 
 
 /* ---------------------------------------- */
-/* BtnTerciary-alt1 */
+/* BtnTerciary-inverse */
 /* ---------------------------------------- */
-document.querySelectorAll(".button--terciary-alt-1").forEach(button => {
-    const lineBtnAlt1 = button.querySelector(".button-line-alt-1 ");
+document.querySelectorAll(".button--terciary-inverse").forEach(button => {
+    const lineBtnAlt1 = button.querySelector(".button-line-inverse");
 
     button.addEventListener("mouseenter", () => {
         const tlBtn1 = gsap.timeline();

@@ -113,3 +113,11 @@ li {
     line-height: var(--li-line);
     color: var(--color-list);
 }
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 450px) {
+
+}

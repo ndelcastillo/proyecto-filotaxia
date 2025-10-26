@@ -10,24 +10,25 @@
 </head>
 
 <body>
-  <!-- Preloader Site -->
-  <div class="pre-loader" id="preloader-site">
+  <!-- Preloader_Site -->
+  <!-- <div class="pre-loader" id="preloader-site">
     <div class="content">
       <img class="pre-loader-img1 content-reveal-position-sm-up" src="./src/assets/images/logo/FILO FOR EXPORT-01.png"
         alt="">
       <img class="pre-loader-img2 content-reveal-position-sm mt-xs"
         src="./src/assets/images/logo/FILO FOR EXPORT-03.png" alt="">
     </div>
-  </div>
-  <!-- Preloader Pages -->
-  <div class="pre-loader-pages" id="preloader-pages"></div>
-  <!-- Grid -->
+  </div> -->
+  <!-- Preloader_Pages -->
+  <!-- <div class="pre-loader-pages" id="preloader-pages"></div> -->
+  <!-- Grid_Layout-->
   <div class="grid-overlay"></div>
+  <!-- Header -->
   <header class="header">
     <nav class="nav content-reveal-position-home" role="navigation" aria-label="Main navigation">
       <div class="grid">
         <div class="grid__col grid__col--span-2">
-          <a href="/" class="nav__logo-link ">
+          <a href="/" class="nav__logo-link">
             <img src="./src/assets/images/logo/FILO FOR EXPORT-03.png" alt="Filotaxia logo" class="nav__logo-img" />
           </a>
         </div>
@@ -52,26 +53,54 @@
         </div>
       </div>
     </nav>
+    <!-- Sidebar (Mobile Menu) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__header">
+        <img src="./src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo" class="sidebar__logo" />
+        <button class="sidebar__close" id="sidebarClose">Cerrar</button>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__nav-content">
+          <h4 class="sidebar__label">(Navegación)</h4>
+          <ul class="sidebar__list">
+            <li><a href="/" class="sidebar__link active">Inicio</a></li>
+            <li><a href="./src/pages/terrarios.html" class="sidebar__link">Terrarios</a></li>
+            <li><a href="./src/pages/musica.html" class="sidebar__link">Formas</a></li>
+            <li><a href="./src/pages/manifiesto.html" class="sidebar__link">Manifiesto</a></li>
+            <li><a href="./src/pages/contacto.html" class="sidebar__link">Contacto</a></li>
+          </ul>
+        </div>
+        <button class="button--terciary-inverse mt-md" type="button">
+          <a href="./src/pages/terrarios.html">
+            Ver Terrarios <span class="button-icon">→</span>
+            <span class="button-line-inverse"></span>
+          </a>
+        </button>
+      </nav>
+    </aside>
+    <!-- Botón para abrir -->
+    <button class="sidebar__toggle" id="sidebarToggle">
+      Menú
+    </button>
   </header>
 
   <main class="main" role="main">
-    <!-- Hero Section -->
+    <!-- Hero_Section -->
     <section class="hero" aria-label="Hero section">
-      <div class="hero__model">
+      <di\v class="hero__model">
         <img src="https://media.giphy.com/media/Igz03DsDSQ3d37atti/giphy.gif" alt="">
-      </div>
+      </di>
       <div>
         <h1 class="display-1 hero__title">FILOTAXIA</h1>
       </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- CTA_Section -->
     <section class="cta mb-xl">
       <img class="cta__image" src="./src/assets/images/ideas/Filotaxia-29.jpg" alt="">
-      <h4 class="mt-xxxs">Filotaxia Shooting</h4>            
     </section>
 
-    <!-- About-Us Section -->
+    <!-- About-Us_Section -->
     <section class="about-us mb-xxl ">
       <div class="grid mt-md">
         <div class="grid__col grid__col--span-12 about-us__content">
@@ -95,9 +124,11 @@
             convierte a cada elemento en una fuente sonora, sino que revela un lenguaje oculto, una
             conversación sutil que nace del ecosistema mismo y se traduce en música.
           </p>
-          <button class="button button--terciary mt-md" type="button">
-            <a href="./src/pages/manifiesto.html">Ver Manifiesto <span class="button-icon">→</span>
-              <span class="button-line"></a></span>
+          <button class="button--terciary mt-md" type="button">
+            <a href="./src/pages/manifiesto.html">
+              Ver Manifiesto <span class="button-icon">→</span>
+              <span class="button-line"></span>
+            </a>
           </button>
         </div>
         <div class="grid__col grid__col--span-3"></div>
@@ -109,7 +140,8 @@
         </div>
       </div>
     </section>
-    <!-- Gallery Section -->
+
+    <!-- Gallery_Section -->
     <section class="gallery mb-xxl">
       <div class="grid mb-xs">
         <div class="grid__col grid__col--span-12 gallery__intro">
@@ -206,15 +238,16 @@
         </div>
       </div>
     </section>
-    <!-- Benefits Section -->
+
+    <!-- Benefits_Section -->
     <section class="benefits mb-xxl">
-      <div class="grid mb-xl">
+      <div class="grid benefits__intro mb-xl">
         <div class="grid__col grid__col--span-8">
-          <h2 class="benefits__title split-text" data-split="lines">Cuatro fundamentos para<br> cuidar el terrario.</h2>
+          <h2 class="split-text" data-split="lines">Cuatro fundamentos para<br> cuidar el terrario.</h2>
         </div>
         <div class="grid__col grid__col--span-3"></div>
-        <div class="grid__col grid__col--span-1 text-nowrap align align--bottom content-reveal-opacity">
-          <button class="button button--primary" type="button">
+        <div class="grid__col grid__col--span-1 text-nowrap align align--bottom content-reveal-opacity mb-xxs">
+          <button class="button--primary" type="button">
             <span class="button-bg"></span>
             <a href="./src/pages/terrarios.html">Explorar cuidados</a>
           </button>
@@ -224,13 +257,11 @@
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
           <div class="grid__col grid__col--span-1 align align--center-vertical">
-            <h3 id="benefits-number" class="benefits__number">01/</h3>
+            <span class="benefits__number" id="benefits-number">01/</span>
           </div>
-
           <div class="grid__col grid__col--span-6">
-            <h3 class="benefits__title">Riego controlado para evitar excesos.</h3>
+            <h3>Riego controlado para evitar excesos.</h3>
           </div>
-
           <div class="grid__col grid__col--span-1 align align--end">
             <div class="benefits__icon-wrapper">
               <span class="benefits__icon benefits__icon-default">→</span>
@@ -246,13 +277,11 @@
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
           <div class="grid__col grid__col--span-1 align align--center-vertical">
-            <h3 id="benefits-number" class="benefits__number">02/</h3>
+            <span class="benefits__number" id="benefits-number">02/</span>
           </div>
-
           <div class="grid__col grid__col--span-6">
-            <h3 class="benefits__title">Luz indirecta para evitar quemaduras.</h3>
+            <h3>Luz indirecta para evitar quemaduras.</h3>
           </div>
-
           <div class="grid__col grid__col--span-1 align align--end">
             <div class="benefits__icon-wrapper">
               <span class="benefits__icon benefits__icon-default">→</span>
@@ -268,9 +297,8 @@
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
           <div class="grid__col grid__col--span-1 align align--center-vertical">
-            <h3 id="benefits-number" class="benefits__number">03/</h3>
+            <span class="benefits__number" id="benefits-number">03/</span>
           </div>
-
           <div class="grid__col grid__col--span-6">
             <h3 class="benefits__title">Mantenimiento regular para evitar plagas.</h3>
           </div>
@@ -280,7 +308,6 @@
               <span class="benefits__icon benefits__icon-active">→</span>
             </div>
           </div>
-
         </div>
         <div class="benefits__image-wrapper">
           <img class="benefits__image" src="./src/assets/images/cuidados/sq7.webp" />
@@ -290,13 +317,11 @@
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
           <div class="grid__col grid__col--span-1 align align--center-vertical">
-            <h3 id="benefits-number" class="benefits__number">04/</h3>
+            <span class="benefits__number" id="benefits-number">04/</span>
           </div>
-
           <div class="grid__col grid__col--span-6">
             <h3 class="benefits__title">Ubicación estable para evitar sequedad.</h3>
           </div>
-
           <div class="grid__col grid__col--span-1 align align--end">
             <div class="benefits__icon-wrapper">
               <span class="benefits__icon benefits__icon-default">→</span>
@@ -309,38 +334,34 @@
         </div>
       </div>
     </section>
-    <!-- Step Section -->
+
+    <!-- Step-Flow_Section -->
     <section class="step-flow">
       <div class="grid">
         <div class="grid__col grid__col--span-1"></div>
-        <!-- Contenido (texto) -->
         <div class="step-flow__content grid__col grid__col--span-4">
-          <h2 class="step-flow_title">Escuchá la música secreta de las plantas.</h2>
-
+          <h2 class="step-flow__title">Escuchá la música secreta de las plantas.</h2>
           <div class="step-flow__steps">
             <div class="step-flow__step" data-step="1">
-              <p class="step-flow__subtitle mb-xs">01/ Adquirí tu terrario.</p>
+              <h4 class="step-flow__subtitle mb-xs">01/ Adquirí tu terrario.</h4>
               <p class="step-flow__text"> Cada terrario de Filotaxia es un ecosistema único, que incluye una pieza
                 sonora creada a partir de las
                 bioemisiones registradas durante su creación.</p>
             </div>
-
             <div class="step-flow__step" data-step="2">
-              <p class="step-flow__subtitle mb-xs">02/ Escaneá el QR.</p>
+              <h4 class="step-flow__subtitle mb-xs">02/ Escaneá el QR.</h4>
               <p class="step-flow__text">Accedé a una plataforma exclusiva
                 donde podrás escuchar la música generada por la actividad biológica de los elementos
                 de tu terrario.
               </p>
             </div>
-
             <div class="step-flow__step" data-step="3">
-              <p class="step-flow__subtitle mb-xs">03/ Disfrutá la experiencia sonora.</p>
+              <h4 class="step-flow__subtitle mb-xs">03/ Disfrutá la experiencia sonora.</h4>
               <p class="step-flow__text">Observá, escuchá y sentí la armonía de tu terrario. Una
                 conversación sutil entre los elementos que lo conforman.</p>
             </div>
           </div>
         </div>
-        <!-- Imágenes -->
         <div class="grid__col grid__col--span-7 step-flow__images">
           <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-1.webp" data-step="1" alt="">
           <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-2.1.webp" data-step="2" alt="">
@@ -348,7 +369,8 @@
         </div>
       </div>
     </section>
-    <!-- Manifiesto Section -->
+
+    <!-- Manifiesto_Section -->
     <section class="manifiesto mt-xxl mb-xxl">
       <div class="grid mb-xs">
         <div class="grid__col grid__col--span-2 content-reveal-opacity">
@@ -369,14 +391,18 @@
             terrarios. Son ecosistemas que hablan.</h2>
           <h2 class="mt-sm split-text" data-split="lines">Nuestra misión es revolucionar la manera de conectar con
             las plantas.</h2>
-          <button class="button button--terciary mt-md" type="button">
-            <a href="./src/pages/musica.html">Ver Formas<span class="button-icon">→</span>
-              <span class="button-line"></a></span>
+          <button class="button--terciary mt-md" type="button">
+            <a href="./src/pages/musica.html">
+              Ver Formas <span class="button-icon">→</span>
+              <span class="button-line"></span>
+            </a>
           </button>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer class="footer mt-md mb-xs content-reveal-opacity" role="contentinfo">
     <div class="grid mb-md ">
       <div class="grid__col grid__col--span-12">
@@ -414,7 +440,9 @@
     </div>
     <div class="grid align--baseline">
       <div class="grid__col grid__col--span-7  mb-xs">
-        <img src="./src/assets/images/logo/FILO FOR EXPORT-03.png" class="footer__logo" alt="">
+        <a href="/" class="nav__logo-link ">
+          <img src="./src/assets/images/logo/FILO FOR EXPORT-03.png" class="footer__logo" alt="">
+        </a>
       </div>
       <div class="grid__col grid__col--span-1"></div>
       <div class="grid__col grid__col--span-2">
