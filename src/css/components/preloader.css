@@ -4,7 +4,10 @@
 .pre-loader {
     position: fixed;
     inset: 0;
-    top:0; right:0; bottom:0; left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,16 +60,6 @@ body.lock-scroll {
     width: 100%;
 }
 
-@media (max-width: 900px) {
-    .content {
-        font-size: 5vw;
-    }
-
-    .loader {
-        width: 70%;
-    }
-}
-
 
 /* ---------------------------------------- */
 /* Preloader > Pages */
@@ -88,4 +81,26 @@ body.lock-scroll {
 .pre-loader-pages-logo {
     width: 200px;
     height: auto;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 780px) {
+    .content {
+        font-size: 5vw;
+    }
+
+    .loader {
+        width: 70%;
+    }
+
+    .pre-loader-img1,
+    .pre-loader-img2 {
+        position: relative;
+        top: -20px;
+        width: 100px;
+        height: auto;
+    }
 }

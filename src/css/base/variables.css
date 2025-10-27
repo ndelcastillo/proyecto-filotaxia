@@ -68,7 +68,7 @@ Variables GLOBAL - NDC TEMPLATE
   --li-line: 1.5rem;
 
 
-    /* --- Links --- */
+  /* --- Links --- */
   --link-size: 2rem;
   --link-line: 2.4rem;
 
@@ -245,35 +245,18 @@ Variables GLOBAL - NDC TEMPLATE
     --h1-size: 3rem;
     --h1-line: 3.3rem;
 
-    --h2-size: 2rem;
-    --h2-line: 2.3rem;
+    --h2-size: 1.8rem;
+    --h2-line: 1.8rem;
 
-    --h3-size: 1.4rem;
-    --h3-line: 1.6rem;
+    --h3-size: 1.2rem;
+    --h3-line: 1.4rem;
 
-    --h4-size: 1rem;
-    --h4-line: 1.3rem;
+    --h4-size: .8rem;
+    --h4-line: 1.1rem;
 
-    --h5-size: 0.9rem;
+    --h5-size: 1rem;
     --h5-line: 1.2rem;
 
-    /* --- Paragraph --- */
-    --p-size: 0.9rem;
-    --p-line: 1.2rem;
-
-    /* --- List --- */
-    --li-size: 0.9rem;
-    --li-line: 1.3rem;
-
-    /* --- Buttons --- */
-    --btn-primary-size: 0.9rem;
-    --btn-primary-line: 1.2rem;
-
-    --btn-secondary-size: 0.9rem;
-    --btn-secondary-line: 1.2rem;
-
-    --btn-tertiary-size: 0.9rem;
-    --btn-tertiary-line: 1.1rem;
 
     /* --- Display --- */
     --display-1-size: 3.7rem;
@@ -281,40 +264,53 @@ Variables GLOBAL - NDC TEMPLATE
 
     --display-2-size: 15rem;
     --display-2-line: 15rem;
+
+
+    /* --- Paragraph --- */
+    --p-size: .8rem;
+    --p-line: 1.1rem;
+
+
+    /* --- List --- */
+    --li-size: 0.8rem;
+    --li-line: 1.1rem;
+
+
+    /* --- Links --- */
+    --link-size: 2rem;
+    --link-line: 2.4rem;
+
+
+    /* --- Buttons --- */
+    --btn-primary-size: 0.8rem;
+    --btn-primary-line: 1.1rem;
+
+    --btn-secondary-size: 0.8rem;
+    --btn-secondary-line: 1.1rem;
+
+    --btn-terciary-size: 0.8rem;
+    --btn-terciary-line: 1.1rem;
+
+    
+    /* --- Icons --- */
+    --icon-xs: 0.75rem;
+    --icon-sm: 1rem;
+    --icon-md: 1.5rem;
+    --icon-lg:1.4rem;
+    --icon-xl: 3rem;
+
+
+    /* --- Numeric --- */
+    --num-xl-size: 9rem;
+    --num-xl-line: 8.5rem;
+
+    --num-lg-size: 5rem;
+    --num-lg-line: 4.8rem;
+
+    --num-md-size: 3rem;
+    --num-md-line: 3.2rem;
+
+    --num-sm-size: 1rem;
+    --num-sm-line: 1rem;
   }
 }
-
-
-/* ==============================
-    PX REFERENCE (for documentation)
-==============================
-
-DESKTOP
---------------------------------
-H1: 140 / 126
-H2: 79 / 79
-H3: 40 / 44
-H4: 20 / 26
-H5: 20 / 26
-H6: 17 / 20
-P:  20 / 26
-Btn-primary: 20 / 26
-Btn-secondary: 20 / 26
-Btn-tertiary: 20 / 20
-Display-1: 389 / 389
-Display-2: 600 / 600
-
-0.2rem: 4px
-0.4rem: 8px 
-0.8rem: 16px 
-1.2rem: 24px
-1.6rem: 32px
-
-MOBILE
---------------------------------
-H1: 60 / 66
-H2: 37 / 41
-H3: 22 / 24
-H4: 16 / 21
-P: 16 / 21
-*/

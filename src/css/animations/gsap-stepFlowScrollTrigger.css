@@ -1,6 +1,7 @@
 /* ---------------------------------------- */
 /* Home > Section stepFlow  */
 /* ---------------------------------------- */
+/* Step-Flow__Desktop */
 .step-flow .grid {
     position: sticky;
     top: 0;
@@ -69,4 +70,94 @@
 .step-flow__image.active {
     opacity: 1;
     transform: scale(1);
+}
+
+
+/* Step-Flow__Mobile */
+.step-flow__mobile {
+    display: none;
+    background-color: var(--color-bg);
+}
+
+.step-flow__mobile .grid {
+    display: flex;
+    flex-direction: column;    
+}
+
+.step-flow__mobile-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.step-flow__mobile-image {
+    width: 325px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.step-flow__mobile-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.step-flow__mobile-step .step-flow__subtitle {
+    color: var(--color-headings-inverse);    
+}
+
+.step-flow__mobile-step .step-flow__text {
+    color: var(--color-text-alt);
+    line-height: 1.5;
+}
+
+.step-flow__mobile-step .step-flow__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    padding: 0 100px 0 120px;
+    /* igual que desktop */
+}
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    /* Step-Flow__Desktop */
+    .step-flow--desktop {
+        display: none;
+    }
+
+    .step-flow__content {
+        padding: 40px 0 70px 0;
+        gap: 30px;
+    }
+
+    /* Step-Flow__Mobile */
+    .step-flow__mobile {
+        display: block;    
+        background-color: #000;
+    }
+
+    .step-flow__mobile .grid {
+        padding: 20px 10px;
+    }
+
+    .step-flow__mobile-step .step-flow__image {
+        padding: 0 20px;
+    }
+
+    .step-flow__image {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .step-flow__subtitle {
+        margin-top: 20px;
+    }
+
+    .step-flow__title {
+        margin-bottom: 20px;
+    }
 }

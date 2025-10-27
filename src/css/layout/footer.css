@@ -24,10 +24,16 @@
 /* RESPONSIVE */
 /* ---------------------------------------- */
 @media (max-width: 450px) {
-
     /* Footer */
     .footer .grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 3rem;
+    } 
 }

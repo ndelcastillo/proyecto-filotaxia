@@ -6,7 +6,7 @@
     color: var(--color-black);
     margin-left: -20px;
     text-align: center;
-    white-space: nowrap;    
+    white-space: nowrap;
     position: relative;
     top: -1rem;
 }
@@ -31,16 +31,28 @@
 
 .split-parent {
     overflow: hidden;
-      line-height: 1.1; /* importante */
+    line-height: 1.1;
+    /* importante */
 }
 
 .split-line {
     display: block;
     overflow: hidden;
-    line-height: 1.1; /* o el valor real de tu h2 */
+    line-height: 1.1;
 }
 
 .split-word,
 .split-char {
     display: inline-block;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    .split-line {
+        display: inline-block;
+        line-height: 1.08;
+    }
 }

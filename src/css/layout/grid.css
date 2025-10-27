@@ -266,10 +266,9 @@
 
 
 
-/* ---------------------------------------- */
-/* Responsive */
-/* ---------------------------------------- */
-
+/* ==============================
+    RESPONSIVE
+============================== */
 /* ----- MOBILE (menor a 600px) ----- */
 @media (max-width: 599px) {
 
@@ -277,7 +276,6 @@
     .grid-overlay {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-        /* opcional: podés reducir el espacio si querés */
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -303,7 +301,85 @@
         white-space: normal;
         /* deja que el texto fluya */
     }
-    
+
+    /* ==============================
+   RESPONSIVE
+============================== */
+    @media (max-width: 768px) {
+
+        /* ---------------------------------------- */
+        /* margin-top */
+        /* ---------------------------------------- */
+        .mt-xxxs {
+            margin-top: 0.4rem;
+        }
+
+        .mt-xxs {
+            margin-top: 0.6rem;
+        }
+
+        .mt-xs {
+            margin-top: 0.8rem;
+        }
+
+        .mt-sm {
+            margin-top: 1.2rem;
+        }
+
+        .mt-md {
+            margin-top: 2rem;
+        }
+
+        .mt-lg {
+            margin-top: 3.5rem;
+        }
+
+        .mt-xl {
+            margin-top: 5rem;
+        }
+
+        .mt-xxl {
+            margin-top: 8rem;
+        }
+
+        /* ---------------------------------------- */
+        /* margin-bottom */
+        /* ---------------------------------------- */
+        .mb-xxxs {
+            margin-bottom: 0.4rem;
+        }
+
+        .mb-xxs {
+            margin-bottom: 0.6rem;
+        }
+
+        .mb-xs {
+            margin-bottom: 0.8rem;
+        }
+
+        .mb-sm {
+            margin-bottom: 1.2rem;
+        }
+
+        .mb-md {
+            margin-bottom: 2rem;
+        }
+
+        .mb-lg {
+            margin-bottom: 3.5rem;
+        }
+
+        .mb-xl {
+            margin-bottom: 5rem;
+        }
+
+        .mb-xxl {
+            margin-bottom: 7rem;
+        }
+    }
+
+
+
     /* ---------------------------------------- */
     /* Modificadores para control de margin-left */
     /* ---------------------------------------- */

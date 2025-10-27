@@ -95,15 +95,15 @@
 
 
 
-/* ---------------------------------------- */
-/* RESPONSIVE */
-/* ---------------------------------------- */
+/* ==============================
+    RESPONSIVE
+============================== */
 @media (max-width: 780px) {
-    .button--terciary-inverse {
+    .button--terciary__sidebar {
         width: 215px !important;
     }
 
-    .button--terciary {
+    .button--terciary__sidebar {
         width: 215px !important;
     }
 }

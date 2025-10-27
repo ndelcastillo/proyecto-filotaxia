@@ -30,6 +30,10 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.benefits__title {
+    width: 100%;
+}
+
 .benefits__number {
     font-size: var(--num-sm-size);
     line-height: var(--num-sm-line);
@@ -350,4 +354,76 @@
 
 .subTerrarios__item.active .subTerrarios__icon-active {
     opacity: 1;
+}
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+
+    /* ---------------------------------------- */
+    /* Home > Benefits Section */
+    /* ---------------------------------------- */
+    .benefits__item {
+        margin-top: -20px;
+        display: flex;        
+    }
+
+    .benefits__item--01 {
+        margin-top: 300px;
+    }
+
+    .benefits__number {
+        position: relative;
+        bottom: -35px;
+    }
+
+    .benefits__title {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+
+    .benefits__icon-wrapper {
+        position: relative;
+        top: -100px;
+        display: none;
+    }
+
+    
+    .benefits__item--01,
+    .benefits__item--02,
+    .benefits__item--03,
+    .benefits__item--04 {
+        margin-bottom: 30px;
+    }
+
+    .benefits__item--01 .benefits__image-wrapper {
+        position: absolute;
+        top: -120px;
+        left: .8rem;
+    }
+    
+    .benefits__item--02 .benefits__image-wrapper {
+        position: absolute;
+        top: -255px;
+        left: .8rem;
+    }
+
+    .benefits__item--03 .benefits__image-wrapper {
+        position: absolute;
+        top: -395px;
+        left: .8rem;
+    }
+
+    .benefits__item--04 .benefits__image-wrapper {
+        position: absolute;
+        top: -525px;
+        left: .8rem;
+    }
+
+    .benefits__image {
+        width: 340px;
+        height: 270px;
+    }
 }

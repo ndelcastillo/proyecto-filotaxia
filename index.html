@@ -11,16 +11,16 @@
 
 <body>
   <!-- Preloader_Site -->
-  <!-- <div class="pre-loader" id="preloader-site">
+  <div class="pre-loader" id="preloader-site">
     <div class="content">
       <img class="pre-loader-img1 content-reveal-position-sm-up" src="./src/assets/images/logo/FILO FOR EXPORT-01.png"
         alt="">
       <img class="pre-loader-img2 content-reveal-position-sm mt-xs"
         src="./src/assets/images/logo/FILO FOR EXPORT-03.png" alt="">
     </div>
-  </div> -->
+  </div>
   <!-- Preloader_Pages -->
-  <!-- <div class="pre-loader-pages" id="preloader-pages"></div> -->
+  <div class="pre-loader-pages" id="preloader-pages"></div>
   <!-- Grid_Layout-->
   <div class="grid-overlay"></div>
   <!-- Header -->
@@ -56,7 +56,9 @@
     <!-- Sidebar (Mobile Menu) -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar__header">
-        <img src="./src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo" class="sidebar__logo" />
+        <a href="/" class="nav__logo-link">
+          <img src="./src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo" class="sidebar__logo" />
+        </a>
         <button class="sidebar__close" id="sidebarClose">Cerrar</button>
       </div>
       <nav class="sidebar__nav">
@@ -70,7 +72,7 @@
             <li><a href="./src/pages/contacto.html" class="sidebar__link">Contacto</a></li>
           </ul>
         </div>
-        <button class="button--terciary-inverse mt-md" type="button">
+        <button class="button--terciary-inverse button--terciary__sidebar mt-md" type="button">
           <a href="./src/pages/terrarios.html">
             Ver Terrarios <span class="button-icon">→</span>
             <span class="button-line-inverse"></span>
@@ -79,7 +81,7 @@
       </nav>
     </aside>
     <!-- Botón para abrir -->
-    <button class="sidebar__toggle" id="sidebarToggle">
+    <button class="sidebar__toggle content-reveal-position-home" id="sidebarToggle">
       Menú
     </button>
   </header>
@@ -87,9 +89,9 @@
   <main class="main" role="main">
     <!-- Hero_Section -->
     <section class="hero" aria-label="Hero section">
-      <di\v class="hero__model">
+      <div class="hero__model">
         <img src="https://media.giphy.com/media/Igz03DsDSQ3d37atti/giphy.gif" alt="">
-      </di>
+      </div>
       <div>
         <h1 class="display-1 hero__title">FILOTAXIA</h1>
       </div>
@@ -105,7 +107,7 @@
       <div class="grid mt-md">
         <div class="grid__col grid__col--span-12 about-us__content">
           <h2 class="about-us__title split-text" data-split="lines"><span><span><img class="about-us__img"
-                  src="./src/assets/images/ideas/Filotaxia-22.jpg" alt=""></span>Somos Filotaxia. Creamos
+                  src="./src/assets/images/ideas/Filotaxia-22.jpg" loading="lazy" alt=""></span>Somos Filotaxia. Creamos
               terrarios que hacen música, transformando la información biológica de cada planta en sonido, para que
               además de verlo, puedas escucharlo.
             </span></h2>
@@ -153,7 +155,7 @@
         <div class="grid__col grid__col--span-4 gallery__item">
           <a href="./src/pages/terrarios/terrario01.html">
             <div class="gallery__image-wrapper mb-xs">
-              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT2.jpg" alt=""
+              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT2.jpg" loading="lazy" alt=""
                 class="gallery__image gallery__image-1" />
             </div>
             <div class="gallery__title-wrapper">
@@ -167,7 +169,7 @@
         <div class="grid__col grid__col--span-4 gallery__item">
           <a href="./src/pages/terrarios/terrario02.html">
             <div class="gallery__image-wrapper mb-xs">
-              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT3.jpg" alt=""
+              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT3.jpg" loading="lazy" alt=""
                 class="gallery__image gallery__image-1" />
             </div>
             <div class="gallery__title-wrapper">
@@ -181,7 +183,7 @@
         <div class="grid__col grid__col--span-4 gallery__item">
           <a href="./src/pages/terrarios/terrario03.html">
             <div class="gallery__image-wrapper mb-xs">
-              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT4.jpg" alt=""
+              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT4.jpg" loading="lazy" alt=""
                 class="gallery__image gallery__image-1" />
             </div>
             <div class="gallery__title-wrapper">
@@ -197,7 +199,7 @@
         <div class="grid__col grid__col--span-4 gallery__item">
           <a href="./src/pages/terrarios/terrario04.html">
             <div class="gallery__image-wrapper mb-xs">
-              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT7.jpg" alt=""
+              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT7.jpg" loading="lazy" alt=""
                 class="gallery__image gallery__image-1" />
             </div>
             <div class="gallery__title-wrapper">
@@ -211,7 +213,7 @@
         <div class="grid__col grid__col--span-4 gallery__item">
           <a href="./src/pages/terrarios/terrario05.html">
             <div class="gallery__image-wrapper mb-xs">
-              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT6.jpg" alt=""
+              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT6.jpg" loading="lazy" alt=""
                 class="gallery__image gallery__image-1" />
             </div>
             <div class="gallery__title-wrapper">
@@ -225,7 +227,7 @@
         <div class="grid__col grid__col--span-4 gallery__item">
           <a href="./src/pages/terrarios/terrario06.html">
             <div class="gallery__image-wrapper mb-xs">
-              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT1.jpg" alt=""
+              <img src="./src/assets/images/productos/FINALES/terrariosShootPorteT1.jpg" loading="lazy" alt=""
                 class="gallery__image gallery__image-1" />
             </div>
             <div class="gallery__title-wrapper">
@@ -243,7 +245,8 @@
     <section class="benefits mb-xxl">
       <div class="grid benefits__intro mb-xl">
         <div class="grid__col grid__col--span-8">
-          <h2 class="split-text" data-split="lines">Cuatro fundamentos para<br> cuidar el terrario.</h2>
+          <h2 class="split-text" data-split="lines">Cuatro fundamentos para cuidar el
+            terrario.</h2>
         </div>
         <div class="grid__col grid__col--span-3"></div>
         <div class="grid__col grid__col--span-1 text-nowrap align align--bottom content-reveal-opacity mb-xxs">
@@ -260,7 +263,7 @@
             <span class="benefits__number" id="benefits-number">01/</span>
           </div>
           <div class="grid__col grid__col--span-6">
-            <h3>Riego controlado para evitar excesos.</h3>
+            <h3 class="benefits__title">Riego controlado para evitar excesos.</h3>
           </div>
           <div class="grid__col grid__col--span-1 align align--end">
             <div class="benefits__icon-wrapper">
@@ -270,9 +273,10 @@
           </div>
         </div>
         <div class="benefits__image-wrapper">
-          <img class="benefits__image" src="./src/assets/images/cuidados/sq5.webp" />
+          <img class="benefits__image" src="./src/assets/images/cuidados/sq5.webp" loading="lazy" />
         </div>
       </div>
+      <hr class="hr-mobile">
       <div class="benefits__item benefits__item--02">
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
@@ -280,7 +284,7 @@
             <span class="benefits__number" id="benefits-number">02/</span>
           </div>
           <div class="grid__col grid__col--span-6">
-            <h3>Luz indirecta para evitar quemaduras.</h3>
+            <h3 class="benefits__title">Luz indirecta para evitar quemaduras.</h3>
           </div>
           <div class="grid__col grid__col--span-1 align align--end">
             <div class="benefits__icon-wrapper">
@@ -290,9 +294,10 @@
           </div>
         </div>
         <div class="benefits__image-wrapper">
-          <img class="benefits__image" src="./src/assets/images/cuidados/sq10.webp" />
+          <img class="benefits__image" src="./src/assets/images/cuidados/sq10.webp" loading="lazy" />
         </div>
       </div>
+      <hr class="hr-mobile">
       <div class="benefits__item benefits__item--03">
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
@@ -310,9 +315,10 @@
           </div>
         </div>
         <div class="benefits__image-wrapper">
-          <img class="benefits__image" src="./src/assets/images/cuidados/sq7.webp" />
+          <img class="benefits__image" src="./src/assets/images/cuidados/sq7.webp" loading="lazy" />
         </div>
       </div>
+      <hr class="hr-mobile">
       <div class="benefits__item benefits__item--04">
         <div class="grid mt-xs">
           <div class="grid__col grid__col--span-4"></div>
@@ -330,13 +336,14 @@
           </div>
         </div>
         <div class="benefits__image-wrapper">
-          <img class="benefits__image" src="./src/assets/images/cuidados/sq9.webp" />
+          <img class="benefits__image" src="./src/assets/images/cuidados/sq9.webp" loading="lazy" />
         </div>
       </div>
+      <hr class="hr-mobile">
     </section>
 
-    <!-- Step-Flow_Section -->
-    <section class="step-flow">
+    <!-- Step-Flow_Desktop -->
+    <section class="step-flow step-flow--desktop ">
       <div class="grid">
         <div class="grid__col grid__col--span-1"></div>
         <div class="step-flow__content grid__col grid__col--span-4">
@@ -363,9 +370,45 @@
           </div>
         </div>
         <div class="grid__col grid__col--span-7 step-flow__images">
-          <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-1.webp" data-step="1" alt="">
-          <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-2.1.webp" data-step="2" alt="">
-          <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-3.webp" data-step="3" alt="">
+          <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-1.webp" loading="lazy"
+            data-step="1" alt="">
+          <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-2.1.webp" loading="lazy"
+            data-step="2" alt="">
+          <img class="step-flow__image" src="./src/assets/images/steps/Filotaxia-step-3.webp" loading="lazy"
+            data-step="3" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Step-Flow Mobile -->
+    <section class="step-flow__mobile">
+      <div class="grid">
+        <div class="grid__col grid__col--span-1"></div>
+        <div class="step-flow__content grid__col grid__col--span-10">
+          <h2 class="step-flow__title">Escuchá la música secreta de las plantas.</h2>
+          <div class="step-flow__mobile-steps">
+            <div class="step-flow__mobile-step">
+              <img class="step-flow__mobile-image" src="./src/assets/images/steps/Filotaxia-step-1.webp" loading="lazy"
+                alt="">
+              <h4 class="step-flow__subtitle mb-xs">01/ Adquirí tu terrario.</h4>
+              <p class="step-flow__text"> Cada terrario de Filotaxia es un ecosistema único, que incluye una pieza
+                sonora creada a partir de las bioemisiones registradas durante su creación.</p>
+            </div>
+            <div class="step-flow__mobile-step">
+              <img class="step-flow__mobile-image" src="./src/assets/images/steps/Filotaxia-step-2.1.webp"
+                loading="lazy" alt="">
+              <h4 class="step-flow__subtitle mb-xs">02/ Escaneá el QR.</h4>
+              <p class="step-flow__text">Accedé a una plataforma exclusiva
+                donde podrás escuchar la música generada por la actividad biológica de los elementos
+                de tu terrario.</p>
+            </div>
+            <div class="step-flow__mobile-step">
+              <img class="step-flow__mobile-image" src="./src/assets/images/steps/Filotaxia-step-3.webp" loading="lazy"
+                alt="">
+              <h4 class="step-flow__subtitle mb-xs">03/ Disfrutá la experiencia sonora.</h4>
+              <p class="step-flow__text">Observá, escuchá y sentí la armonía de tu terrario. Una
+                conversación sutil entre los elementos que lo conforman.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -373,7 +416,7 @@
     <!-- Manifiesto_Section -->
     <section class="manifiesto mt-xxl mb-xxl">
       <div class="grid mb-xs">
-        <div class="grid__col grid__col--span-2 content-reveal-opacity">
+        <div class="grid__col grid__col--span-2 manifiesto__image content-reveal-opacity">
           <div class="homeManifiesto__title-content">
             <div class="homeManifiesto__title-content1">
               <div class="homeImage-terrario01"></div>
@@ -419,7 +462,7 @@
         <hr class="mt-xs">
       </div>
     </div>
-    <div class="grid mb-xl">
+    <div class="grid footer__links mb-xl">
       <div class="grid__col grid__col--span-2 text-nowrap">
         <p class="footer__subtitle mb-xs">Navegación</p>
         <ul class="nav__list--column">
@@ -441,7 +484,7 @@
     <div class="grid align--baseline">
       <div class="grid__col grid__col--span-7  mb-xs">
         <a href="/" class="nav__logo-link ">
-          <img src="./src/assets/images/logo/FILO FOR EXPORT-03.png" class="footer__logo" alt="">
+          <img src="./src/assets/images/logo/FILO FOR EXPORT-03.png" loading="lazy" class="footer__logo" alt="">
         </a>
       </div>
       <div class="grid__col grid__col--span-1"></div>

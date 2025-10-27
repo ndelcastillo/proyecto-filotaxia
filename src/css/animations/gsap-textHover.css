@@ -65,17 +65,22 @@
 .gallery__title-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: -10px;
+
 }
 
 .gallery__title-text.original {
     position: relative;
     opacity: 1;
-
+    font-size: var(--p-size);
+    line-height: var(--p-line);
 }
 
 .gallery__title-text.alt {
     position: absolute;
     opacity: 0;
+    font-size: var(--p-size);
+    line-height: var(--p-line);
 }
 
 .gallery__subtitle {
@@ -91,10 +96,18 @@
     /* ---------------------------------------- */
     /* Home > Section Gallery */
     /* ---------------------------------------- */
+    .gallery-2 {
+        display: none;
+    }
+
+    .gallery__intro {
+        margin-bottom: 20px;
+    }
+
     .gallery__image-wrapper {
         height: 300px;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .gallery__image {
@@ -104,7 +117,9 @@
         transform-origin: center center;
     }
 
-    .gallery-2 {
-        display: none;
+    .gallery__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
     }
 }
