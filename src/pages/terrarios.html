@@ -12,7 +12,9 @@
 <body>
     <!-- Preloader Pages -->
     <div class="pre-loader-pages" id="preloader-pages"></div>
+    <!-- Grid_Layout-->
     <div class="grid-overlay"></div>
+    <!-- Header -->
     <header class="header">
         <nav class="nav content-reveal-position-sm-down" role="navigation" aria-label="Main navigation">
             <div class="grid">
@@ -51,34 +53,70 @@
                 </div>
             </div>
         </nav>
+        <!-- Sidebar (Mobile Menu) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <a href="/" class="nav__logo-link">
+                    <img src="./src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo"
+                        class="sidebar__logo" />
+                </a>
+                <button class="sidebar__close" id="sidebarClose">Cerrar</button>
+            </div>
+            <nav class="sidebar__nav">
+                <div class="sidebar__nav-content">
+                    <h4 class="sidebar__label">(Navegación)</h4>
+                    <ul class="sidebar__list">
+                        <li><a href="/" class="sidebar__link active">Inicio</a></li>
+                        <li><a href="./src/pages/terrarios.html" class="sidebar__link">Terrarios</a></li>
+                        <li><a href="./src/pages/musica.html" class="sidebar__link">Formas</a></li>
+                        <li><a href="./src/pages/manifiesto.html" class="sidebar__link">Manifiesto</a></li>
+                        <li><a href="./src/pages/contacto.html" class="sidebar__link">Contacto</a></li>
+                    </ul>
+                </div>
+                <button class="button--terciary-inverse button--terciary__sidebar mt-md" type="button">
+                    <a href="./src/pages/terrarios.html">
+                        Ver Terrarios <span class="button-icon">→</span>
+                        <span class="button-line-inverse"></span>
+                    </a>
+                </button>
+            </nav>
+        </aside>
+        <!-- Botón para abrir -->
+        <button class="sidebar__toggle content-reveal-position-home" id="sidebarToggle">
+            Menú
+        </button>
     </header>
 
     <main class="main" role="main">
+        <!-- Hero_Section -->
         <section class="hero__terrarios">
             <div class="terrarios__item terrarios__item--01 mb-xs">
                 <div class="grid">
                     <div class="grid__col grid__col--span-12 split-text" data-split="lines">
                         <a href="./terrarios/terrario01.html" class="terrarios__title" data-index="0">
-                            <h2>Terrario01<span>/</span></h2>
+                            <h2 class="terrarios__title-1">Terrario01</h2>
+                            <h2>/</h2>
                         </a>
                         <a href="./terrarios/terrario02.html" class="terrarios__title" data-index="1">
-                            <h2>Terrario02</h2>
+                            <h2 class="terrarios__title-2">Terrario02</h2>
                         </a>
                     </div>
                     <div class="grid__col grid__col--span-12 split-text" data-split="lines">
                         <a href="./terrarios/terrario03.html" class="terrarios__title" data-index="2">
-                            <h2>Terrario03<span>/</span></h2>
+                            <h2 class="terrarios__title-3">Terrario03</h2>
+                            <h2>/</h2>
                         </a>
                         <a href="/terrarios/terrario04.html" class="terrarios__title" data-index="3">
-                            <h2>Terrario04</h2>
+                            <h2 class="terrarios__title-4">Terrario04</h2>
                         </a>
                     </div>
                     <div class="grid__col grid__col--span-12 split-text" data-split="lines">
                         <a href="./terrarios/terrario05.html" class="terrarios__title" data-index="4">
-                            <h2>Terrario05<span>/</span></h2>
+                            <h2 class="terrarios__title-5">Terrario05</h2>
+                            <h2>/</h2>
                         </a>
                         <a href="./terrarios/terrario06.html" class="terrarios__title" data-index="5">
-                            <h2>Terrario06</h2>
+                            <h2 class="terrarios__title-6">Terrario06</h2>
                         </a>
                     </div>
                 </div>
@@ -100,9 +138,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- Capas_Section -->
         <section class="terrarios-capas mb-xxl">
             <div class="grid mt-md">
-                <div class="grid__col grid__col--span-12 terrarios-capas__content content-plants">
+                <!-- CAPA 01 -->
+                <div class="grid__col grid__col--span-12 terrarios-capas__content">
+                    <img class="terrarios-capas__bg" src="https://media3.giphy.com/media/txCo7WXCwZpmM/giphy.gif"
+                        alt="Fondo Plantas" loading="lazy">
                     <div class="content-1">
                         <p class="content-1__link">Capa01/</p>
                         <p class="content-1__subtitle"></p>
@@ -112,14 +155,17 @@
                         <h2 class="content-2__title split-text" data-split="lines">Plantas</h2>
                     </div>
                     <div class="content-3">
-                        <p class="content-3__link">Suculentas, Piedras Pomez</p>
+                        <p class="content-3__link">Suculentas</p>
                         <p class="content-3__subtitle"></p>
                         <div class="content-3__btn">
                             <div></div>
                         </div>
                     </div>
                 </div>
-                <div class="grid__col grid__col--span-12 terrarios-capas__content content-sustrato">
+                <!-- CAPA 02 -->
+                <div class="grid__col grid__col--span-12 terrarios-capas__content">
+                    <img class="terrarios-capas__bg" src="https://media0.giphy.com/media/l9md6q8WS4pwJrO4qc/giphy.gif"
+                        alt="Fondo Sustrato" loading="lazy">
                     <div class="content-1">
                         <p class="content-1__link">Capa02/</p>
                         <p class="content-1__subtitle"></p>
@@ -129,14 +175,17 @@
                         <h2 class="content-2__title split-text" data-split="lines">Sustrato</h2>
                     </div>
                     <div class="content-3">
-                        <p class="content-3__link">Compost, Gravas, Arena Gruesa</p>
+                        <p class="content-3__link">Tierra, Perlita, Arena Gruesa</p>
                         <p class="content-3__subtitle"></p>
                         <div class="content-3__btn">
                             <div></div>
                         </div>
                     </div>
                 </div>
-                <div class="grid__col grid__col--span-12 terrarios-capas__content content-metal">
+                <!-- CAPA 03 -->
+                <div class="grid__col grid__col--span-12 terrarios-capas__content">
+                    <img class="terrarios-capas__bg" src="https://media3.giphy.com/media/OhBO5rAr1G0VhxM8X4/giphy.gif"
+                        alt="Fondo Metal" loading="lazy">
                     <div class="content-1">
                         <p class="content-1__link">Capa03/</p>
                         <p class="content-1__subtitle"></p>
@@ -153,7 +202,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__col grid__col--span-12 terrarios-capas__content content-piedras">
+                <!-- CAPA 04 -->
+                <div class="grid__col grid__col--span-12 terrarios-capas__content">
+                    <img class="terrarios-capas__bg" src="https://media0.giphy.com/media/55jWt7O2wPB5e/giphy.gif"
+                        alt="Fondo Piedras" loading="lazy">
                     <div class="content-1">
                         <p class="content-1__link">Capa04/</p>
                         <p class="content-1__subtitle"></p>
@@ -170,14 +222,18 @@
                         </div>
                     </div>
                 </div>
+                <!-- TEXTO FINAL -->
                 <div class="grid__col grid__col--span-7 terrarios-capas__text">
-                    <h3 class="content-reveal-opacity">Un terrario es un micro-ecosistema abierto de cuatro capas, cada
-                        una con su
-                        sonido característico. Las plantas reciben agua, transpiran y mantienen su ciclo vital a la
-                        vista, creando un ecosistema activo y conectado.</h3>
+                    <h3 class="content-reveal-opacity">
+                        Un terrario es un micro-ecosistema abierto de cuatro capas, cada una con su sonido
+                        característico.
+                        Las plantas reciben agua, transpiran y mantienen su ciclo vital a la vista, creando un
+                        ecosistema activo y conectado.
+                    </h3>
                 </div>
             </div>
         </section>
+
         <!-- <section class="cuidados mb-xxl">
             <div class="grid">
                 <div class="grid__col grid__col--span-6 terrariosCuidados__content mt-sm mb-sm">
@@ -201,6 +257,8 @@
                 </div>
             </div>
         </section> -->
+
+        <!-- Cuidados_Section -->
         <section class="cuidados mb-xxl">
             <div class="grid">
                 <div class="grid__col grid__col--span-6">
@@ -246,6 +304,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- FAQ_Section -->
         <section class="faq mb-xxl">
             <div class="grid faq-intro mt-md mb-xs content-reveal-opacity">
                 <div class="grid__col grid__col--span-11 faq-intro__content">
@@ -351,6 +411,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer mt-md mb-xs content-reveal-opacity" role="contentinfo">
         <div class="grid mb-md">
             <div class="grid__col grid__col--span-12">
