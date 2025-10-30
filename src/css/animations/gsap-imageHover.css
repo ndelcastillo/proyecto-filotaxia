@@ -156,7 +156,7 @@ h2.terrarios__title-6 {
 }
 
 .cuidados__text {
-    color: #a0a0a0;
+    color: var(--color-text-alt);
 }
 
 .cuidados__content {
@@ -170,7 +170,7 @@ h2.terrarios__title-6 {
     display: inline-block;
     cursor: pointer;
     transition: color 0.3s ease;
-    color: #a0a0a0;
+    color: var(--color-headings-alt);
     margin-top: 22px;
     font-weight: 400;
 }
@@ -183,24 +183,22 @@ h2.terrarios__title-6 {
     bottom: -10px;
     width: 100%;
     height: 3px;
-    background-color: #000;
+    background-color: var(--color-line-dark-bg);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
 }
 
-/* Hover */
 .cuidados__content h2:hover {
-    color: #000;
+    color: var(--color-headings);
 }
 
 .cuidados__content h2:hover::after {
     transform: scaleX(1);
 }
 
-/* Activo */
 .cuidados__content h2.active {
-    color: #000;
+    color: var(--color-headings);
 }
 
 .cuidados__content h2.active::after {
@@ -210,7 +208,6 @@ h2.terrarios__title-6 {
 .cuidados__content img {
     width: 100%;
 }
-
 
 
 /* ---------------------------------------- */
@@ -240,7 +237,6 @@ h2.terrarios__title-6 {
     transform: scale(0.95);
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
-    /* no bloquea el hover */
     z-index: 5;
 }
 
@@ -249,7 +245,6 @@ h2.terrarios__title-6 {
     transform: scale(1);
 }
 
-/* HR oculto por defecto dentro de cada fila */
 .catalogo__content hr {
     display: block;
     width: 100%;
@@ -267,6 +262,10 @@ h2.terrarios__title-6 {
 .catalogo__content:hover hr {
     opacity: 1;
     transform: scaleX(1);
+}
+
+.catalogo__content p {
+    padding-top: 20px;
 }
 
 
@@ -359,6 +358,7 @@ h2.terrarios__title-6 {
     opacity: 1;
 }
 
+
 /* ==============================
     RESPONSIVE
 ============================== */
@@ -434,6 +434,10 @@ h2.terrarios__title-6 {
     /* ---------------------------------------- */
     /* Terrarios > Hero Section */
     /* ---------------------------------------- */
+    .terrarios__item .grid {
+        bottom: 0;
+    }
+
     .terrarios__image-wrapper {
         width: 350px;
         height: 350px;
@@ -473,10 +477,81 @@ h2.terrarios__title-6 {
     }
 
     p#cuidados-title {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
-    .terrarios__item .grid {        
-        bottom: 0;        
+    .cuidados__content h2 {
+        margin-top: 14px;
     }
+
+
+    /* ---------------------------------------- */
+    /* Musica > Catalogo Section */
+    /* ---------------------------------------- */
+    .musica__catalogo .grid {
+        padding-bottom: 100px;
+    }
+
+    .catalogo__content-fila1 .grid__col:nth-child(3),
+    .catalogo__content-fila1 .grid__col:nth-child(4) {
+        display: none;
+    }
+
+    .catalogo__content-fila1 p {
+        padding-top: 0;
+        line-height: .8;
+    }
+
+    .catalogo__content-fila1 .content__title p{
+        font-size: 1rem;
+        line-height: 1;
+        width: 50%;
+    }
+
+    .catalogo__content .content__title p {
+        font-size: 1rem;
+        line-height: 1;
+        width: 50%;
+    }
+
+    .catalogo__content p {
+        padding-top: 0;
+        line-height: .9;
+    }
+
+    .catalogo__content:hover {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .catalogo__content hr {
+        display: block;
+        width: 50%;
+        border: 0;
+        height: 1px;
+        background: #000;
+        opacity: 1 !important;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.55s ease, opacity 0.35s ease;
+        will-change: transform, opacity;
+    }
+
+    /* Al hacer hover en la fila, aparece el hr */
+    .catalogo__content:hover hr {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    .catalogo__image-preview {
+        position: absolute;
+        left: 170px;
+        top: -2.4rem;
+        right: 0;
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        opacity: 1;
+        transform: scale(0.95);
+    }
+
 }

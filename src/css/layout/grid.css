@@ -270,7 +270,7 @@
     RESPONSIVE
 ============================== */
 /* ----- MOBILE (menor a 600px) ----- */
-@media (max-width: 599px) {
+@media (max-width: 768px) {
 
     /* Grid Overlay */
     .grid-overlay {
@@ -302,86 +302,78 @@
         /* deja que el texto fluya */
     }
 
-    /* ==============================
-   RESPONSIVE
-============================== */
-    @media (max-width: 768px) {
-
-        /* ---------------------------------------- */
-        /* margin-top */
-        /* ---------------------------------------- */
-        .mt-xxxs {
-            margin-top: 0.4rem;
-        }
-
-        .mt-xxs {
-            margin-top: 0.6rem;
-        }
-
-        .mt-xs {
-            margin-top: 0.8rem;
-        }
-
-        .mt-sm {
-            margin-top: 1.2rem;
-        }
-
-        .mt-md {
-            margin-top: 2rem;
-        }
-
-        .mt-lg {
-            margin-top: 3.5rem;
-        }
-
-        .mt-xl {
-            margin-top: 5rem;
-        }
-
-        .mt-xxl {
-            margin-top: 8rem;
-        }
-
-        /* ---------------------------------------- */
-        /* margin-bottom */
-        /* ---------------------------------------- */
-        .mb-xxxs {
-            margin-bottom: 0.4rem;
-        }
-
-        .mb-xxs {
-            margin-bottom: 0.6rem;
-        }
-
-        .mb-xs {
-            margin-bottom: 0.8rem;
-        }
-
-        .mb-sm {
-            margin-bottom: 1.2rem;
-        }
-
-        .mb-md {
-            margin-bottom: 2rem;
-        }
-
-        .mb-lg {
-            margin-bottom: 3.5rem;
-        }
-
-        .mb-xl {
-            margin-bottom: 5rem;
-        }
-
-        .mb-xxl {
-            margin-bottom: 7rem;
-        }
+    /* ---------------------------------------- */
+    /* margin-top */
+    /* ---------------------------------------- */
+    .mt-xxxs {
+        margin-top: 0.4rem;
     }
 
+    .mt-xxs {
+        margin-top: 0.6rem;
+    }
 
+    .mt-xs {
+        margin-top: 0.8rem;
+    }
+
+    .mt-sm {
+        margin-top: 1.2rem;
+    }
+
+    .mt-md {
+        margin-top: 2rem;
+    }
+
+    .mt-lg {
+        margin-top: 3.5rem;
+    }
+
+    .mt-xl {
+        margin-top: 5rem;
+    }
+
+    .mt-xxl {
+        margin-top: 8rem;
+    }
 
     /* ---------------------------------------- */
-    /* Modificadores para control de margin-left */
+    /* margin-bottom */
+    /* ---------------------------------------- */
+    .mb-xxxs {
+        margin-bottom: 0.4rem;
+    }
+
+    .mb-xxs {
+        margin-bottom: 0.6rem;
+    }
+
+    .mb-xs {
+        margin-bottom: 0.8rem;
+    }
+
+    .mb-sm {
+        margin-bottom: 1.2rem;
+    }
+
+    .mb-md {
+        margin-bottom: 2rem;
+    }
+
+    .mb-lg {
+        margin-bottom: 3.5rem;
+    }
+
+    .mb-xl {
+        margin-bottom: 5rem;
+    }
+
+    .mb-xxl {
+        margin-bottom: 7rem;
+    }
+
+    /* ---------------------------------------- */
+    /* margin-left */
     /* ---------------------------------------- */
     .ml-xs {
         margin-left: 0rem;
@@ -400,7 +392,7 @@
     }
 
     /* ---------------------------------------- */
-    /* Modificadores para control de margin-right */
+    /* margin-right */
     /* ---------------------------------------- */
     .mr-xs {
         margin-right: 0rem;
@@ -416,5 +408,17 @@
 
     .mr-lg {
         margin-right: 0rem;
+    }
+
+
+    /* ---------------------------------------- */
+    /* Musica > Catalogo */
+    /* ---------------------------------------- */
+    .musica__catalogo .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }

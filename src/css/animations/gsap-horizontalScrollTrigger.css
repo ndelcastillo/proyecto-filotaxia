@@ -1,22 +1,10 @@
 /* ---------------------------------------- */
-/* Section CTA-3D */
+/* Musica > Horizontal */
 /* ---------------------------------------- */
-.panel {
-    width: 100vw;
-    height: 100vh;
-    flex: 0 0 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    color: #fff;
-    border: 1px solid #000;
-}
 
 .horizontal-section {
     position: relative;
     height: 100vh;
-    /* clave: altura de viewport */
     overflow: hidden;
 }
 
@@ -26,38 +14,33 @@
     will-change: transform;
     position: relative;
     z-index: 2;
-    /* adelante del 3D */
 }
 
-.panel h2 {    
-    color: #fff;    
+.panel {
+    width: 100vw;
+    height: 100vh;
+    flex: 0 0 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-dark);
+    border: 1px solid #000;
+}
+
+.panel h2 {
+    color: var(--color-headings-inverse);
 }
 
 .panel__text {
-    font-size: 2rem;
+    font-size: var(--h3-size);
     margin-right: .5rem;
     position: relative;
     bottom: 2px;
 }
 
 .text__caption {
-    font-size: 1rem;    
+    font-size: var(--h4-size);
     margin-right: .5rem;
-}
-
-.tooltip {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.3s, transform 0.3s;
-    font-size: 5rem;
-    color: #fff;
-    margin-left: 1.8rem;
-}
-
-.tooltip.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 #three-container {
@@ -71,33 +54,36 @@
     pointer-events: none;
 }
 
-.panel__icon {
-    width: 100px;
-}
-
-
-.panel .content1{
+.panel .content1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -30px;    
+    margin-top: -30px;
 }
 
 .panel .content1 img {
-    width: 500px;    
+    width: 500px;
 }
 
 .panel .content2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -35px;    
+    margin-top: -35px;
 }
 
 .panel .content2 img {
     width: 500px;
+}
+
+/* ---------------------------------------- */
+/* Musica > Vertical */
+/* ---------------------------------------- */
+.vertical-section {
+    display: none;
+    /* por defecto oculta en desktop */
 }
 
 
@@ -130,8 +116,10 @@
 .hero__subCapas-content-1 img {
     object-fit: cover;
     height: 370px;
-    flex-shrink: 0; /* que no se achiquen */
-    width: auto; /* podés fijar un ancho si querés consistencia */
+    flex-shrink: 0;
+    /* que no se achiquen */
+    width: auto;
+    /* podés fijar un ancho si querés consistencia */
 }
 
 .hero__subCapas-content-2 {
@@ -139,7 +127,7 @@
     flex-direction: column;
     justify-content: start;
     margin-top: 0px;
-    
+
     /* height: 45vh; */
 }
 
@@ -177,4 +165,76 @@
 
 .subCapas-content-3-3 {
     text-align: right;
+}
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 780px) {
+
+    /* ---------------------------------------- */
+    /* Musica > Horizontal */
+    /* ---------------------------------------- */
+    .horizontal-section {
+        display: none;
+    }
+
+    /* ---------------------------------------- */
+    /* Musica > Vertical */
+    /* ---------------------------------------- */
+
+    .vertical-section {
+        display: block;
+        background: var(--color-bg-dark);
+        padding: 60px 10px;
+        color: var(--color-headings-inverse);
+    }
+
+    .vertical-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .vertical-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .vertical-row img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .vertical-row h2 {
+        font-size: var(--h2-size);
+        color: var(--color-headings-inverse);
+        margin-top: 10px;
+        margin-right: -10px;
+    }
+
+    .vertical-row .content2 {
+        margin-top:0;
+    }
+
+    .panel__text {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .text__caption {
+        display: block;
+        font-size: .7rem;
+        opacity: 1;
+        text-transform: normal;
+        line-height:1;
+    }
 }

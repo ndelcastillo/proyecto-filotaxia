@@ -17,7 +17,7 @@
 .terrarios-capas__content {
     height: 500px;
     width: 100%;
-    background-color: black;
+    background-color: var(--color-bg-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,6 @@
 .terrarios-capas__content {
     position: relative;
     overflow: hidden;
-    color: #fff;
     min-height: 350px;
 }
 
@@ -72,76 +71,20 @@
 .content-1__subtitle,
 .content-3__subtitle,
 .content-2__title {
-    color: #fff;
+    color: var(--color-text-inverse);
 }
 
-.content-1__btn {
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 6px 12px;
-    background-color: transparent;
-    font-size: .8rem;
-    cursor: pointer;
-}
-
-.content-1__btn a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.content-3__btn {
+.content-3__icon {
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    background-color: #fff;
+    cursor: pointer;
+    background-color: var(--color-icon-light-bg);
 }
 
 .terrarios-capas__text h3 {
     width: 95%;
-    color: #000;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .terrarios-capas__content {
-        min-height: 250px;
-    }
-
-    .content-1,
-    .content-3 {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-}
-
-
-
-/* ---------------------------------------- */
-/* Section terrariosCuidados */
-/* ---------------------------------------- */
-.terrariosCuidados__img {
-    width: 100%;
-    height: 800px;
-    display: block;
-    object-fit: cover;
-}
-
-.terrariosCuidados__text {
-    color: #a0a0a0;
-    width: 95%;
-}
-
-.terrariosCuidados__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.terrariosCuidados__content h3 {
-    margin-top: 10px;
-}
-
 
 
 /* ---------------------------------------- */
@@ -175,10 +118,13 @@
 /* RESPONSIVE */
 /* ---------------------------------------- */
 @media (max-width: 450px) {
-
     /* ---------------------------------------- */
     /* Section_Capas */
     /* ---------------------------------------- */
+    .terrarios-capas__content {
+        min-height: 250px;
+    }
+
     .content-1,
     .content-3 {
         flex-direction: row;
@@ -189,8 +135,8 @@
     /* ---------------------------------------- */
     /* Section_FAQ */
     /* ---------------------------------------- */
-    .faq-intro__subtitle {        
-        margin-right: 20px;        
-        top: -8px;        
+    .faq-intro__subtitle {
+        margin-right: 20px;
+        top: -8px;
     }
 }

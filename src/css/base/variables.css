@@ -37,7 +37,7 @@ Variables GLOBAL - NDC TEMPLATE
   --h2-size: 3.5rem;
   --h2-line: 3.8rem;
 
-  --h3-size: 2em;
+  --h3-size: 2rem;
   --h3-line: 2.2rem;
 
   --h4-size: 1rem;
@@ -90,6 +90,7 @@ Variables GLOBAL - NDC TEMPLATE
   --icon-md: 1.5rem;
   --icon-lg: 2rem;
   --icon-xl: 3rem;
+  --icon-xxl: 3.5rem;
 
 
   /* --- Numeric --- */
@@ -124,6 +125,7 @@ Variables GLOBAL - NDC TEMPLATE
   --color-black: #000000;
   --color-white: #ffffff;
 
+
   /* Greyscale - light */
   --color-gray-50: #fafafa;
   --color-gray-100: #f5f5f5;
@@ -136,20 +138,24 @@ Variables GLOBAL - NDC TEMPLATE
   --color-gray-800: #171717;
   --color-gray-900: #0a0a0a;
 
+
   /* --- Brand / Primary Palette --- */
   --color-primary-100: #E6EEF6;
   --color-primary-500: #3A5A78;
   --color-primary-900: #1F2E3D;
+
 
   /* --- Brand / Secondary Palette --- */
   --color-secondary-100: #F5F5F2;
   --color-secondary-500: #D0D0CC;
   --color-secondary-900: #9A9A96;
 
+
   /* --- Brand / Accent --- */
   --color-accent-100: #FBE9D0;
   --color-accent-500: #E0A458;
   --color-accent-900: #B4742D;
+
 
   /* --- Brand / Swiss --- */
   --color-primary-500: #111111;
@@ -161,24 +167,31 @@ Variables GLOBAL - NDC TEMPLATE
   /* Text */
   --color-headings: var(--color-black);
   --color-headings-inverse: var(--color-white);
+  --color-headings-alt: var(--color-gray-500);
+  --color-headings-alt-inverse: var(--color-gray-600);
 
   --color-display: var(--color-black);
   --color-display-inverse: var(--color-white);
+  --color-display-alt: var(--color-gray-500);
+  --color-display-alt-inverse: var(--color-gray-600);
 
   --color-text: var(--color-black);
   --color-text-inverse: var(--color-white);
-
-  --color-text-alt: var(--color-gray-500);
+  --color-text-alt: var(--color-gray-400);
   --color-text-alt-inverse: var(--color-gray-600);
 
-  --color-text-list: var(--color-black);
-  --color-text-list-inverse: var(--color-white);
+  --color-list: var(--color-black);
+  --color-list-inverse: var(--color-white);
+  --color-list-alt: var(--color-gray-500);
+  --color-list-alt-inverse: var(--color-gray-600);
+
 
   /* Links */
   --color-link: var(--color-black);
   --color-link-hover: var(--color-gray-400);
   --color-link-inverse: var(--color-white);
   --color-link-inverse-hover: var(--color-gray-400);
+
 
   /* Buttons */
   --color-btn-primary-text: var(--color-white);
@@ -192,21 +205,35 @@ Variables GLOBAL - NDC TEMPLATE
   --color-btn-terciary-inverse-text: var(--color-white);
   --color-btn-terciary-inverse-bg: var(--color-white);
 
+  --color-btn-quaternary-text: var(--color-white);
+
+
+  /* --- Icons --- */
+  --color-icon-light-bg: var(--color-white);
+  --color-icon-dark-bg: var(--color-black);
+
+
+  /* --- Lines --- */
+  --color-line-light-bg: var(--color-white);
+  --color-line-dark-bg: var(--color-black);
+
+  
   /* Background */
   --color-bg: var(--color-white);
   --color-bg-dark: var(--color-black);
   --color-bg-light: var(--color-gray-100);
+
 
   /* Borders */
   --color-border: var(--color-gray-300);
   --color-muted: var(--color-gray-500);
   --color-surface: var(--color-gray-100);
 
+
   /* States */
   --color-normal: var(--color-primary-500);
   --color-hover: var(--color-gray-400);
   --color-active: var(--color-gray-100);
-
 
 
   /* ==============================
@@ -246,7 +273,7 @@ Variables GLOBAL - NDC TEMPLATE
     --h1-line: 3.3rem;
 
     --h2-size: 1.8rem;
-    --h2-line: 1.8rem;
+    --h2-line: 2rem;
 
     --h3-size: 1.2rem;
     --h3-line: 1.4rem;
@@ -262,8 +289,8 @@ Variables GLOBAL - NDC TEMPLATE
     --display-1-size: 3.7rem;
     --display-1-line: 3.7rem;
 
-    --display-2-size: 15rem;
-    --display-2-line: 15rem;
+    --display-2-size: 6rem;
+    --display-2-line: 8rem;
 
 
     /* --- Paragraph --- */
@@ -291,12 +318,12 @@ Variables GLOBAL - NDC TEMPLATE
     --btn-terciary-size: 0.8rem;
     --btn-terciary-line: 1.1rem;
 
-    
+
     /* --- Icons --- */
     --icon-xs: 0.75rem;
     --icon-sm: 1rem;
     --icon-md: 1.5rem;
-    --icon-lg:1.4rem;
+    --icon-lg: 1.4rem;
     --icon-xl: 3rem;
 
 

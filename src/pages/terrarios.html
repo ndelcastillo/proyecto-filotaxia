@@ -11,7 +11,7 @@
 
 <body>
     <!-- Preloader Pages -->
-    <div class="pre-loader-pages" id="preloader-pages"></div>
+    <!-- <div class="pre-loader-pages" id="preloader-pages"></div> -->
     <!-- Grid_Layout-->
     <div class="grid-overlay"></div>
     <!-- Header -->
@@ -57,7 +57,7 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <a href="/" class="nav__logo-link">
-                    <img src="./src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo"
+                    <img src="../../src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo"
                         class="sidebar__logo" />
                 </a>
                 <button class="sidebar__close" id="sidebarClose">Cerrar</button>
@@ -67,10 +67,10 @@
                     <h4 class="sidebar__label">(Navegación)</h4>
                     <ul class="sidebar__list">
                         <li><a href="/" class="sidebar__link active">Inicio</a></li>
-                        <li><a href="./src/pages/terrarios.html" class="sidebar__link">Terrarios</a></li>
-                        <li><a href="./src/pages/musica.html" class="sidebar__link">Formas</a></li>
-                        <li><a href="./src/pages/manifiesto.html" class="sidebar__link">Manifiesto</a></li>
-                        <li><a href="./src/pages/contacto.html" class="sidebar__link">Contacto</a></li>
+                        <li><a href="./terrarios.html" class="sidebar__link">Terrarios</a></li>
+                        <li><a href="./musica.html" class="sidebar__link">Formas</a></li>
+                        <li><a href="./manifiesto.html" class="sidebar__link">Manifiesto</a></li>
+                        <li><a href="./contacto.html" class="sidebar__link">Contacto</a></li>
                     </ul>
                 </div>
                 <button class="button--terciary-inverse button--terciary__sidebar mt-md" type="button">
@@ -149,7 +149,9 @@
                     <div class="content-1">
                         <p class="content-1__link">Capa01/</p>
                         <p class="content-1__subtitle"></p>
-                        <button class="content-1__btn"><a href="./capas/capa01.html">+ info</a></button>
+                        <button class="button--quaternary">
+                            <a href="./capas/capa01.html">+ info</a>
+                        </button>
                     </div>
                     <div class="content-2">
                         <h2 class="content-2__title split-text" data-split="lines">Plantas</h2>
@@ -157,7 +159,7 @@
                     <div class="content-3">
                         <p class="content-3__link">Suculentas</p>
                         <p class="content-3__subtitle"></p>
-                        <div class="content-3__btn">
+                        <div class="content-3__icon">
                             <div></div>
                         </div>
                     </div>
@@ -169,7 +171,9 @@
                     <div class="content-1">
                         <p class="content-1__link">Capa02/</p>
                         <p class="content-1__subtitle"></p>
-                        <button class="content-1__btn"><a href="./capas/capa02.html">+ info</a></button>
+                        <button class="button--quaternary">
+                            <a href="./capas/capa02.html">+ info</a>
+                        </button>
                     </div>
                     <div class="content-2">
                         <h2 class="content-2__title split-text" data-split="lines">Sustrato</h2>
@@ -177,7 +181,7 @@
                     <div class="content-3">
                         <p class="content-3__link">Tierra, Perlita, Arena Gruesa</p>
                         <p class="content-3__subtitle"></p>
-                        <div class="content-3__btn">
+                        <div class="content-3__icon">
                             <div></div>
                         </div>
                     </div>
@@ -189,7 +193,9 @@
                     <div class="content-1">
                         <p class="content-1__link">Capa03/</p>
                         <p class="content-1__subtitle"></p>
-                        <button class="content-1__btn"><a href="./capas/capa03.html">+ info</a></button>
+                        <button class="button--quaternary">
+                            <a href="./capas/capa03.html">+ info</a>
+                        </button>
                     </div>
                     <div class="content-2">
                         <h2 class="content-2__title split-text" data-split="lines">Metal</h2>
@@ -197,7 +203,7 @@
                     <div class="content-3">
                         <p class="content-3__link">Rejilla Metálica</p>
                         <p class="content-3__subtitle"></p>
-                        <div class="content-3__btn">
+                        <div class="content-3__icon">
                             <div></div>
                         </div>
                     </div>
@@ -209,7 +215,9 @@
                     <div class="content-1">
                         <p class="content-1__link">Capa04/</p>
                         <p class="content-1__subtitle"></p>
-                        <button class="content-1__btn"><a href="./capas/capa04.html">+ info</a></button>
+                        <button class="button--quaternary">
+                            <a href="./capas/capa04.html">+ info</a>
+                        </button>
                     </div>
                     <div class="content-2">
                         <h2 class="content-2__title split-text" data-split="lines">Piedras</h2>
@@ -217,12 +225,11 @@
                     <div class="content-3">
                         <p class="content-3__link">Piedras Pomez</p>
                         <p class="content-3__subtitle"></p>
-                        <div class="content-3__btn">
+                        <div class="content-3__icon">
                             <div></div>
                         </div>
                     </div>
-                </div>
-                <!-- TEXTO FINAL -->
+                </div>                
                 <div class="grid__col grid__col--span-7 terrarios-capas__text">
                     <h3 class="content-reveal-opacity">
                         Un terrario es un micro-ecosistema abierto de cuatro capas, cada una con su sonido
@@ -234,30 +241,6 @@
             </div>
         </section>
 
-        <!-- <section class="cuidados mb-xxl">
-            <div class="grid">
-                <div class="grid__col grid__col--span-6 terrariosCuidados__content mt-sm mb-sm">
-                    <div>
-                        <h2>Observar es la clave para un terrario sano.</h2>
-                    </div>
-                    <div>
-                        <p class="terrariosCuidados__text">Los terrarios abiertos permiten a las plantas vivir en un
-                            microambiente controlado, pero necesitan atención constante. Mantenerlos limpios y en buenas
-                            condiciones asegura que las plantas crezcan sanas y fuertes.</p>
-                        <br>
-                        <p class="terrariosCuidados__text">El cuidado adecuado ayuda a prevenir enfermedades, plagas y
-                            exceso de humedad. Un terrario bien mantenido refleja la vitalidad de las plantas y prolonga
-                            su vida dentro del contenedor.</p><br>
-                        <p class="terrariosCuidados__text">Observar el estado de las plantas y ajustar el entorno según
-                            sea necesario permite que cada especie prospere.</p>
-                    </div>
-                </div>
-                <div class="grid__col grid__col--span-6"> <img src="../assets/images/terrarios/Filotaxia-5.webp"
-                        class="terrariosCuidados__img" alt="">
-                </div>
-            </div>
-        </section> -->
-
         <!-- Cuidados_Section -->
         <section class="cuidados mb-xxl">
             <div class="grid">
@@ -268,7 +251,6 @@
                 <div class="grid__col grid__col--span-4 cuidados__content mb-sm">
                     <div class="split-text" data-split="words">
                         <h4 class="cuidados__subtitle mb-sm">Cuidados</h4>
-
                         <h2 data-img="../assets/images/cuidados/sq5.webp" data-title="Riego controlado"
                             data-text="Regar demasiado ahoga, regar poco reseca: lo ideal es encontrar un ritmo constante. Deja que la tierra se seque entre cada riego para que respire.">
                             Riego
@@ -289,12 +271,7 @@
                             data-text="Cada planta tiene un nivel de cuidado distinto: algunas requieren atención diaria, otras apenas pequeños gestos. Entender esa dificultad es parte del vínculo.">
                             Mantenimiento
                         </h2>
-
-                        <!-- <button class="button button--terciary mt-xs" type="button">
-                            Ver Terrarios<span class="button-icon">→</span>
-                        </button> -->
                     </div>
-
                     <div>
                         <p id="cuidados-title" class="mb-xs">Riego controlado</p>
                         <p id="cuidados-text" class="cuidados__text">
