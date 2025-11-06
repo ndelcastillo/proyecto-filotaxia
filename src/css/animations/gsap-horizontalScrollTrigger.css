@@ -1,7 +1,6 @@
 /* ---------------------------------------- */
 /* Musica > Horizontal */
 /* ---------------------------------------- */
-
 .horizontal-section {
     position: relative;
     height: 100vh;
@@ -183,12 +182,12 @@
     /* ---------------------------------------- */
     /* Musica > Vertical */
     /* ---------------------------------------- */
-
     .vertical-section {
         display: block;
         background: var(--color-bg-dark);
         padding: 60px 10px;
         color: var(--color-headings-inverse);
+        margin: 10px;
     }
 
     .vertical-grid {
@@ -222,7 +221,8 @@
     }
 
     .vertical-row .content2 {
-        margin-top:0;
+        margin-top: 0;
+        opacity: 0;
     }
 
     .panel__text {
@@ -235,6 +235,33 @@
         font-size: .7rem;
         opacity: 1;
         text-transform: normal;
-        line-height:1;
+        line-height: 1;
+    }
+
+    .row-item-1,
+    .row-item-2,
+    .row-item-3,
+    .row-item-4 {
+        position: relative;
+    }
+
+    .row-item-1 .content2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .row-item-2 .content2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .row-item-3 .content2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .row-item-4 .content2 {
+        position: absolute;
+        top: 0;
     }
 }

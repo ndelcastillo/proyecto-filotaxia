@@ -502,22 +502,31 @@ h2.terrarios__title-6 {
         line-height: .8;
     }
 
-    .catalogo__content-fila1 .content__title p{
+    .catalogo__content-fila1 .content__title p {
         font-size: 1rem;
         line-height: 1;
         width: 50%;
     }
 
     .catalogo__content .content__title p {
-        font-size: 1rem;
         line-height: 1;
         width: 50%;
+        color: var(--color-text);
     }
 
     .catalogo__content p {
         padding-top: 0;
-        line-height: .9;
+        line-height: .7;
+        color: var(--color-text-alt);
     }
+
+    .catalogo__content span {
+        position: relative;
+        top: -4px;
+    }
+
+
+
 
     .catalogo__content:hover {
         background: rgba(0, 0, 0, 0);

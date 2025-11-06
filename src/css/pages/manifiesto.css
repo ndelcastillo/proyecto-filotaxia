@@ -8,10 +8,6 @@
     height: 86vh;
 }
 
-/* .manifiesto__title-content2 h1 {
-    margin-top:-50px;
-} */
-
 .hero__musica-title2 {
     margin-top: -30px;
 }
@@ -56,9 +52,64 @@
     display: inline-block;
 }
 
+
 /* ---------------------------------------- */
-/* Section CTA */
+/* Section CTA-Mesh_Section  */
 /* ---------------------------------------- */
-.testimonials__text {
-    color: #5C5C5C
+.manifiesto__cta-mesh {
+    height: 100vh;
+    background-color: #000;
+    margin: 20px;
+    padding: 30px 20px;
+}
+
+.manifiesto__cta-mesh .grid {
+    height: 100%;
+}
+
+.cta-mesh__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.cta-mesh__title {
+    color: var(--color-headings-inverse);
+}
+
+.cta-mesh__subtitle {
+    color: var(--color-headings-inverse);
+}
+
+.cta-mesh__text {
+    color: var(--color-text-alt-inverse);
+    width: 70%;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+
+    /* ---------------------------------------- */
+    /* Section Hero */
+    /* ---------------------------------------- */
+    .hero__manifiesto {
+        height: 90vh;
+    }
+
+    .hero__manifiesto h4 {
+        display: none;
+    }
+
+    /* ---------------------------------------- */
+    /* Section CTA */
+    /* ---------------------------------------- */
+    .cta__manifiesto {
+        height: 50vh;
+    }
 }

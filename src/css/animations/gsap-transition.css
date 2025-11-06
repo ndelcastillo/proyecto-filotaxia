@@ -44,7 +44,6 @@
 }
 
 
-
 /* ---------------------------------------- */
 /* Manifiesto > Hero Section */
 /* ---------------------------------------- */
@@ -137,4 +136,29 @@
 
 .image-terrario04 {
     background: url("../../assets/images/terrarios/Filotaxia-12.webp") center/contain no-repeat;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+
+    /* ---------------------------------------- */
+    /* Manifiesto > Hero Section */
+    /* ---------------------------------------- */
+    .manifiesto__title-content {
+        margin-top: 60px;
+        width: 100%;
+        gap: 0;
+    }
+
+    .manifiesto__title-content1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .manifiesto__title-content1 h1 {
+        left: 80px;
+    }
 }

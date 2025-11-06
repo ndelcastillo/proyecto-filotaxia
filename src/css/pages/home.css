@@ -69,44 +69,6 @@
 /* ---------------------------------------- */
 
 
-
-/* ---------------------------------------- */
-/* Section Testimonials  */
-/* ---------------------------------------- */
-.testimonials {
-    height: 100vh;
-    background-color: #000;
-    margin: 20px;
-    padding: 30px 20px;
-}
-
-.testimonials .grid {
-    height: 100%;
-}
-
-.testimonials__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-
-.testimonials__title {
-    color: #fff;
-}
-
-.testimonials__subtitle {
-    color: #fff;
-}
-
-.testimonials__text {
-    color: #ffffff;
-    width: 80%;
-}
-
-
 /* ---------------------------------------- */
 /* Section stepFlow  */
 /* ---------------------------------------- */
