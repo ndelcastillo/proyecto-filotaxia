@@ -159,6 +159,14 @@
     }
 
     .manifiesto__title-content1 h1 {
-        left: 80px;
+        left: 70px;
+    }
+
+    /* ---------------------------------------- */
+    /* Contacto > Hero Section */
+    /* ---------------------------------------- */
+    .contacto__title-content1 {        
+        width: 345px;
+        height: 345px;
     }
 }

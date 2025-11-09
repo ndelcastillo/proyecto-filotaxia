@@ -38,8 +38,6 @@ images.forEach((img, i) => {
 /* ---------------------------------------- */
 /* Contacto > Hero Section */
 /* ---------------------------------------- */
-
-
 const imagesContacto = document.querySelectorAll(".contacto__title-content1 div");
 
 gsap.set(imagesContacto, { opacity: 0 });
@@ -51,4 +49,30 @@ const tlContacto = gsap.timeline({ repeat: -1 });
 imagesContacto.forEach((img, i) => {
   tlContacto.to(img, { opacity: 1, duration: 0 })   // aparece
     .to(img, { opacity: 0, duration: 0 }, "+=0.7"); // espera 2s y desaparece
+});
+
+
+/* ---------------------------------------- */
+/* Contacto > Hero section */
+/* ---------------------------------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  // Solo ejecutar si el viewport es de escritorio
+  if (window.matchMedia("(min-width: 1025px)").matches) {
+    const imageMove = document.querySelector(".image-move");
+    if (!imageMove) return; // seguridad, por si no existe el elemento
+
+    const imageTl = gsap.timeline();
+
+    imageTl.from(imageMove, {
+      opacity: 0,
+      duration: 1,
+      ease: "ease",
+    });
+
+    imageTl.to(imageMove, {
+      x: 530,
+      duration: 3,
+      ease: "power4.out",
+    });
+  }
 });

@@ -3,13 +3,11 @@
 /* ---------------------------------------- */
 .hero__contacto {
     height: 72vh;
-    position: relative;
     top: 20px;
 }
 
 .hero__contacto-content {
-    height: 100%;    
-
+    height: 100%;
 }
 
 .hero__contacto-content p {
@@ -22,13 +20,36 @@
 }
 
 .hero__contacto-content img {
-    height: 220px;    
+    height: 220px;
 }
 
 .info__title {
     color: #888A8B;
 }
 
-/* ---------------------------------------- */
-/* Section Contacto */
-/* ---------------------------------------- */
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    /* ---------------------------------------- */
+    /* Section Hero */
+    /* ---------------------------------------- */
+    .hero__contacto-content {
+        margin-top: 0;
+    }
+
+    .hero__contacto-content h1 {
+        margin-top: 3rem;
+    }
+
+    .hero__contacto .contacto__title-content {
+        margin-top: 4.8rem;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Form */
+    /* ---------------------------------------- */
+    .contacto__info {
+        margin-top: 12rem;
+    }
+}

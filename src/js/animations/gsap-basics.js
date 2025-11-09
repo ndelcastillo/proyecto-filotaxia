@@ -107,23 +107,4 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-/* ---------------------------------------- */
-/* Contacto > Hero section */
-/* ---------------------------------------- */
-document.addEventListener('DOMContentLoaded', () => {
-    let imageMove = document.querySelector(".image-move");
-    let imageTl = gsap.timeline()
-
-    imageTl.from(imageMove, {
-        opacity: 0,
-        duration: 1,
-        ease: "ease",
-    })
-    imageTl.to(imageMove, {
-        x: 530,
-        duration: 3,
-        ease: "power4.out",
-    })
-});
-
 

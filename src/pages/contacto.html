@@ -12,10 +12,10 @@
 
 <body>
     <!-- Preloader Pages -->
-    <div class="pre-loader-pages" id="preloader-pages">
-        <!-- <img src="../assets/images/logo/FILO FOR EXPORT-02.png" alt="Filotaxia logo" class="pre-loader-pages-logo"> -->
-    </div>
+    <div class="pre-loader-pages" id="preloader-pages"></div>
+    <!-- Grid_Layout-->
     <div class="grid-overlay"></div>
+    <!-- Header -->
     <header class="header">
         <nav class="nav content-reveal-position-sm-down" role="navigation" aria-label="Main navigation">
             <div class="grid">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="grid__col grid__col--span-5">
                     <div class="nav__tagline text-nowrap">
-                        <p>Armonía en Plantas</p>
+                        <!-- <p>Armonía en Plantas</p> -->
                     </div>
                 </div>
                 <div class="grid__col grid__col--span-1"></div>
@@ -35,21 +35,54 @@
                     <ul class="nav__list--row">
                         <li class="nav__item"><a href="./terrarios.html" class="nav__link">Terrarios,</a></li>
                         <li class="nav__item"><a href="./musica.html" class="nav__link">Formas,</a></li>
-                        <li class="nav__item"><a href="./manifiesto.html" class="nav__link">Manifiesto,</a></li>
-                        <li class="nav__item"><a href="./contacto.html" class="nav__link nav__link-active">Contacto</a>
-                        </li>
+                        <li class="nav__item"><a href="./manifiesto.html"
+                                class="nav__link">Manifiesto,</a></li>
+                        <li class="nav__item"><a href="./contacto.html" class="nav__link nav__link-active">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="grid__col grid__col--span-1 align align--center-vertical align--end">
-                    <div class="nav__toggle nav-toggle-animation">
+                    <div class="nav__toggle">
                         <div></div>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- Sidebar (Mobile Menu) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <a href="/" class="nav__logo-link">
+                    <img src="../../src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo"
+                        class="sidebar__logo" />
+                </a>
+                <button class="sidebar__close" id="sidebarClose">Cerrar</button>
+            </div>
+            <nav class="sidebar__nav">
+                <div class="sidebar__nav-content">
+                    <h4 class="sidebar__label">(Navegación)</h4>
+                    <ul class="sidebar__list">
+                        <li><a href="/" class="sidebar__link">Inicio</a></li>
+                        <li><a href="./terrarios.html" class="sidebar__link">Terrarios</a></li>
+                        <li><a href="./musica.html" class="sidebar__link">Formas</a></li>
+                        <li><a href="./manifiesto.html" class="sidebar__link">Manifiesto</a></li>
+                        <li><a href="./contacto.html" class="sidebar__link active">Contacto</a></li>
+                    </ul>
+                </div>
+                <button class="button--terciary-inverse button--terciary__sidebar mt-md" type="button">
+                    <a href="./src/pages/terrarios.html">
+                        Ver Terrarios <span class="button-icon">→</span>
+                        <span class="button-line-inverse"></span>
+                    </a>
+                </button>
+            </nav>
+        </aside>
+        <!-- Botón para abrir -->
+        <button class="sidebar__toggle content-reveal-position-home" id="sidebarToggle">
+            Menú
+        </button>
     </header>
 
     <main class="main" role="main">
+        <!-- Hero_Section -->
         <section class="hero__contacto">
             <div class="grid mt-xl hero__contacto-content">
                 <div class="grid__col grid__col--span-5 mt-sm">
@@ -72,16 +105,12 @@
                 </div>
             </div>
         </section>
+
+        <!-- Info_Section -->
         <section class="contacto__info mb-xxl">
             <div class="grid">
                 <div class="grid__col grid__col--span-3">
                     <h4>Detalle de contacto:</h4>
-                    <!-- <p class="info__title mt-xs">Dirección de oficina:</p>
-                    <ul class="mt-xs">
-                        <li>Camino Moron 1550</li>
-                        <li>Buenos Aires</li>
-                        <li>Argentina</li>
-                    </ul> -->
                     <p class="info__title mt-xs">Tel: +54 9 11 4198 6572 </p>
                     <p class="info__title">Email: hola@filotaxia.com</p>
                     <p class="info__title">Instagram: @filotaxiar</p>
@@ -136,17 +165,9 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="mt-xxl mb-xxl">
-            <div class="grid">
-                <div class="grid__col grid__col--span-1"></div>
-                <div class="grid__col grid__col--span-10">
-                    <p class="split-text" data-split="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore corrupti eius. Quia, soluta quae. Commodi, pariatur eius. Laboriosam amet culpa harum rerum alias eaque in blanditiis doloremque expedita inventore!
-                    Nemo amet, perferendis, aspernatur fugit a omnis iure ut praesentium nihil, quam expedita fugiat inventore id ea unde libero voluptatibus dolor eum consectetur accusantium quaerat reiciendis sunt nulla? Modi, vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus doloremque culpa deserunt commodi laudantium eos quibusdam aspernatur similique molestiae error impedit illum animi, itaque sed? Beatae aliquid magnam natus!</p>
-                </div>
-                <div class="grid__col grid__col--span-1"></div>
-            </div>
-        </section> -->
     </main>
+
+    <!-- Footer -->
     <footer class="footer mb-xs content-reveal-opacity" role="contentinfo">
         <div class="grid mb-md">
             <div class="grid__col grid__col--span-12">

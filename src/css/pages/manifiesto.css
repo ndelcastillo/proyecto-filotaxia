@@ -54,7 +54,7 @@
 
 
 /* ---------------------------------------- */
-/* Section CTA-Mesh_Section  */
+/* Section CTA-Mesh  */
 /* ---------------------------------------- */
 .manifiesto__cta-mesh {
     height: 100vh;
@@ -94,12 +94,11 @@
     RESPONSIVE
 ============================== */
 @media (max-width: 768px) {
-
     /* ---------------------------------------- */
     /* Section Hero */
     /* ---------------------------------------- */
     .hero__manifiesto {
-        height: 90vh;
+        height: 85vh;
     }
 
     .hero__manifiesto h4 {
@@ -110,6 +109,36 @@
     /* Section CTA */
     /* ---------------------------------------- */
     .cta__manifiesto {
-        height: 50vh;
+        height: 40vh;        
+    }
+
+    /* ---------------------------------------- */
+    /* Section Text */
+    /* ---------------------------------------- */
+    .manifiesto-text__title {
+        width: 80%;        
+        margin-top: 20px;
+    }
+
+    .manifiesto-text__subtitle {
+        width: 80%;
+    }
+
+
+    /* ---------------------------------------- */
+    /* Section CTA-Mesh  */
+    /* ---------------------------------------- */
+    .manifiesto__cta-mesh {
+        height: 85vh;
+        margin: 10px;
+        padding: 20px 0px;
+    }
+
+    .cta-mesh__title {
+        font-size: 2.6rem;
+    }
+
+    .cta-mesh__text {
+        width: 100%;
     }
 }

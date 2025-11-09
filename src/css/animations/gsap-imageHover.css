@@ -439,8 +439,8 @@ h2.terrarios__title-6 {
     }
 
     .terrarios__image-wrapper {
-        width: 350px;
-        height: 350px;
+        width: 365px;
+        height: 365px;
         top: 70px;
         left: 10px;
     }
@@ -459,15 +459,21 @@ h2.terrarios__title-6 {
     h2.terrarios__title-1,
     h2.terrarios__title-3,
     h2.terrarios__title-5 {
-        margin-right: 6px;
+        margin-right: 3px;
     }
 
-    h2.terrarios__title-2,
     h2.terrarios__title-4,
     h2.terrarios__title-6 {
         margin-left: 0;
     }
 
+    h2.terrarios__title-2 {
+        margin-left: 1px;
+    }
+
+    .terrarios__title-1-icon {
+        margin-left: 3px;
+    }
 
     /* ---------------------------------------- */
     /* Terrarios > Cuidados Section */
@@ -524,9 +530,6 @@ h2.terrarios__title-6 {
         position: relative;
         top: -4px;
     }
-
-
-
 
     .catalogo__content:hover {
         background: rgba(0, 0, 0, 0);
