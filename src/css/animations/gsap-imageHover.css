@@ -282,7 +282,7 @@ h2.terrarios__title-6 {
     position: relative;
     width: 100%;
     height: 100%;
-    top: 40px;
+    top: 25px;
 }
 
 .subTerrarios__image-wrapper {
@@ -566,4 +566,21 @@ h2.terrarios__title-6 {
         transform: scale(0.95);
     }
 
+
+    /* ---------------------------------------- */
+    /* subTerrarios > Funcionamiento */
+    /* ---------------------------------------- */
+    .subTerrarios__images-container {
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .subTerrarios__icon-wrapper {
+        display: none;
+    }
+
+    .subTerrarios__item .grid {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }

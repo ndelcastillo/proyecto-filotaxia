@@ -5,14 +5,9 @@
     height: 90vh;
 }
 
-/* .hero__subTerrarios .grid {
-    margin-left: 0;
-} */
-
 .hero__subTerrarios-content-1 {
     width: 100%;
     height: 100vh;
-    /* margin-top: -84px; */
 }
 
 .hero__subTerrarios-content-1 img {
@@ -26,10 +21,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-
-/* .hero__subTerrarios-content-2 .grid {
-    margin: 0 0;
-} */
 
 .subTerrarios-content-2-1 {
     display: flex;
@@ -51,13 +42,25 @@
     gap: 10px;
 }
 
-.subTerrarios__subtitle {
-    color: #888A8B;
-}
-
 .subTerrarios__title {
     margin-bottom: 10px;
 }
+
+
+/* ---------------------------------------- */
+/* Section Detalle */
+/* ---------------------------------------- */
+.info-content-1 p {
+    padding: 20px 0 20px 0;
+    line-height: 1;
+}
+
+.info-content .grid {
+    gap: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 /* ---------------------------------------- */
 /* Section Destacado */
@@ -87,39 +90,105 @@
 }
 
 .destacado-text {
-    color: #888A8B;
-}
-
-/* ---------------------------------------- */
-/* Section Hero */
-/* ---------------------------------------- */
-.info-content-1 {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.info-content-1 p {
-    padding: 20px 0 0 0;
-    line-height: 1;
+    color: var(--color-text-alt);
 }
 
 
 /* ---------------------------------------- */
-/* Section Paso a paso */
+/* Section Funcionamiento */
 /* ---------------------------------------- */
-.subTerrario__benefits__image {
-    width: 340px;
-    height: 320px;
+.subTerrarios__funcionamiento {
+    margin-bottom: 5rem;
 }
 
-.subTerrario__benefits__image-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 1.5rem;
-    transform: translateY(-50%);
-    width: 300px;
-    height: auto;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 10;
+.funcionamiento__content {
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    /* ---------------------------------------- */
+    /* Section Hero */
+    /* ---------------------------------------- */
+    .hero__subTerrarios {
+        height: 90vh;
+    }
+
+    .hero__subTerrarios-content-1 {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__subTerrarios-content-1 img {
+        height: 55%;
+        width: 100%;
+        margin-top: -50px;
+        margin-left: -5px;
+    }
+
+    .hero__subTerrarios-content-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .subTerrarios-content-2-1 {
+        margin-top: -150px !important;
+        width: 100%;
+    }
+
+
+    /* ---------------------------------------- */
+    /* Section Detalle */
+    /* ---------------------------------------- */
+    .info-content-1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .info-content-1 hr {
+        width: 91vw;
+    }
+
+    .info-content-1 .grid__col:nth-of-type(2) p {
+        margin-left: -150px;
+        text-align: right;
+    }
+
+
+    /* ---------------------------------------- */
+    /* subTerrarios > Detalle */
+    /* ---------------------------------------- */
+    .info-content .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+
+    /* ---------------------------------------- */
+    /* Section Destacado */
+    /* ---------------------------------------- */
+    .subTerrarios__destacado .grid {
+        gap: 80px;
+    }
+
+    .destacado-content {
+        gap: 15px;
+    }
+
+    .destacado-content-1 img {
+        height: 300px;
+    }
+
+    .destacado-content-2 img {
+        height: 300px;
+    }
+
+    .destacado-content-3 img {
+        height: 300px;
+    }
 }

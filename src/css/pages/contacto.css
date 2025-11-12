@@ -24,7 +24,7 @@
 }
 
 .info__title {
-    color: #888A8B;
+    color: var(--color-text-alt);
 }
 
 /* ==============================

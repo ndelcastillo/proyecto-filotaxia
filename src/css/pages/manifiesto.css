@@ -19,7 +19,7 @@
 .cta__manifiesto {
     height: 100vh;
     margin: 20px;
-    background-color: black;
+    background-color: var(--color-bg-dark);
     position: relative;
 }
 
@@ -34,12 +34,8 @@
 /* ---------------------------------------- */
 /* Section Text */
 /* ---------------------------------------- */
-.manifiesto-text__icon {
-    font-size: 7rem;
-}
-
 .manifiesto-text__text {
-    color: #888A8B;
+    color: var(--color-text-alt);
 }
 
 .manifiesto-text__title {
@@ -58,7 +54,7 @@
 /* ---------------------------------------- */
 .manifiesto__cta-mesh {
     height: 100vh;
-    background-color: #000;
+    background-color: var(--color-bg-dark);
     margin: 20px;
     padding: 30px 20px;
 }
@@ -77,7 +73,7 @@
 
 
 .cta-mesh__title {
-    color: var(--color-headings-inverse);
+    color: var(--color-headings-inverse);    
 }
 
 .cta-mesh__subtitle {
