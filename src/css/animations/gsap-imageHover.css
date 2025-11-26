@@ -1,0 +1,586 @@
+/* ---------------------------------------- */
+/* Home > Benefits Section */
+/* ---------------------------------------- */
+.benefits__item {
+    position: relative;
+    overflow: visible;
+    margin-top: 30px;
+}
+
+.benefits__image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.benefits__image {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.benefits__item--01 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefits__title {
+    width: 100%;
+}
+
+.benefits__number {
+    font-size: var(--num-sm-size);
+    line-height: var(--num-sm-line);
+}
+
+.benefits__icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.benefits__icon {
+    font-size: var(--icon-lg);
+    width: var(--icon-lg);
+    height: var(--icon-lg);
+    position: absolute;
+    top: 0;
+    left: -10px;
+    line-height: 1;
+    transition: opacity 0.35s ease;
+}
+
+.benefits__icon-active {
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+.benefits__item:hover .benefits__icon-default {
+    opacity: 0;
+}
+
+.benefits__item:hover .benefits__icon-active {
+    opacity: 1;
+}
+
+
+/* ---------------------------------------- */
+/* Terrarios > Hero Section */
+/* ---------------------------------------- */
+.terrarios__item {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.terrarios__title h2 {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+    line-height: 0.8;
+}
+
+h2.terrarios__title-1,
+h2.terrarios__title-3,
+h2.terrarios__title-5 {
+    margin-right: 15px;
+}
+
+h2.terrarios__title-2,
+h2.terrarios__title-4,
+h2.terrarios__title-6 {
+    margin-left: -18px;
+}
+
+.terrarios__image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 520px;
+    height: 440px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.terrarios__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 0;
+}
+
+.terrarios__image.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+
+.terrarios__item .grid__col {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.terrarios__item .grid {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+}
+
+
+/* ---------------------------------------- */
+/* Terrarios > Cuidados Section */
+/* ---------------------------------------- */
+.cuidados__img {
+    width: 100%;
+    height: 800px;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+.cuidados__text {
+    color: var(--color-text-alt);
+}
+
+.cuidados__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cuidados__content h2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: var(--color-headings-alt);
+    margin-top: 22px;
+    font-weight: 400;
+}
+
+/* Línea personalizada */
+.cuidados__content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-line-dark-bg);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.cuidados__content h2:hover {
+    color: var(--color-headings);
+}
+
+.cuidados__content h2:hover::after {
+    transform: scaleX(1);
+}
+
+.cuidados__content h2.active {
+    color: var(--color-headings);
+}
+
+.cuidados__content h2.active::after {
+    transform: scaleX(1);
+}
+
+.cuidados__content img {
+    width: 100%;
+}
+
+
+/* ---------------------------------------- */
+/* Musica > Catalogo Section */
+/* ---------------------------------------- */
+.catalogo__content {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    display: grid;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.catalogo__content:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.catalogo__image-preview {
+    position: absolute;
+    top: -4.5rem;
+    left: 23%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.catalogo__image-preview.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.catalogo__content hr {
+    display: block;
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background: #000;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.55s ease, opacity 0.35s ease;
+    will-change: transform, opacity;
+}
+
+/* Al hacer hover en la fila, aparece el hr */
+.catalogo__content:hover hr {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.catalogo__content p {
+    padding-top: 20px;
+}
+
+
+/* ---------------------------------------- */
+/* subTerrarios > Funcionamiento */
+/* ---------------------------------------- */
+.subTerrarios__item {
+    position: relative;
+    overflow: visible;
+    margin-top: 30px;
+}
+
+.subTerrarios__images-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 25px;
+}
+
+.subTerrarios__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0;
+    transition: opacity 0.6s ease; */
+}
+
+.subTerrarios__image-wrapper.active {
+    opacity: 1;
+}
+
+.subTerrarios__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subTerrarios__item--01 {
+    transition: transform 0.3s ease-in-out;
+}
+
+.subTerrarios__icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.subTerrarios__icon {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-size: 2rem;
+    line-height: 1;
+    transition: opacity 0.35s ease;
+}
+
+.subTerrarios__icon-active {
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+.subTerrarios__item:hover .subTerrarios__icon-default {
+    opacity: 0;
+}
+
+.subTerrarios__item:hover .subTerrarios__icon-active {
+    opacity: 1;
+}
+
+
+.subTerrarios__item .subTerrarios__icon-default {
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.subTerrarios__item .subTerrarios__icon-active {
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+/* Cuando el item está activo */
+.subTerrarios__item.active .subTerrarios__icon-default {
+    opacity: 0;
+}
+
+.subTerrarios__item.active .subTerrarios__icon-active {
+    opacity: 1;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+
+    /* ---------------------------------------- */
+    /* Home > Benefits Section */
+    /* ---------------------------------------- */
+    .benefits__item {
+        margin-top: -20px;
+        display: flex;
+    }
+
+    .benefits__item--01 {
+        margin-top: 300px;
+    }
+
+    .benefits__number {
+        position: relative;
+        bottom: -35px;
+    }
+
+    .benefits__title {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+
+    .benefits__icon-wrapper {
+        position: relative;
+        top: -100px;
+        display: none;
+    }
+
+
+    .benefits__item--01,
+    .benefits__item--02,
+    .benefits__item--03,
+    .benefits__item--04 {
+        margin-bottom: 30px;
+    }
+
+    .benefits__item--01 .benefits__image-wrapper {
+        position: absolute;
+        top: -120px;
+        left: .8rem;
+    }
+
+    .benefits__item--02 .benefits__image-wrapper {
+        position: absolute;
+        top: -255px;
+        left: .8rem;
+    }
+
+    .benefits__item--03 .benefits__image-wrapper {
+        position: absolute;
+        top: -395px;
+        left: .8rem;
+    }
+
+    .benefits__item--04 .benefits__image-wrapper {
+        position: absolute;
+        top: -525px;
+        left: .8rem;
+    }
+
+    .benefits__image {
+        width: 340px;
+        height: 270px;
+    }
+
+
+    /* ---------------------------------------- */
+    /* Terrarios > Hero Section */
+    /* ---------------------------------------- */
+    .terrarios__item .grid {
+        bottom: 0;
+    }
+
+    .terrarios__image-wrapper {
+        width: 365px;
+        height: 365px;
+        top: 70px;
+        left: 10px;
+    }
+
+    .terrarios__image {
+        width: 350px;
+    }
+
+    .terrarios__title h2 {
+        display: inline;
+        margin-right: 0rem;
+        line-height: 1;
+        font-size: 1.7rem;
+    }
+
+    h2.terrarios__title-1,
+    h2.terrarios__title-3,
+    h2.terrarios__title-5 {
+        margin-right: 3px;
+    }
+
+    h2.terrarios__title-4,
+    h2.terrarios__title-6 {
+        margin-left: 0;
+    }
+
+    h2.terrarios__title-2 {
+        margin-left: 1px;
+    }
+
+    .terrarios__title-1-icon {
+        margin-left: 3px;
+    }
+
+    /* ---------------------------------------- */
+    /* Terrarios > Cuidados Section */
+    /* ---------------------------------------- */
+    .cuidados__img {
+        height: 350px;
+    }
+
+    p#cuidados-title {
+        margin-top: 30px;
+    }
+
+    .cuidados__content h2 {
+        margin-top: 14px;
+    }
+
+
+    /* ---------------------------------------- */
+    /* Musica > Catalogo Section */
+    /* ---------------------------------------- */
+    .musica__catalogo .grid {
+        padding-bottom: 100px;
+    }
+
+    .catalogo__content-fila1 .grid__col:nth-child(3),
+    .catalogo__content-fila1 .grid__col:nth-child(4) {
+        display: none;
+    }
+
+    .catalogo__content-fila1 p {
+        padding-top: 0;
+        line-height: .8;
+    }
+
+    .catalogo__content-fila1 .content__title p {
+        font-size: 1rem;
+        line-height: 1;
+        width: 50%;
+    }
+
+    .catalogo__content .content__title p {
+        line-height: 1;
+        width: 50%;
+        color: var(--color-text);
+    }
+
+    .catalogo__content p {
+        padding-top: 0;
+        line-height: .7;
+        color: var(--color-text-alt);
+    }
+
+    .catalogo__content span {
+        position: relative;
+        top: -4px;
+    }
+
+    .catalogo__content:hover {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .catalogo__content hr {
+        display: block;
+        width: 50%;
+        border: 0;
+        height: 1px;
+        background: #000;
+        opacity: 1 !important;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.55s ease, opacity 0.35s ease;
+        will-change: transform, opacity;
+    }
+
+    /* Al hacer hover en la fila, aparece el hr */
+    .catalogo__content:hover hr {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    .catalogo__image-preview {
+        position: absolute;
+        left: 170px;
+        top: -2.4rem;
+        right: 0;
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        opacity: 1;
+        transform: scale(0.95);
+    }
+
+
+    /* ---------------------------------------- */
+    /* subTerrarios > Funcionamiento */
+    /* ---------------------------------------- */
+    .subTerrarios__images-container {
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .subTerrarios__icon-wrapper {
+        display: none;
+    }
+
+    .subTerrarios__item .grid {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

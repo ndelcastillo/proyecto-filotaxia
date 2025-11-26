@@ -1,0 +1,267 @@
+/* ---------------------------------------- */
+/* Musica > Horizontal */
+/* ---------------------------------------- */
+.horizontal-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.horizontal-wrapper {
+    display: flex;
+    height: 100vh;
+    will-change: transform;
+    position: relative;
+    z-index: 2;
+}
+
+.panel {
+    width: 100vw;
+    height: 100vh;
+    flex: 0 0 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-dark);
+    border: 1px solid #000;
+}
+
+.panel h2 {
+    color: var(--color-headings-inverse);
+}
+
+.panel__text {
+    font-size: var(--h3-size);
+    margin-right: .5rem;
+    position: relative;
+    bottom: 2px;
+}
+
+.text__caption {
+    font-size: var(--h4-size);
+    margin-right: .5rem;
+}
+
+#three-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.panel .content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.panel .content1 img {
+    width: 500px;
+}
+
+.panel .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -35px;
+}
+
+.panel .content2 img {
+    width: 500px;
+}
+
+/* ---------------------------------------- */
+/* Musica > Vertical */
+/* ---------------------------------------- */
+.vertical-section {
+    display: none;
+    /* por defecto oculta en desktop */
+}
+
+
+/* ---------------------------------------- */
+/* subTerrarios > Hero */
+/* ---------------------------------------- */
+.header__subCapas {
+    position: fixed;
+}
+
+.hero__subCapas {
+    height: 85vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden !important;
+    position: relative;
+}
+
+.hero__subCapas-content-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: max-content;
+    will-change: transform;
+    position: relative;
+    left: 80px;
+}
+
+.hero__subCapas-content-1 img {
+    object-fit: cover;
+    height: 370px;
+    flex-shrink: 0;
+    /* que no se achiquen */
+    width: auto;
+    /* podés fijar un ancho si querés consistencia */
+}
+
+.hero__subCapas-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 0px;
+
+    /* height: 45vh; */
+}
+
+.subCapas-content-2-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.subCapas-content-2-2 {
+    margin-left: -5px;
+}
+
+.subCapas-content-2-3 {
+    width: 85%;
+}
+
+.subCapas__subtitle {
+    color: #888A8B;
+}
+
+.hero__subCapas-content-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000 !important;
+}
+
+.subCapas-content-3-2 {
+    text-align: left;
+    margin-left: -100px;
+}
+
+.subCapas-content-3-3 {
+    text-align: right;
+}
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 780px) {
+
+    /* ---------------------------------------- */
+    /* Musica > Horizontal */
+    /* ---------------------------------------- */
+    .horizontal-section {
+        display: none;
+    }
+
+    /* ---------------------------------------- */
+    /* Musica > Vertical */
+    /* ---------------------------------------- */
+    .vertical-section {
+        display: block;
+        background: var(--color-bg-dark);
+        padding: 60px 10px;
+        color: var(--color-headings-inverse);
+        margin: 10px;
+    }
+
+    .vertical-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .vertical-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .vertical-row img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .vertical-row h2 {
+        font-size: var(--h2-size);
+        color: var(--color-headings-inverse);
+        margin-top: 10px;
+        margin-right: -10px;
+    }
+
+    .vertical-row .content2 {
+        margin-top: 0;
+        opacity: 0;
+    }
+
+    .panel__text {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .text__caption {
+        display: block;
+        font-size: .7rem;
+        opacity: 1;
+        text-transform: normal;
+        line-height: 1;
+    }
+
+    .row-item-1,
+    .row-item-2,
+    .row-item-3,
+    .row-item-4 {
+        position: relative;
+    }
+
+    .row-item-1 .content2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .row-item-2 .content2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .row-item-3 .content2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .row-item-4 .content2 {
+        position: absolute;
+        top: 0;
+    }
+}

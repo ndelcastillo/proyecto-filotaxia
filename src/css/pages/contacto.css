@@ -1,0 +1,55 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__contacto {
+    height: 72vh;
+    top: 20px;
+}
+
+.hero__contacto-content {
+    height: 100%;
+}
+
+.hero__contacto-content p {
+    width: 100%;
+}
+
+.hero__contacto-content h1 {
+    position: relative;
+    left: -5px;
+}
+
+.hero__contacto-content img {
+    height: 220px;
+}
+
+.info__title {
+    color: var(--color-text-alt);
+}
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    /* ---------------------------------------- */
+    /* Section Hero */
+    /* ---------------------------------------- */
+    .hero__contacto-content {
+        margin-top: 0;
+    }
+
+    .hero__contacto-content h1 {
+        margin-top: 3rem;
+    }
+
+    .hero__contacto .contacto__title-content {
+        margin-top: 4.8rem;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Form */
+    /* ---------------------------------------- */
+    .contacto__info {
+        margin-top: 12rem;
+    }
+}

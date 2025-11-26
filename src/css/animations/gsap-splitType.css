@@ -1,0 +1,58 @@
+/* ---------------------------------------- */
+/* Home > Section Hero */
+/* ---------------------------------------- */
+
+.hero__title {
+    color: var(--color-black);
+    margin-left: -20px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    top: -1rem;
+}
+
+.hero__title .char {
+    display: inline-block;
+    /* Cada carácter mantiene su propio ancho */
+    will-change: transform;
+}
+
+
+/* ---------------------------------------- */
+/* General > FX */
+/* ---------------------------------------- */
+/* .split-line {
+    overflow: hidden;
+}
+
+.split-parent {
+    overflow: hidden;
+} */
+
+.split-parent {
+    overflow: hidden;
+    line-height: 1.1;
+    /* importante */
+}
+
+.split-line {
+    display: block;
+    overflow: hidden;
+    line-height: 1.1;
+}
+
+.split-word,
+.split-char {
+    display: inline-block;
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    .split-line {
+        display: inline-block;
+        line-height: 1.1;
+    }
+}

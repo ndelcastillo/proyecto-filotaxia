@@ -1,0 +1,343 @@
+/* ================================
+Variables GLOBAL - NDC TEMPLATE
+   ================================ */
+
+/* === FONT-FACE === */
+@font-face {
+  font-family: 'PP_Neue_Montreal_medium';
+  src: url('../../assets/fonts/PP_Neue_Montreal/ppneuemontreal-medium.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP_Neue_Montreal_book';
+  src: url('../../assets/fonts/PP_Neue_Montreal/ppneuemontreal-book.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+:root {
+  /* ==============================
+    TYPOGRAPHY
+  ============================== */
+  /* Base */
+  font-size: 20px !important;
+
+  /* Fonts */
+  --font-primary: 'PP_Neue_Montreal_medium';
+  --font-secondary: 'PP_Neue_Montreal_book';
+
+
+  /* --- Headings (Desktop) --- */
+  --h1-size: 7rem;
+  --h1-line: 6.3rem;
+
+  --h2-size: 3.5rem;
+  --h2-line: 3.8rem;
+
+  --h3-size: 2rem;
+  --h3-line: 2.2rem;
+
+  --h4-size: 1rem;
+  --h4-line: 1.3rem;
+
+  --h5-size: 1.2rem;
+  --h5-line: 1.3rem;
+
+  --h6-size: 0.85rem;
+  --h6-line: 1rem;
+
+
+  /* --- Display --- */
+  --display-1-size: 15.1rem;
+  --display-1-line: 15.5rem;
+
+  --display-2-size: 7rem;
+  --display-2-line: 7rem;
+
+
+  /* --- Paragraph --- */
+  --p-size: 1rem;
+  --p-line: 1.3rem;
+
+
+  /* --- List --- */
+  --li-size: 1rem;
+  --li-line: 1.5rem;
+
+
+  /* --- Links --- */
+  --link-size: 2rem;
+  --link-line: 2.4rem;
+
+
+  /* --- Buttons --- */
+  --btn-primary-size: .9rem;
+  --btn-primary-line: 1.3rem;
+
+  --btn-secondary-size: .9rem;
+  --btn-secondary-line: 1.3rem;
+
+  --btn-terciary-size: 1rem;
+  --btn-terciary-line: 1rem;
+
+
+  /* --- Icons --- */
+  --icon-xs: 0.75rem;
+  --icon-sm: 1rem;
+  --icon-md: 1.5rem;
+  --icon-lg: 2rem;
+  --icon-xl: 3rem;
+  --icon-xxl: 3.5rem;
+
+
+  /* --- Numeric --- */
+  --num-xl-size: 9rem;
+  --num-xl-line: 8.5rem;
+
+  --num-lg-size: 5rem;
+  --num-lg-line: 4.8rem;
+
+  --num-md-size: 3rem;
+  --num-md-line: 3.2rem;
+
+  --num-sm-size: 1.4rem;
+  --num-sm-line: 1.4rem;
+
+
+  /* ==============================
+  FONT WEIGHTS
+============================== */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+
+  /* ==============================
+    COLORS
+============================== */
+  /* --- Guidelines --- */
+  /* Base */
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+
+  /* Greyscale - light */
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #d4d4d4;
+  --color-gray-400: #a3a3a3;
+  --color-gray-500: #737373;
+  --color-gray-600: #404040;
+  --color-gray-700: #262626;
+  --color-gray-800: #171717;
+  --color-gray-900: #0a0a0a;
+
+
+  /* --- Brand / Primary Palette --- */
+  --color-primary-100: #E6EEF6;
+  --color-primary-500: #3A5A78;
+  --color-primary-900: #1F2E3D;
+
+
+  /* --- Brand / Secondary Palette --- */
+  --color-secondary-100: #F5F5F2;
+  --color-secondary-500: #D0D0CC;
+  --color-secondary-900: #9A9A96;
+
+
+  /* --- Brand / Accent --- */
+  --color-accent-100: #FBE9D0;
+  --color-accent-500: #E0A458;
+  --color-accent-900: #B4742D;
+
+
+  /* --- Brand / Swiss --- */
+  --color-primary-500: #111111;
+  --color-secondary-500: #F2F2F2;
+  --color-accent-500: #FF6B35;
+
+
+  /* --- Semantic (Functional) --- */
+  /* Text */
+  --color-headings: var(--color-black);
+  --color-headings-inverse: var(--color-white);
+  --color-headings-alt: var(--color-gray-500);
+  --color-headings-alt-inverse: var(--color-gray-600);
+
+  --color-display: var(--color-black);
+  --color-display-inverse: var(--color-white);
+  --color-display-alt: var(--color-gray-500);
+  --color-display-alt-inverse: var(--color-gray-600);
+
+  --color-text: var(--color-black);
+  --color-text-inverse: var(--color-white);
+  --color-text-alt: var(--color-gray-400);
+  --color-text-alt-inverse: var(--color-gray-600);
+
+  --color-list: var(--color-black);
+  --color-list-inverse: var(--color-white);
+  --color-list-alt: var(--color-gray-500);
+  --color-list-alt-inverse: var(--color-gray-600);
+
+
+  /* Links */
+  --color-link: var(--color-black);
+  --color-link-hover: var(--color-gray-400);
+  --color-link-inverse: var(--color-white);
+  --color-link-inverse-hover: var(--color-gray-400);
+
+
+  /* Buttons */
+  --color-btn-primary-text: var(--color-white);
+  --color-btn-primary-bg: var(--color-black);
+
+  --color-btn-secondary-text: var(--color-black);
+  --color-btn-secondary-bg: var(--color-white);
+
+  --color-btn-terciary-text: var(--color-black);
+  --color-btn-terciary-bg: var(--color-white);
+  --color-btn-terciary-inverse-text: var(--color-white);
+  --color-btn-terciary-inverse-bg: var(--color-white);
+
+  --color-btn-quaternary-text: var(--color-white);
+
+
+  /* --- Icons --- */
+  --color-icon-light-bg: var(--color-white);
+  --color-icon-dark-bg: var(--color-black);
+
+
+  /* --- Lines --- */
+  --color-line-light-bg: var(--color-white);
+  --color-line-dark-bg: var(--color-black);
+
+  
+  /* Background */
+  --color-bg: var(--color-white);
+  --color-bg-dark: var(--color-black);
+  --color-bg-light: var(--color-gray-100);
+
+
+  /* Borders */
+  --color-border: var(--color-gray-300);
+  --color-muted: var(--color-gray-500);
+  --color-surface: var(--color-gray-100);
+
+
+  /* States */
+  --color-normal: var(--color-primary-500);
+  --color-hover: var(--color-gray-400);
+  --color-active: var(--color-gray-100);
+
+
+  /* ==============================
+    SPACING
+  ============================== */
+  --spacing-xs: 0.2rem;
+  --spacing-sm: 0.4rem;
+  --spacing-md: 0.8rem;
+  --spacing-lg: 1.2rem;
+  --spacing-xl: 1.6rem;
+
+
+  /* ==============================
+    RADIUS
+  ============================== */
+  --radius-sm: 0.2rem;
+  --radius-md: 0.4rem;
+  --radius-lg: 0.8rem;
+
+
+  /* ==============================
+    SHADOWS
+  ============================== */
+  --shadow-sm: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  :root {
+    /* --- Headings --- */
+    --h1-size: 3rem;
+    --h1-line: 3.3rem;
+
+    --h2-size: 1.8rem;
+    --h2-line: 2rem;
+
+    --h3-size: 1.2rem;
+    --h3-line: 1.4rem;
+
+    --h4-size: .8rem;
+    --h4-line: 1.1rem;
+
+    --h5-size: 1rem;
+    --h5-line: 1.2rem;
+
+
+    /* --- Display --- */
+    --display-1-size: 3.7rem;
+    --display-1-line: 3.7rem;
+
+    --display-2-size: 5rem;
+    --display-2-line: 7rem;
+
+
+    /* --- Paragraph --- */
+    --p-size: .8rem;
+    --p-line: 1.1rem;
+
+
+    /* --- List --- */
+    --li-size: 0.8rem;
+    --li-line: 1.1rem;
+
+
+    /* --- Links --- */
+    --link-size: 2rem;
+    --link-line: 2.4rem;
+
+
+    /* --- Buttons --- */
+    --btn-primary-size: 0.8rem;
+    --btn-primary-line: 1.1rem;
+
+    --btn-secondary-size: 0.8rem;
+    --btn-secondary-line: 1.1rem;
+
+    --btn-terciary-size: 0.8rem;
+    --btn-terciary-line: 1.1rem;
+
+
+    /* --- Icons --- */
+    --icon-xs: 0.75rem;
+    --icon-sm: 1rem;
+    --icon-md: 1.5rem;
+    --icon-lg: 1.4rem;
+    --icon-xl: 3rem;
+
+
+    /* --- Numeric --- */
+    --num-xl-size: 9rem;
+    --num-xl-line: 8.5rem;
+
+    --num-lg-size: 5rem;
+    --num-lg-line: 4.8rem;
+
+    --num-md-size: 3rem;
+    --num-md-line: 3.2rem;
+
+    --num-sm-size: 1rem;
+    --num-sm-line: 1rem;
+  }
+}

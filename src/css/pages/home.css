@@ -1,0 +1,192 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__model {
+    position: relative;
+    top: -20px;
+}
+
+/* ---------------------------------------- */
+/* Section CTA */
+/* ---------------------------------------- */
+.cta {
+    height: 100vh;
+    padding: 20px;
+}
+
+.cta__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* ---------------------------------------- */
+/* Section About-Us */
+/* ---------------------------------------- */
+.about-us__title span {
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.about-us__img {
+    height: 240px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.about-us__icons {
+    display: flex;
+    gap: 5px;
+}
+
+.about-us__img-icon {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+}
+
+/* ---------------------------------------- */
+/* Section Gallery */
+/* ---------------------------------------- */
+.gallery__intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* ---------------------------------------- */
+/* Section Benefits  */
+/* ---------------------------------------- */
+
+
+/* ---------------------------------------- */
+/* Section stepFlow  */
+/* ---------------------------------------- */
+.step-flow {
+    position: relative;
+    background-color: var(--color-bg-dark);
+    height: 400vh;
+    margin: 0px;
+}
+
+
+/* ---------------------------------------- */
+/* Section Manifiesto */
+/* ---------------------------------------- */
+.manifiesto__image {
+    height: 240px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.manifiesto__tilte {
+    position: relative;
+}
+
+.manifiesto__title-detail {
+    font-size: var(--h4-size);
+    position: relative;
+    top: -1rem;
+    margin-right: 1rem;
+}
+
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 450px) {
+    /* ---------------------------------------- */
+    /* Section Hero */
+    /* ---------------------------------------- */
+    .hero {
+        height: 90dvh;
+        justify-content: space-between;
+    }
+
+    .hero__model img {
+        width: 360px;
+        padding-top: 100px;
+    }
+
+    .hero__title {
+        letter-spacing: -0.1rem;
+        margin-left: -6px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section CTA */
+    /* ---------------------------------------- */
+    .cta {
+        height: 40vh;
+        padding: 0 15px 0 15px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section About-Us */
+    /* ---------------------------------------- */
+    .about-us__content2 h4 {
+        margin-top: 1rem;
+    }
+
+    .about-us__img {
+        height: 220px;
+        width: 190px;
+        margin-bottom: 10px;
+    }
+
+    .about-us__title span {
+        margin-right: 0;
+        display: block;
+    }
+
+    .content2-text {
+        margin-left: 0px;
+    }
+
+    .content2-btn {
+        margin-left: 0px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Gallery */
+    /* ---------------------------------------- */
+    .gallery__intro {
+        position: relative;
+        bottom: -30px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Benefist */
+    /* ---------------------------------------- */
+    .benefits__intro {
+        margin-bottom: 4rem;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Manifiesto */
+    /* ---------------------------------------- */
+    .manifiesto {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .manifiesto__image {
+        margin-bottom: 50px;
+    }
+
+    .manifiesto__title-detail {
+        position: relative;
+        top: -0.5rem;
+    }
+}

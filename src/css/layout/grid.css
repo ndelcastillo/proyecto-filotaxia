@@ -1,0 +1,424 @@
+/* Grid Overlay */
+.grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    /* margen izquierdo */
+    width: calc(100% - 40px);
+    /* ancho total menos márgenes */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    /* gutter */
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.grid-overlay>div {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+
+/* ---------------------------------------- */
+/* Contenedor de grilla: 12 columnas con gutter y márgenes */
+/* ---------------------------------------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    /* quitar padding */
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ---------------------------------------- */
+/* Columna base: ocupa toda la fila (12 columnas) por defecto */
+/* ---------------------------------------- */
+.grid__col {
+    grid-column: span 12;
+}
+
+/* ---------------------------------------- */
+/* Modificadores para controlar cuántas columnas ocupa (span) */
+/* ---------------------------------------- */
+.grid__col--span-1 {
+    grid-column: span 1;
+}
+
+.grid__col--span-2 {
+    grid-column: span 2;
+}
+
+.grid__col--span-3 {
+    grid-column: span 3;
+}
+
+.grid__col--span-4 {
+    grid-column: span 4;
+}
+
+.grid__col--span-5 {
+    grid-column: span 5;
+}
+
+.grid__col--span-6 {
+    grid-column: span 6;
+}
+
+.grid__col--span-7 {
+    grid-column: span 7;
+}
+
+.grid__col--span-8 {
+    grid-column: span 8;
+}
+
+.grid__col--span-9 {
+    grid-column: span 9;
+}
+
+.grid__col--span-10 {
+    grid-column: span 10;
+}
+
+.grid__col--span-11 {
+    grid-column: span 11;
+}
+
+.grid__col--span-12 {
+    grid-column: span 12;
+}
+
+/* ---------------------------------------- */
+/* Modificadores para control de margin-top */
+/* ---------------------------------------- */
+.mt-xxxs {
+    margin-top: .6rem;
+}
+
+.mt-xxs {
+    margin-top: .8rem;
+}
+
+.mt-xs {
+    margin-top: 1rem;
+}
+
+.mt-sm {
+    margin-top: 2rem;
+}
+
+.mt-md {
+    margin-top: 4rem;
+}
+
+.mt-lg {
+    margin-top: 6rem;
+}
+
+.mt-xl {
+    margin-top: 8rem;
+}
+
+.mt-xxl {
+    margin-top: 14rem;
+}
+
+/* ---------------------------------------- */
+/* Modificadores para control de margin-bottom */
+/* ---------------------------------------- */
+.mb-xxxs {
+    margin-top: .6rem;
+}
+
+.mb-xxs {
+    margin-bottom: .8rem;
+}
+
+.mb-xs {
+    margin-bottom: 1rem;
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 4rem;
+}
+
+.mb-lg {
+    margin-bottom: 6rem;
+}
+
+.mb-xl {
+    margin-bottom: 8rem;
+}
+
+.mb-xxl {
+    margin-bottom: 14rem;
+}
+
+/* ---------------------------------------- */
+/* Modificadores para control de margin-left */
+/* ---------------------------------------- */
+.ml-xs {
+    margin-left: 1rem;
+}
+
+.ml-sm {
+    margin-left: 2rem;
+}
+
+.ml-md {
+    margin-left: 4rem;
+}
+
+.ml-lg {
+    margin-left: 6rem;
+}
+
+/* ---------------------------------------- */
+/* Modificadores para control de margin-right */
+/* ---------------------------------------- */
+.mr-xs {
+    margin-right: 1rem;
+}
+
+.mr-sm {
+    margin-right: 2rem;
+}
+
+.mr-md {
+    margin-right: 4rem;
+}
+
+.mr-lg {
+    margin-right: 6rem;
+}
+
+/* ---------------------------------------- */
+/* Modificador para control de text no-wrap */
+/* ---------------------------------------- */
+.text-nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* ---------------------------------------- */
+/* Modificadores de alineación horizontal */
+/* ---------------------------------------- */
+.align--left {
+    text-align: left;
+}
+
+.align--center {
+    text-align: center;
+}
+
+.align--right {
+    text-align: right;
+}
+
+/* ---------------------------------------- */
+/* Modificadores de alineación vertical */
+/* ---------------------------------------- */
+.align {
+    display: flex;
+}
+
+.align--top {
+    align-items: flex-start;
+}
+
+.align--center-vertical {
+    align-items: center;
+}
+
+.align--bottom {
+    align-items: flex-end;
+}
+
+.align--baseline {
+    align-items: baseline;
+}
+
+/* ---------------------------------------- */
+/* Modificadores de alineación vertical */
+/* ---------------------------------------- */
+.align--start {
+    justify-content: flex-start;
+}
+
+.align--end {
+    justify-content: flex-end;
+}
+
+.align-horizontal--center {
+    justify-content: center;
+}
+
+
+
+
+
+/* ==============================
+    RESPONSIVE
+============================== */
+/* ----- MOBILE (menor a 600px) ----- */
+@media (max-width: 768px) {
+
+    /* Grid Overlay */
+    .grid-overlay {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .grid-overlay>div {
+        background-color: rgba(255, 0, 0, 0.1);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .grid__col {
+        grid-column: span 1 !important;
+    }
+
+    .text-nowrap {
+        white-space: normal;
+        /* deja que el texto fluya */
+    }
+
+    /* ---------------------------------------- */
+    /* margin-top */
+    /* ---------------------------------------- */
+    .mt-xxxs {
+        margin-top: 0.4rem;
+    }
+
+    .mt-xxs {
+        margin-top: 0.6rem;
+    }
+
+    .mt-xs {
+        margin-top: 0.8rem;
+    }
+
+    .mt-sm {
+        margin-top: 1.2rem;
+    }
+
+    .mt-md {
+        margin-top: 2rem;
+    }
+
+    .mt-lg {
+        margin-top: 3.5rem;
+    }
+
+    .mt-xl {
+        margin-top: 5rem;
+    }
+
+    .mt-xxl {
+        margin-top: 7rem;
+    }
+
+    /* ---------------------------------------- */
+    /* margin-bottom */
+    /* ---------------------------------------- */
+    .mb-xxxs {
+        margin-bottom: 0.4rem;
+    }
+
+    .mb-xxs {
+        margin-bottom: 0.6rem;
+    }
+
+    .mb-xs {
+        margin-bottom: 0.8rem;
+    }
+
+    .mb-sm {
+        margin-bottom: 1.2rem;
+    }
+
+    .mb-md {
+        margin-bottom: 2rem;
+    }
+
+    .mb-lg {
+        margin-bottom: 3.5rem;
+    }
+
+    .mb-xl {
+        margin-bottom: 5rem;
+    }
+
+    .mb-xxl {
+        margin-bottom: 7rem;
+    }
+
+    /* ---------------------------------------- */
+    /* margin-left */
+    /* ---------------------------------------- */
+    .ml-xs {
+        margin-left: 0rem;
+    }
+
+    .ml-sm {
+        margin-left: 0rem;
+    }
+
+    .ml-md {
+        margin-left: 0rem;
+    }
+
+    .ml-lg {
+        margin-left: 0rem;
+    }
+
+    /* ---------------------------------------- */
+    /* margin-right */
+    /* ---------------------------------------- */
+    .mr-xs {
+        margin-right: 0rem;
+    }
+
+    .mr-sm {
+        margin-right: 0rem;
+    }
+
+    .mr-md {
+        margin-right: 0rem;
+    }
+
+    .mr-lg {
+        margin-right: 0rem;
+    }
+
+
+    /* ---------------------------------------- */
+    /* Musica > Catalogo */
+    /* ---------------------------------------- */
+    .musica__catalogo .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

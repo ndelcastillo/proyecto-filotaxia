@@ -1,0 +1,111 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__musica {
+    height: 90vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.musica__img-content img {
+    width: 100%;
+}
+
+.hero__musica p {
+    width: 95%;
+}
+
+
+/* ---------------------------------------- */
+/* Section Proceso */
+/* ---------------------------------------- */
+.proceso__intro h3 {
+    width: 96%;
+}
+
+.etapas__content {
+    width: 90%;
+}
+
+.etapas__content-text {
+    color: var(--color-text-alt);
+}
+
+
+/* ---------------------------------------- */
+/* Section CTA */
+/* ---------------------------------------- */
+.cta__product {
+    height: 100vh;
+    margin: 20px;
+}
+
+.cta__product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 450px) {
+
+    /* ---------------------------------------- */
+    /* Section_Hero */
+    /* ---------------------------------------- */
+    .hero__musica-title {
+        padding-top: 40px;
+    }
+
+    .hero__musica-title h1 {
+        font-size: 2.92rem;
+        line-height: 1;
+    }
+
+    .hero__musica p {
+        margin-top: 10px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section Catalogo */
+    /* ---------------------------------------- */
+    .intro-catalogo__title h2 {
+        margin-top: -50px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section_Intro-Catalogo */
+    /* ---------------------------------------- */
+    .musica__intro-catalogo .display-2 {
+        margin-top: -30px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section_Proceso */
+    /* ---------------------------------------- */
+    .musica__proceso {
+        margin-top: -80px;
+    }
+
+    .proceso__intro h3 {
+        width: 100%;
+    }
+
+    /* ---------------------------------------- */
+    /* Section_CTA */
+    /* ---------------------------------------- */
+    .cta__product {
+        height: 45vh;
+    }
+
+    .cta__product img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 60% center;
+    }
+}

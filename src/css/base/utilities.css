@@ -1,0 +1,43 @@
+/* ================================
+    Responsive Visibility
+   ================================ */
+/* Ocultar en cada breakpoint */
+@media (max-width: 780px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* Mostrar solo en un breakpoint */
+@media (max-width: 780px) {
+    .show-mobile {
+        display: block !important;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .show-tablet {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .show-desktop {
+        display: block !important;
+    }
+}
+
+/* Ejemplo: <p class="show-mobile">Texto visible solo en mobile</p>
+>>> no se vea en desktop/tablet por accidente. */

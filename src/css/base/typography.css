@@ -1,0 +1,131 @@
+/* Tipografías generales */
+@font-face {
+    font-family: 'PP_Neue_Montreal_medium';
+    src: url('../../assets/fonts/PP_Neue_Montreal/ppneuemontreal-medium.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP_Neue_Montreal_book';
+    src: url('../../assets/fonts/PP_Neue_Montreal/ppneuemontreal-book.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    font-family: var(--font-primary);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    color: var(--color-black);
+    background-color: var(--color-background);
+}
+
+
+/* === HEADINGS === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-headings);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    line-height: var(--h2-line);
+}
+
+h3 {
+    font-size: var(--h3-size);
+    line-height: var(--h3-line);
+}
+
+h4 {
+    font-size: var(--h4-size);
+    line-height: var(--h4-line);
+}
+
+h5 {
+    font-size: var(--h5-size);
+    line-height: var(--h5-line);
+}
+
+h6 {
+    font-size: var(--h6-size);
+    line-height: var(--h6-line);
+}
+
+
+/* === DISPLAY === */
+.display-1 {
+    font-size: var(--display-1-size);
+    line-height: var(--display-1-line);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: -0.03rem;
+}
+
+.display-2 {
+    font-size: var(--display-2-size);
+    line-height: var(--display-2-line);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: -0.02em;
+}
+
+
+/* === PARAGRAPHS === */
+p {
+    font-family: var(--font-primary);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    color: var(--color-text);
+    margin: 0;
+}
+
+
+/* === LINKS === */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* === LISTS === */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-family: var(--font-primary);
+    font-size: var(--li-size);
+    line-height: var(--li-line);
+    color: var(--color-list);
+}
+
+
+/* === ICONS === */
+.icon {
+    font-size: var(--icon-xl);
+    line-height: var(--display-2-line);
+    font-family: var(--font-primary);
+}
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 450px) {}

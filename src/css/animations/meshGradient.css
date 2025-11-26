@@ -1,0 +1,38 @@
+/* ---------------------------------------- */
+/* Manifiesto > CTA_gradient */
+/* ---------------------------------------- */
+.meshGradient {
+    background: radial-gradient(at 78% 41%, hsla(0, 0%, 74%, 1) 0px, transparent 50%);
+    background-size: 300% 300%;
+    animation: change 5s infinite ease-in-out;
+}
+
+@keyframes change {
+
+    0% {
+
+        background-position: 0 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+
+        background-position: 0 50%;
+
+    }
+
+}
+
+.meshGradient {
+    background-color: #000;
+    background-image:
+        radial-gradient(at 78% 41%, #212121 0px, transparent 50%),
+        radial-gradient(at 36% 0%, #212121 0px, transparent 50%),
+        radial-gradient(at 2% 82%, #212121 0px, transparent 50%);
+}

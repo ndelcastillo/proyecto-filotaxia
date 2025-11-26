@@ -1,0 +1,33 @@
+@import url('./base/reset.css');
+@import url('./base/utilities.css');
+@import url('./base/variables.css');
+@import url('./base/typography.css');
+
+@import url('./layout/grid.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+@import url('./models/model-three.css');
+
+@import url('./animations/gsap.css');
+@import url('./animations/meshGradient.css');
+
+@import url('./components/acordeon.css');
+@import url('./components/sidebar.css');
+@import url('./components/button.css');
+@import url('./components/slider.css');
+@import url('./components/model.css');
+@import url('./components/audio.css');
+@import url('./components/form.css');
+@import url('./components/preloader.css');
+
+@import url('./pages/home.css');
+@import url('../css/pages/terrarios.css');
+@import url('../css/pages/musica.css');
+@import url('../css/pages/manifiesto.css');
+@import url('../css/pages/contacto.css');
+
+@import url('../css/pages/terrarios/terrario01.css');
+@import url('../css/pages/capas/capa01.css');
+
+

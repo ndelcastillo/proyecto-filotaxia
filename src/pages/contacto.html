@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filotaxia</title>
+    <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <!-- Preloader Pages -->
+    <div class="pre-loader-pages" id="preloader-pages"></div>
+    <!-- Grid_Layout-->
+    <div class="grid-overlay"></div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav content-reveal-position-sm-down" role="navigation" aria-label="Main navigation">
+            <div class="grid">
+                <div class="grid__col grid__col--span-2">
+                    <a href="/" class="nav__logo-link ">
+                        <img src="../assets/images/logo/FILO FOR EXPORT-03.png" alt="Filotaxia logo"
+                            class="nav__logo-img" />
+                    </a>
+                </div>
+                <div class="grid__col grid__col--span-5">
+                    <div class="nav__tagline text-nowrap">
+                        <p>Armonía en Plantas</p>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--span-1"></div>
+                <div class="grid__col grid__col--span-3">
+                    <ul class="nav__list--row">
+                        <li class="nav__item"><a href="./terrarios.html" class="nav__link">Terrarios,</a></li>
+                        <li class="nav__item"><a href="./musica.html" class="nav__link">Formas,</a></li>
+                        <li class="nav__item"><a href="./manifiesto.html"
+                                class="nav__link">Manifiesto,</a></li>
+                        <li class="nav__item"><a href="./contacto.html" class="nav__link nav__link-active">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="grid__col grid__col--span-1 align align--center-vertical align--end">
+                    <div class="nav__toggle">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar (Mobile Menu) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <a href="/" class="nav__logo-link">
+                    <img src="../../src/assets/images/logo/FILO FOR EXPORT-04.png" alt="Filotaxia Logo"
+                        class="sidebar__logo" />
+                </a>
+                <button class="sidebar__close" id="sidebarClose">Cerrar</button>
+            </div>
+            <nav class="sidebar__nav">
+                <div class="sidebar__nav-content">
+                    <h4 class="sidebar__label">(Navegación)</h4>
+                    <ul class="sidebar__list">
+                        <li><a href="/" class="sidebar__link">Inicio</a></li>
+                        <li><a href="./terrarios.html" class="sidebar__link">Terrarios</a></li>
+                        <li><a href="./musica.html" class="sidebar__link">Formas</a></li>
+                        <li><a href="./manifiesto.html" class="sidebar__link">Manifiesto</a></li>
+                        <li><a href="./contacto.html" class="sidebar__link active">Contacto</a></li>
+                    </ul>
+                </div>
+                <button class="button--terciary-inverse button--terciary__sidebar mt-md" type="button">
+                    <a href="./src/pages/terrarios.html">
+                        Ver Terrarios <span class="button-icon">→</span>
+                        <span class="button-line-inverse"></span>
+                    </a>
+                </button>
+            </nav>
+        </aside>
+        <!-- Botón para abrir -->
+        <button class="sidebar__toggle content-reveal-position-home" id="sidebarToggle">
+            Menú
+        </button>
+    </header>
+
+    <main class="main" role="main">
+        <!-- Hero_Section -->
+        <section class="hero__contacto">
+            <div class="grid mt-xl hero__contacto-content">
+                <div class="grid__col grid__col--span-5 mt-sm">
+                    <h1 class="split-text" data-split="lines">Contacto</h1>
+                    <p class="content-reveal-opacity">Si quieres contactarnos sobre tu terrario o simplemente
+                        compartir algun duda,
+                        escríbenos a
+                        hola@filotaxia.com. O si prefieres, contáctanos directamente mediante el formulario a
+                        continuación.</p>
+                </div>
+                <div class="grid__col grid__col--span-5">
+                    <div class="contacto__title-content">
+                        <div class="contacto__title-content1 image-move">
+                            <div class="image-terrario01"></div>
+                            <div class="image-terrario02"></div>
+                            <div class="image-terrario03"></div>
+                            <div class="image-terrario04"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info_Section -->
+        <section class="contacto__info mb-xxl">
+            <div class="grid">
+                <div class="grid__col grid__col--span-3">
+                    <h4>Detalle de contacto:</h4>
+                    <p class="info__title mt-xs">Tel: +54 9 11 4198 6572 </p>
+                    <p class="info__title">Email: hola@filotaxia.com</p>
+                    <p class="info__title">Instagram: @filotaxiar</p>
+                </div>
+                <div class="grid__col grid__col--span-3"></div>
+                <div class="grid__col grid__col--span-6">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre*</label>
+                            <input type="text" id="name" name="name" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo*</label>
+                            <input type="email" id="email" name="email" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Tel*</label>
+                            <input type="email" id="phone" name="phone" placeholder="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">Asunto*</label>
+                            <select id="topic" name="topic" required>
+                                <option value=""></option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="pedido">Pedido / Terrario</option>
+                                <option value="cuidados">Cuidados</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje*</label>
+                            <textarea id="message" name="message" placeholder="" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="consent" name="consent" required>
+                                Acepto la <a href="#">política de privacidad</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class=" button button button--primary mt-xxs">
+                            <span class="button-bg"></span>
+                            <a href="./src/pages/terrarios.html">Enviar</a>
+                        </button>
+                        <p class="form-feedback"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mb-xs content-reveal-opacity" role="contentinfo">
+        <div class="grid mb-md">
+            <div class="grid__col grid__col--span-12">
+                <hr class="mt-xs">
+            </div>
+        </div>
+        <div class="grid mb-xl">
+            <div class="grid__col grid__col--span-2 text-nowrap">
+                <p class="footer__subtitle mb-xs">Navegación</p>
+                <ul class="nav__list--column">
+                    <li class="nav__item"><a href="./terrarios.html" class="nav__link">Terrarios</a></li>
+                    <li class="nav__item"><a href="./musica.html" class="nav__link">Formas</a></li>
+                    <li class="nav__item"><a href="./manifiesto.html" class="nav__link">Manifiesto</a></li>
+                    <li class="nav__item"><a href="./contacto.html" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="grid__col grid__col--span-2 text-nowrap">
+                <p class="footer__subtitle mb-xs">Redes Sociales</p>
+                <ul class="nav__list--column">
+                    <li class="nav__item"><a href="#terrarios" class="nav__link">Instagram</a></li>
+                    <li class="nav__item"><a href="#musica" class="nav__link">Twitter</a></li>
+                    <li class="nav__item"><a href="#plantas" class="nav__link">Souncloud</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid align--baseline">
+            <div class="grid__col grid__col--span-7  mb-xs">
+                <img src="../assets/images/logo/FILO FOR EXPORT-03.png" class="footer__logo" alt="">
+            </div>
+            <div class="grid__col grid__col--span-1"></div>
+            <div class="grid__col grid__col--span-2">
+                <p class="footer__link" id="backToTop">Volver Arriba ↑</p>
+            </div>
+            <div class="grid__col grid__col--span-2 text-nowrap">
+                <p class="footer__link" style="margin-left:-10px">Copyright ©Filotaxia 2025</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Model Viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <!-- Scripts -->
+    <script src="../js/vendor/vendor.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+
+</html>

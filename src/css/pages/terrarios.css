@@ -1,0 +1,149 @@
+/* ---------------------------------------- */
+/* Section Hero */
+/* ---------------------------------------- */
+.hero__terrarios {
+    height: 90vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.terrarios-capas .grid {
+    gap: 15px;
+}
+
+.terrarios-capas__content {
+    height: 500px;
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 10px;
+}
+
+
+/* ---------------------------------------- */
+/* Section Capas */
+/* ---------------------------------------- */
+.terrarios-capas__content {
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+}
+
+.terrarios-capas__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* TEXT CONTENT */
+.content-1,
+.content-2,
+.content-3 {
+    z-index: 10;
+}
+
+.content-1,
+.content-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-1__link,
+.content-3__link,
+.content-1__subtitle,
+.content-3__subtitle,
+.content-2__title {
+    color: var(--color-text-inverse);
+}
+
+.content-3__icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: var(--color-icon-light-bg);
+}
+
+.terrarios-capas__text h3 {
+    width: 95%;
+}
+
+
+/* ---------------------------------------- */
+/* Section FAQ */
+/* ---------------------------------------- */
+.faq-intro__title {
+    width: 100%;
+}
+
+.faq-intro__subtitle {
+    font-size: var(--p-size);
+    margin-right: 200px;
+    position: relative;
+    top: -15px;
+    width: 100% !important;
+}
+
+.faq-intro__number {
+    position: relative;
+    bottom: -30px;
+}
+
+.faq-intro__img {
+    height: 240px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------- */
+@media (max-width: 450px) {
+    /* ---------------------------------------- */
+    /* Section_Hero */
+    /* ---------------------------------------- */
+    .hero__terrarios {
+        height: 100vh !important;
+    }
+
+    /* ---------------------------------------- */
+    /* Section_Capas */
+    /* ---------------------------------------- */
+    .terrarios-capas__content {
+        min-height: 250px;
+    }
+
+    .content-1,
+    .content-3 {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* ---------------------------------------- */
+    /* Section_FAQ */
+    /* ---------------------------------------- */
+    .faq-intro__subtitle {
+        margin-right: 20px;
+        top: -8px;
+    }
+}

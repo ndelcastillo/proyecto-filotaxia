@@ -1,0 +1,106 @@
+/* Nav */
+header {
+    z-index: 1000;
+}
+
+.nav {
+    height: 10vh;
+    padding-top: 25px;
+    z-index: 1000;
+}
+
+.nav__list--row {
+    display: flex;
+    gap: .3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'PP_Neue_Montreal_medium';
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+/* Línea solo para la página activa */
+.nav__link-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    /* separa la línea del texto */
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    /* usa el color del texto */
+
+    /* animación */
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: underline-grow .8s ease forwards;
+    animation-delay: 0.5s;
+    /* <-- retrasa el inicio */
+}
+
+@keyframes underline-grow {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+/* Hover effect: link hovered = negro */
+.nav__link:hover {
+    color: #000;
+}
+
+/* Los demás se ponen grises cuando uno está hovered */
+.nav__list--row:hover .nav__link {
+    color: #9e9e9e;
+}
+
+.nav__list--row:hover .nav__link:hover {
+    color: #000;
+}
+
+
+.nav__logo-img {
+    width: 120px;
+    position: relative;
+    top: 3px;
+}
+
+.nav__toggle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* Mostrar sólo en mobile */
+@media (max-width: 580px) {
+    .nav {        
+        padding-top: 15px;
+    }
+
+    .nav__tagline {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+    }
+}
