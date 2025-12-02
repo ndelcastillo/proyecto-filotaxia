@@ -59,4 +59,12 @@ hr {
         width: 90%;
         margin-left: 20px;
     }
+
+    body {
+        overflow-x: hidden;
+        /* Evita scroll horizontal — está bien */
+        overflow-y: auto;
+        /* HABILITA el scroll vertical */
+    }
+
 }

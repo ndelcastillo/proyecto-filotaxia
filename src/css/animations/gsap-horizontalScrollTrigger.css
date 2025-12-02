@@ -87,14 +87,14 @@
 
 
 /* ---------------------------------------- */
-/* subTerrarios > Hero */
+/* subCapas > Hero */
 /* ---------------------------------------- */
 .header__subCapas {
     position: fixed;
 }
 
 .hero__subCapas {
-    height: 85vh !important;
+    height: 88vh !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,9 +116,7 @@
     object-fit: cover;
     height: 370px;
     flex-shrink: 0;
-    /* que no se achiquen */
     width: auto;
-    /* podés fijar un ancho si querés consistencia */
 }
 
 .hero__subCapas-content-2 {
@@ -126,8 +124,6 @@
     flex-direction: column;
     justify-content: start;
     margin-top: 0px;
-
-    /* height: 45vh; */
 }
 
 .subCapas-content-2-1 {
@@ -264,4 +260,57 @@
         position: absolute;
         top: 0;
     }
+
+
+    /* ---------------------------------------- */
+    /* subCapas > Hero */
+    /* ---------------------------------------- */
+    .hero__subCapas {
+        z-index: 0 !important;
+    }
+
+    .hero__subCapas .grid {
+        z-index: 0;
+    }
+
+    .hero__subCapas {
+        height: auto !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
+
+    .hero__subCapas-content-1 {
+        margin-left: -80px;
+        margin-top: 60px;
+    }
+
+    .hero__subCapas-content-1 img {
+        height: 230px;
+    }
+
+    .subCapas-content-2-1 {
+        width: 100%;
+    }
+
+    .subCapas-content-2-2 {
+        margin-left: -5px;
+    }
+
+    .subCapas-content-2-3 {
+        width: 100%;
+    }
+
+    .hero__subCapas-content-3 {
+        margin-top: 40px;
+    }
+
+    .subCapas-content-3-2 {
+        text-align: left;
+        margin-left: -100px;
+    }
+
+    .subCapas-content-3-3 {
+        text-align: right;
+    }
+
 }

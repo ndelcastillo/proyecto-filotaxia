@@ -12,7 +12,7 @@
 
 .hero__subTerrarios-content-1 img {
     object-fit: cover;
-    height: 90%;
+    height: 80%;
     width: 100%;
 }
 
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-right: 10px;
 }
 
 .subTerrarios-content-2-1 {
@@ -114,18 +115,18 @@
     /* Section Hero */
     /* ---------------------------------------- */
     .hero__subTerrarios {
-        height: 90vh;
+        height: 85vh;
     }
 
     .hero__subTerrarios-content-1 {
-        height: 80vh;
+        height: 72vh;
         display: flex;
         align-items: center;
     }
 
     .hero__subTerrarios-content-1 img {
-        height: 55%;
-        width: 100%;
+        height: 360px;
+        width: 360px;
         margin-top: -50px;
         margin-left: -5px;
     }

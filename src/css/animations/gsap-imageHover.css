@@ -105,10 +105,11 @@ h2.terrarios__title-6 {
     position: absolute;
     top: 0;
     right: 1rem;
-    width: 520px;
-    height: 440px;
+    width: 500px;
+    height: 400px;
     pointer-events: none;
     z-index: 10;
+    margin-right: -10px;
 }
 
 .terrarios__image {
@@ -435,18 +436,20 @@ h2.terrarios__title-6 {
     /* Terrarios > Hero Section */
     /* ---------------------------------------- */
     .terrarios__item .grid {
-        bottom: 0;
+        bottom: 0px;
+        z-index: 1000 !important;
+
     }
 
     .terrarios__image-wrapper {
-        width: 365px;
-        height: 365px;
-        top: 70px;
+        width: 360px;
+        height: 360px;
+        top: 50px;
         left: 10px;
     }
 
     .terrarios__image {
-        width: 350px;
+        width: 360px;
     }
 
     .terrarios__title h2 {
@@ -474,6 +477,18 @@ h2.terrarios__title-6 {
     .terrarios__title-1-icon {
         margin-left: 3px;
     }
+
+    .terrarios__image {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        position: absolute;
+    }
+
+    .terrarios__image.active {
+        opacity: 1;
+        position: relative;
+    }
+
 
     /* ---------------------------------------- */
     /* Terrarios > Cuidados Section */

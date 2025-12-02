@@ -1,68 +1,87 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Draggable } from "gsap/Draggable";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, Draggable);
 
 /* ---------------------------------------- */
 /* Terrarios > Hero */
 /* ---------------------------------------- */
-gsap.to(".terrarios__image-wrapper img", {
-    y: 300, // se mueve 300px hacia abajo
-    duration: 3,
-    scrollTrigger: {
-        trigger: ".hero__terrarios",
-        start: "top top",     // start scrollerStart
-        end: "bottom bottom", // end scrollerEnd
-        toggleClass: "small-gsap",
-        toggleActions: "play none none none",
-        //onEnter onLeave onEnterBack onLeaveBack
-        //play pause resume reverse restart complete none
-        scrub: true,
-        // markers: true
-    }
-});
+if (window.innerWidth > 900) {
+    gsap.to(".terrarios__image-wrapper img", {
+        y: 300,
+        scrollTrigger: {
+            trigger: ".hero__terrarios",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        }
+    });
+}
 
 /* ---------------------------------------- */
-/* subTerrarios > Hero */
+/* subCapas > Hero */
 /* ---------------------------------------- */
 function initHorizontalHero() {
     const hero = document.querySelector(".hero__subCapas");
     const container = document.querySelector(".hero__subCapas-content-1");
-    const header = document.querySelector("header"); // si existe
 
     if (!hero || !container) return;
 
-    // ancho a desplazar
     const distance = container.scrollWidth - window.innerWidth;
-    if (distance <= 0) return; // nada que desplazar
+    if (distance <= 0) return;
 
-    // altura del header (0 si no hay)
-    const headerHeight = header ? header.offsetHeight : 0;
+    // 👉 Detectar mobile
+    const isMobile = window.matchMedia("(max-width: 780px)").matches;
 
-    // Posición absoluta de inicio (scrollY) en px:
-    // queremos que empiece justo cuando la parte superior del hero
-    // alcance el top del viewport teniendo en cuenta el header.
-    const startScrollPos = hero.offsetTop - headerHeight;
-    const endScrollPos = startScrollPos + distance;
-
-    // Limpiar triggers previos (útil en dev / HMR)
+    // LIMPIAR cualquier animación previa
     ScrollTrigger.getAll().forEach(t => t.kill());
 
-    gsap.to(container, {
-        x: -distance,
-        ease: "none",
-        scrollTrigger: {            
-            start: startScrollPos,
-            end: endScrollPos,
-            scrub: 0.6,
-            pin: hero,                                    
-            invalidateOnRefresh: true
-        }
-    });
+    if (isMobile) {
+        /* ---------------------------------------
+         *  🔵 MODO MOBILE → arrastre con el dedo
+         * --------------------------------------- */
+        Draggable.create(container, {
+            type: "x",
+            inertia: true,
+            bounds: {
+                minX: -distance,
+                maxX: 0
+            },
+            edgeResistance: 0.85
+        });
+
+        gsap.set(container, { x: 0 });
+
+    } else {
+        /* ---------------------------------------
+         *  🟢 MODO DESKTOP → scroll horizontal
+         * --------------------------------------- */
+        const header = document.querySelector("header");
+        const headerHeight = header ? header.offsetHeight : 0;
+
+        const startScrollPos = hero.offsetTop - headerHeight;
+        const endScrollPos = startScrollPos + distance;
+
+        gsap.to(container, {
+            x: -distance,
+            ease: "none",
+            scrollTrigger: {
+                start: startScrollPos,
+                end: endScrollPos,
+                scrub: 0.6,
+                pin: hero,
+                anticipatePin: 1,
+                invalidateOnRefresh: true
+            }
+        });
+    }
 
     ScrollTrigger.refresh();
 }
 
-// Esperar a load (imágenes incluidas) para mediciones correctas
 window.addEventListener("load", initHorizontalHero);
-window.addEventListener("resize", () => ScrollTrigger.refresh());
+window.addEventListener("resize", () => {
+    initHorizontalHero();
+});
+
