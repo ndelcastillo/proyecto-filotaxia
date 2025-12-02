@@ -436,20 +436,23 @@ h2.terrarios__title-6 {
     /* Terrarios > Hero Section */
     /* ---------------------------------------- */
     .terrarios__item .grid {
-        bottom: 0px;
+        bottom: 50px;
         z-index: 1000 !important;
+    }
 
+    .terrarios__item {
+        margin-top: 40px;        
     }
 
     .terrarios__image-wrapper {
-        width: 360px;
-        height: 360px;
-        top: 50px;
-        left: 10px;
+        width: auto;
+        height: 320px;
+        top: 60px;
+        left: 20px;
     }
 
     .terrarios__image {
-        width: 360px;
+        width: 340px;
     }
 
     .terrarios__title h2 {

@@ -73,7 +73,7 @@
 
 
 .cta-mesh__title {
-    color: var(--color-headings-inverse);    
+    color: var(--color-headings-inverse);
 }
 
 .cta-mesh__subtitle {
@@ -90,6 +90,7 @@
     RESPONSIVE
 ============================== */
 @media (max-width: 768px) {
+
     /* ---------------------------------------- */
     /* Section Hero */
     /* ---------------------------------------- */
@@ -101,18 +102,22 @@
         display: none;
     }
 
+    .hero__manifiesto h3 {
+        width: 100%;
+    }
+
     /* ---------------------------------------- */
     /* Section CTA */
     /* ---------------------------------------- */
     .cta__manifiesto {
-        height: 40vh;        
+        height: 40vh;
     }
 
     /* ---------------------------------------- */
     /* Section Text */
     /* ---------------------------------------- */
     .manifiesto-text__title {
-        width: 80%;        
+        width: 80%;
         margin-top: 20px;
     }
 
